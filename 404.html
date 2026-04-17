@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found — Aarambha</title>
+<meta name="description" content="Yeh page abhi nahi bana. Par aarambha zaroor ho chuki hai.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: {
+    colors: { primary: '#0ea5e9', 'primary-dark': '#0284c7', accent: '#f59e0b', 'accent-dark': '#d97706', cosmos: '#020710', dark: '#060d1a', card: '#0d1525' },
+    fontFamily: { sora: ['Sora', 'sans-serif'], hindi: ['Noto Sans Devanagari', 'sans-serif'] }
+  } } }
+</script>
+
+<style>
+  body { font-family: 'Sora', sans-serif; background: #020710; color: #e2e8f0; }
+  .hindi { font-family: 'Noto Sans Devanagari', sans-serif; }
+  .grad { background: linear-gradient(135deg, #0ea5e9, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+</style>
+</head>
+<body class="min-h-screen flex items-center justify-center px-4 md:px-8">
+
+<div class="max-w-xl mx-auto text-center">
+  <div class="hindi text-[8rem] md:text-[10rem] font-black text-accent leading-none mb-4" style="text-shadow: 0 0 60px rgba(245,158,11,0.3);">404</div>
+  <p class="hindi text-xl md:text-2xl text-gray-300 leading-relaxed mb-2">यह page अभी नहीं बना।</p>
+  <p class="text-lg text-gray-500 mb-8 italic">Par aarambha zaroor ho chuki hai.</p>
+  <a href="/" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold px-6 py-3 rounded-xl transition-all">← Wapas jaao homepage</a>
+</div>
+
+</body>
+</html>
