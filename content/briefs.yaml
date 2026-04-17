@@ -1,0 +1,555 @@
+# content/briefs.yaml — 20 blog-post briefs
+# Each post generates EN + HI independent versions + 1 hero image
+
+common:
+  author: "Aarambha"
+  brand_voice: |
+    Confident founder-tone. Warm. Data-backed. Never corporate.
+    Hinglish-friendly English. NO personal names, NO employer names,
+    NO city names. Always "we" / "Aarambha".
+  target_length: [1200, 1500]   # words per language
+  image_style: |
+    Editorial dark illustration. Cosmos-navy #060d1a background.
+    Amber #f59e0b and sky-blue #0ea5e9 accents only. Premium magazine
+    quality. Restrained. One subject. Generous negative space.
+    NO text, NO logos, NO watermarks.
+
+posts:
+  - slug: india-mein-ai-ki-aarambh
+    title_en: "India mein AI ki aarambh — why now, why us"
+    title_hi: "भारत में AI का आरम्भ — अभी क्यों, हम क्यों"
+    vertical: brand
+    published_at: "2026-02-12"
+    keywords: [AI for India, Bharat AI, aarambha manifesto]
+    og_description_en: "The question we kept asking: why hasn't world-class AI reached India's villages? Aarambha is our answer."
+    og_description_hi: "जो सवाल हम बार-बार पूछते रहे: world-class AI गाँव तक क्यों नहीं पहुँचा? आरम्भ उसका उत्तर है।"
+    bullets_en:
+      - "The 1.2 billion gap — Indians left behind by English-first AI"
+      - "Why translation isn't enough — we rebuild for Hindi from scratch"
+      - "Pancha Bhoota framing — 5 elements, 7 products, one mission"
+      - "The moment that changed everything — one message from home"
+      - "What 'aarambh' means for Bharat, not India"
+    bullets_hi:
+      - "1.2 अरब की दूरी — जो AI से छूट गए"
+      - "अनुवाद क्यों काफ़ी नहीं — हम हिंदी के लिए नए सिरे से बनाते हैं"
+      - "पंच भूत की दृष्टि — 5 तत्व, 7 products, एक मिशन"
+      - "वह message जो सब बदल गया — घर से आई एक चिट्ठी"
+      - "आरम्भ का अर्थ — भारत के लिए, India के लिए नहीं"
+    image_prompt: |
+      Cinematic editorial illustration: a single dimly-lit phone on a
+      wooden village table glowing with soft amber light, in the dark
+      night, distant silhouette of an Indian village (mud houses, banyan
+      tree). The phone screen shows a single beacon of sky-blue AI light
+      reaching toward the stars. Peaceful, hopeful, restrained.
+
+  - slug: bharat-vs-india
+    title_en: "Bharat vs India — why we build for the villages"
+    title_hi: "भारत बनाम India — हम गाँवों के लिए क्यों बनाते हैं"
+    vertical: brand
+    published_at: "2026-02-20"
+    keywords: [Bharat first, rural AI, tier 3 AI India]
+    og_description_en: "India gets funded. Bharat gets ignored. Here's why that's about to flip."
+    og_description_hi: "India को funding मिलती है। भारत को नज़रअंदाज़ किया जाता है। यही पलटने वाला है।"
+    bullets_en:
+      - "India: 20 crore English speakers, metro, funded"
+      - "Bharat: 120 crore, Hindi/regional, Tier 2/3/4, ignored by every AI company"
+      - "Why the gap exists — design assumptions, language assumptions, market assumptions"
+      - "What Bharat actually needs from AI — voice, Hindi, audio, low-data"
+      - "The data: 600K villages with internet, zero native AI products"
+    bullets_hi:
+      - "India: 20 करोड़ English-speaking, metro, funded"
+      - "भारत: 120 करोड़, हिंदी / क्षेत्रीय भाषाएँ, जिन पर किसी ने AI नहीं बनाया"
+      - "यह gap क्यों है — design की, भाषा की, बाज़ार की ग़लत धारणाएँ"
+      - "भारत को AI से असली में क्या चाहिए — voice, हिंदी, audio, low-data"
+      - "आँकड़े: 6 लाख गाँवों में internet, native AI product शून्य"
+    image_prompt: |
+      Split-panel conceptual illustration: left half shows a glass metro
+      skyscraper in cool blue tones (India), right half shows a warm
+      amber-lit village with farmers at dusk (Bharat), joined in the
+      middle by a single cable of light. Cinematic, restrained. Two
+      worlds, one connection.
+
+  - slug: pancha-bhoota-ai
+    title_en: "Pancha Bhoota — ancient elements, modern AI"
+    title_hi: "पंच भूत — प्राचीन तत्व, आधुनिक AI"
+    vertical: brand
+    published_at: "2026-02-28"
+    keywords: [pancha bhoota, Indian philosophy AI, Prithvi Vayu Tejas Jal Akasha]
+    og_description_en: "Five elements. Seven products. A framework borrowed from our grandparents."
+    og_description_hi: "पाँच तत्व। सात products। हमारे दादा-दादियों से उधार लिया गया दर्शन।"
+    bullets_en:
+      - "The origin — why 5 elements, why now"
+      - "Prithvi (earth): knowledge grounds everything — Shrutam"
+      - "Vayu (air): commerce flows — WhatsApp Commerce"
+      - "Tejas (fire): clarity ignites — Karta AI"
+      - "Jal (water): life-giving — Pashu, Bima"
+      - "Akasha (space): connection — Svayam, Adhikar"
+      - "Why frameworks matter for disciplined product building"
+    bullets_hi:
+      - "उद्गम — पाँच तत्व क्यों, अभी क्यों"
+      - "पृथ्वी: ज्ञान की ज़मीन — श्रुतम्"
+      - "वायु: व्यापार का प्रवाह — WhatsApp Commerce"
+      - "तेजस्: स्पष्टता की ज्वाला — Karta AI"
+      - "जल: जीवनदायिनी — Pashu, Bima"
+      - "आकाश: जोड़ने वाला अवकाश — Svayam, Adhikar"
+      - "framework अनुशासन के लिए ज़रूरी है"
+    image_prompt: |
+      Abstract editorial illustration: five ethereal Indian elements
+      arranged in a circle — a single leaf (Prithvi), a wisp of wind
+      (Vayu), a tiny flame (Tejas), a drop of water (Jal), a star-field
+      point (Akasha). Each glows softly. Navy cosmos background, amber
+      and sky-blue lights. Balanced, ceremonial, hopeful.
+
+  - slug: 22-7-philosophy
+    title_en: "22/7 — tez nahi, sahi. Why we don't ship fast."
+    title_hi: "22/7 — तेज़ नहीं, सही। हम जल्दी ship क्यों नहीं करते।"
+    vertical: brand
+    published_at: "2026-03-06"
+    keywords: [22/7 philosophy, smart work, slow build AI]
+    og_description_en: "Two woodcutters. One cuts for 24 hours. One cuts for 22 and sharpens for 2. The slow one wins."
+    og_description_hi: "दो लकड़हारे। एक 24 घंटे काटता है। दूसरा 22 काटता है, 2 कुल्हाड़ी तेज़ करता है। धीमा जीतता है।"
+    bullets_en:
+      - "The story — woodcutter parable"
+      - "Applied to Shrutam — why blind mode took an extra month"
+      - "Pause to sharpen — reflection as work"
+      - "Optimize first — don't scale broken things"
+      - "Ship right, not ten times broken"
+    bullets_hi:
+      - "कहानी — लकड़हारे की मिसाल"
+      - "श्रुतम् में लागू — blind mode एक महीना देर क्यों हुआ"
+      - "रुककर तेज़ करना — सोचना भी काम है"
+      - "पहले optimize — टूटे को बड़ा मत करो"
+      - "सही ship, दस बार टूटा नहीं"
+    image_prompt: |
+      A single axe standing upright in soft dusk light, next to a small
+      whetstone and a coiled rope, on a dark earth-toned table. Cinematic,
+      restrained, meditative. Warm amber light source off-frame. No text.
+
+  - slug: bharat-ai-gap
+    title_en: "India's 1.2 billion AI gap — the math"
+    title_hi: "भारत का 1.2 अरब AI का अंतर — आँकड़े"
+    vertical: market
+    published_at: "2026-03-12"
+    keywords: [India AI market, non-English India AI, rural India AI]
+    og_description_en: "1.4 billion Indians. 200 million speak English. Every AI product serves that 200M. Here's the math on the 1.2B left behind."
+    og_description_hi: "1.4 अरब भारतीय। 20 करोड़ English बोलते हैं। हर AI product उन्हीं के लिए बनता है। बाक़ी 1.2 अरब का गणित।"
+    bullets_en:
+      - "1.4B population, 200M English-speaking — the filter"
+      - "Smartphone + Jio data: 500M+ rural users ready"
+      - "Why AI companies miss them — venture math, not impact math"
+      - "The market being missed — ₹ size if you build for Bharat"
+      - "What 'serving' actually looks like — voice, Hindi, WhatsApp-native"
+    bullets_hi:
+      - "1.4 अरब जनसंख्या, 20 करोड़ English-बोलने वाले — filter यहीं है"
+      - "Smartphone + Jio data: 50 करोड़+ ग्रामीण तैयार हैं"
+      - "AI companies क्यों चूकती हैं — venture math, impact math नहीं"
+      - "जो बाज़ार छूट रहा — भारत के लिए बनाओ तो कितना बड़ा"
+      - "'सेवा' असली में क्या है — voice, हिंदी, WhatsApp-native"
+    image_prompt: |
+      A minimalist infographic-style illustration: a large amber disc
+      representing 1.4 billion, with a small sky-blue wedge of 200M
+      carved out and lit, the remaining 1.2B dim-amber unlit portion
+      dominating. Numbers implied but no actual text. Editorial, clean.
+
+  - slug: hindi-vs-translation
+    title_en: "We don't translate, we rebuild — why native Hindi AI wins"
+    title_hi: "हम अनुवाद नहीं करते, नए सिरे से बनाते हैं"
+    vertical: market
+    published_at: "2026-03-18"
+    keywords: [native Hindi AI, hindi LLM, translated vs native]
+    og_description_en: "Translated AI sounds wrong. It thinks in English and pretends. Native Hindi AI thinks in Hindi. The difference is everything."
+    og_description_hi: "अनूदित AI ग़लत लगती है। वह English में सोचती है, नाटक करती है। हिंदी में सोचने वाली AI अलग है।"
+    bullets_en:
+      - "The tell-tale signs of translated AI — idioms wrong, metaphors stiff"
+      - "Why our SAAVI says 'Ek circle socho' not 'See the diagram'"
+      - "The technical side — native training vs post-hoc translation"
+      - "What students notice immediately — and why it builds trust"
+      - "The cost of translation: cultural mistakes nobody caught"
+    bullets_hi:
+      - "अनुवादित AI के पहचान के निशान — मुहावरे ग़लत, रूपक कड़क"
+      - "हमारी SAAVI 'See the diagram' नहीं, 'एक circle सोचो' क्यों कहती है"
+      - "तकनीकी पक्ष — native training बनाम बाद का अनुवाद"
+      - "विद्यार्थी तुरंत क्या देखते हैं — और भरोसा कैसे बनता है"
+      - "अनुवाद की क़ीमत — संस्कृति की ग़लतियाँ जिन पर किसी की नज़र नहीं पड़ी"
+    image_prompt: |
+      Two overlapping speech bubbles: one in cool English sky-blue with
+      mechanical gear-like edges, the other in warm amber Devanagari-
+      inspired flowing curves. They overlap but are visibly different
+      shapes. Cosmos-navy background. Minimalist, conceptual.
+
+  - slug: shrutam-hindi-medium-kids
+    title_en: "Why Hindi-medium kids are falling behind — and what fixes it"
+    title_hi: "हिंदी-medium बच्चे पीछे क्यों रह जाते हैं — और क्या ठीक करेगा"
+    vertical: shrutam
+    product: shrutam
+    published_at: "2026-03-22"
+    keywords: [hindi medium students, class 10 board exam hindi, CG Board CBSE]
+    og_description_en: "67% of India's students study in Hindi medium. They're not behind because of intelligence. They're behind because every tool assumes English."
+    og_description_hi: "भारत के 67% विद्यार्थी हिंदी माध्यम में पढ़ते हैं। वे बुद्धि की कमी से पीछे नहीं हैं। वे पीछे हैं क्योंकि हर tool English मानकर चलता है।"
+    bullets_en:
+      - "67% Hindi medium — who they are, what they struggle with"
+      - "The 10th board cliff — when English subjects appear"
+      - "Audio + Hinglish + slower pace = actual comprehension"
+      - "Case pattern: the student who suddenly stops failing"
+      - "Why CG Board schools see this first"
+    bullets_hi:
+      - "67% हिंदी माध्यम — कौन हैं, कहाँ अटकते हैं"
+      - "10वीं की cliff — जब English वाले subjects आते हैं"
+      - "Audio + Hinglish + धीमी गति = असली समझ"
+      - "एक patron — जो अचानक पास होने लगा"
+      - "CG Board schools यह पहले क्यों देखते हैं"
+    image_prompt: |
+      A young Indian student sitting in a modest village schoolroom at
+      dusk, warm amber window light falling on a notebook. On the desk:
+      a phone showing a subtle sky-blue glow as AI audio plays. The
+      student's expression is thoughtful, focused — a moment of
+      understanding. No faces clearly shown. Cinematic, gentle.
+
+  - slug: shrutam-audio-first
+    title_en: "Why audio-first for Class 6-10 students"
+    title_hi: "Class 6-10 के लिए audio-first क्यों"
+    vertical: shrutam
+    product: shrutam
+    published_at: "2026-03-28"
+    keywords: [audio learning India, Hinglish tutor, audio vs video class 10]
+    og_description_en: "Video feels modern but fails Bharat. Text fails the weak reader. Audio meets everyone where they are."
+    og_description_hi: "Video आधुनिक लगता है, पर भारत के लिए नहीं चलता। Text कमज़ोर पाठक को पीछे छोड़ देता है। Audio हर बच्चे से मिलता है।"
+    bullets_en:
+      - "The data problem — 2GB/day limits video"
+      - "The literacy problem — weak readers skip text"
+      - "Why audio works — hands free, eyes free, listen anywhere"
+      - "SAAVI's voice design — warm, calm, a didi not a teacher"
+      - "The surprise: parents listen along"
+    bullets_hi:
+      - "Data की समस्या — 2GB/दिन video नहीं चलने देता"
+      - "साक्षरता की समस्या — कमज़ोर पाठक text छोड़ देते हैं"
+      - "Audio क्यों चलता है — हाथ फ़्री, आँख फ़्री, कहीं भी"
+      - "SAAVI की आवाज़ — गर्म, शांत, didi जैसी"
+      - "अप्रत्याशित खोज: माता-पिता भी सुनते हैं"
+    image_prompt: |
+      A single wireless earbud resting on an open textbook (blurred,
+      no readable text), warm amber lamplight, dark wooden desk. Above
+      the scene, a faint sky-blue soundwave line gently pulses. Quiet,
+      intimate, late-evening study mood. Restrained.
+
+  - slug: shrutam-blind-mode
+    title_en: "India's first blind-mode edtech — FREE forever"
+    title_hi: "भारत का पहला blind-mode edtech — हमेशा के लिए FREE"
+    vertical: shrutam
+    product: shrutam
+    published_at: "2026-04-02"
+    keywords: [blind students India, accessibility edtech, visually impaired students]
+    og_description_en: "50 lakh visually-impaired students in India. Zero edtech serves them. Shrutam does — and it's free."
+    og_description_hi: "भारत में 50 लाख दृष्टिबाधित विद्यार्थी। कोई edtech उनकी सेवा नहीं करता। Shrutam करता है — और मुफ़्त में।"
+    bullets_en:
+      - "The 50 lakh students nobody serves"
+      - "What 'blind mode' actually means — not screen reader bolt-on"
+      - "Voice navigation, haptic feedback, SAAVI-as-guide design"
+      - "Why revenue zero, commitment eternal"
+      - "How schools for the blind are adopting"
+    bullets_hi:
+      - "50 लाख विद्यार्थी जिनकी सेवा कोई नहीं करता"
+      - "'Blind mode' असल में क्या है — bolt-on screen reader नहीं"
+      - "Voice navigation, haptic feedback, SAAVI-as-guide design"
+      - "Revenue शून्य, प्रतिबद्धता शाश्वत क्यों"
+      - "अंधा-विद्यालय कैसे अपना रहे हैं"
+    image_prompt: |
+      A braille-textured surface softly lit by warm amber light, with a
+      single phone placed beside it emitting a gentle sky-blue audio
+      waveform. Fingers implied but not shown. Dignified, hopeful,
+      serene. Editorial composition.
+
+  - slug: whatsapp-commerce-msme
+    title_en: "63M MSMEs run on WhatsApp + Excel — here's the AI layer"
+    title_hi: "6.3 करोड़ MSMEs WhatsApp + Excel पर चलते हैं — AI layer अब यहाँ है"
+    vertical: commerce
+    product: commerce
+    published_at: "2026-04-08"
+    keywords: [MSME AI India, kirana automation, whatsapp commerce b2b]
+    og_description_en: "India's 63 million MSMEs don't need enterprise SaaS. They need AI that speaks their channel and their language."
+    og_description_hi: "भारत के 6.3 करोड़ MSMEs को enterprise SaaS नहीं चाहिए। उन्हें उनके channel और भाषा की AI चाहिए।"
+    bullets_en:
+      - "The ground truth — WhatsApp is the ERP"
+      - "What breaks at scale — lost orders, stockout blindness, reorder misses"
+      - "Four NLP layers — intent, catalog, stock, fulfillment"
+      - "Why metro SaaS can't serve this — the 80% shape of Indian SMBs"
+      - "What changes when a kirana owner gets AI"
+    bullets_hi:
+      - "ज़मीनी सच — WhatsApp ही ERP है"
+      - "scale पर क्या टूटता है — orders खो जाते, stockout दिखता नहीं, reorder छूटता"
+      - "चार NLP layers — intent, catalog, stock, fulfillment"
+      - "Metro SaaS यह नहीं कर सकता — भारत के SMB का 80% आकार"
+      - "एक kirana मालिक को AI मिले तो क्या बदलता है"
+    image_prompt: |
+      A small Indian kirana shop interior at dusk, the shopkeeper's phone
+      on the counter showing a WhatsApp-style interface with a sky-blue
+      AI glow. Shelves of products in background, warm amber hanging
+      bulb. Intimate, working, real. No logos.
+
+  - slug: kirana-to-distributor
+    title_en: "Kirana to distributor — the 4-layer NLP stack explained"
+    title_hi: "Kirana से distributor तक — 4-layer NLP stack"
+    vertical: commerce
+    product: commerce
+    published_at: "2026-04-14"
+    keywords: [nlp commerce india, whatsapp ai b2b, catalog matching ai]
+    og_description_en: "How AI handles 'Suresh-ji, 10 paani soda aur 5 chai patti bhej do' — from message to fulfilment."
+    og_description_hi: "'सुरेश जी, 10 पानी soda और 5 चाय-पत्ती भेज दो' — message से डिलीवरी तक AI कैसे सँभालती है।"
+    bullets_en:
+      - "Layer 1: intent — order? stock query? reorder? complaint?"
+      - "Layer 2: catalog — which SKU does 'paani soda' mean for THIS distributor?"
+      - "Layer 3: stock — is it available, alt brands, ETA"
+      - "Layer 4: fulfillment — delivery route, invoice, payment"
+      - "The hard part — Hinglish, brand nicknames, regional units"
+    bullets_hi:
+      - "Layer 1: intent — order? stock? reorder? शिकायत?"
+      - "Layer 2: catalog — 'पानी soda' इस distributor के लिए कौन-सा SKU"
+      - "Layer 3: stock — उपलब्ध है? alternatives, ETA"
+      - "Layer 4: fulfillment — delivery route, invoice, payment"
+      - "कठिन भाग — Hinglish, brand के तकिया-नाम, क्षेत्रीय units"
+    image_prompt: |
+      An abstract four-layer architectural diagram, each layer a glowing
+      horizontal band in varying shades (amber → sky-blue → darker
+      amber → deep blue), stacked on a cosmos-navy background. Minimal,
+      editorial, no numbers or text.
+
+  - slug: karta-ai-gst
+    title_en: "GSTR-1, GSTR-3B, and Karta AI — compliance at voice speed"
+    title_hi: "GSTR-1, GSTR-3B, और Karta AI — voice की गति पर compliance"
+    vertical: karta
+    product: karta
+    published_at: "2026-04-20"
+    keywords: [gst filing ai hindi, gstr-3b automation, karta ai msme]
+    og_description_en: "Every month, 63 million MSMEs file GST returns. Most pay a CA ₹2000-5000. Karta AI does it for free in 3 minutes."
+    og_description_hi: "हर महीने 6.3 करोड़ MSMEs GST returns भरते हैं। ज़्यादातर CA को ₹2000-5000 देते हैं। Karta AI 3 मिनट में मुफ़्त करता है।"
+    bullets_en:
+      - "The monthly nightmare — GSTR-1 (outward), GSTR-3B (summary)"
+      - "What goes wrong today — 30% return errors in first filing"
+      - "Karta's invoice-photo-to-return pipeline"
+      - "Voice filing — speak your sales, AI categorises"
+      - "What CAs lose, what MSMEs gain"
+    bullets_hi:
+      - "हर महीने का सिरदर्द — GSTR-1 (outward), GSTR-3B (summary)"
+      - "आज क्या ग़लत होता है — पहली filing में 30% return errors"
+      - "Karta की invoice-फ़ोटो-से-return pipeline"
+      - "Voice से filing — अपनी sales बोलो, AI वर्गीकृत करे"
+      - "CA क्या खोते हैं, MSMEs क्या पाते हैं"
+    image_prompt: |
+      A stack of paper invoices on a small Indian shop desk, one in the
+      foreground being photographed by a phone that emits a subtle
+      sky-blue scan-line. Warm amber desk lamp. Editorial, focused. No
+      readable text on invoices.
+
+  - slug: karta-ai-itr
+    title_en: "ITR filing in 3 minutes — voice, Hinglish, no CA"
+    title_hi: "3 मिनट में ITR filing — voice, Hinglish, बिना CA"
+    vertical: karta
+    product: karta
+    published_at: "2026-04-26"
+    keywords: [itr filing hindi, voice tax filing india, karta itr]
+    og_description_en: "8 crore salaried Indians file ITR every July. ClearTax charges. CAs charge more. Karta AI files by voice, for free."
+    og_description_hi: "हर जुलाई 8 करोड़ salaried भारतीय ITR भरते हैं। ClearTax पैसे लेता है। CA और भी। Karta AI voice से मुफ़्त में करता है।"
+    bullets_en:
+      - "The annual panic — who files what (ITR-1/2/4)"
+      - "Form-16 → AI auto-detects fields"
+      - "Voice deductions — 'LIC mein 50 hazaar, PPF 1.5 lakh' → filled"
+      - "HRA, 80C, 80D — the Hindi side of tax planning"
+      - "Edge cases — freelance, capital gains, multiple employers"
+    bullets_hi:
+      - "सालाना घबराहट — कौन कौन-सा form (ITR-1/2/4)"
+      - "Form-16 → AI अपने आप fields भरती है"
+      - "Voice कटौतियाँ — 'LIC में 50 हज़ार, PPF 1.5 लाख' → भर गया"
+      - "HRA, 80C, 80D — tax planning का हिंदी पक्ष"
+      - "Edge cases — freelance, capital gains, कई employers"
+    image_prompt: |
+      A single Form-16 paper on a desk with a faint sky-blue highlight
+      outline around specific fields, as if AI is reading them. Beside
+      it a phone with a subtle voice-wave indicator. Amber desk light.
+      Clean, calm, technical-elegant.
+
+  - slug: pashu-ai-cattle
+    title_en: "Pashu ka doctor, aapke phone mein — how Pashu AI works"
+    title_hi: "पशु का डॉक्टर, आपके फ़ोन में — Pashu AI कैसे काम करता है"
+    vertical: pashu
+    product: pashu
+    published_at: "2026-05-02"
+    keywords: [cattle doctor app india, pashu ai dairy farmer, veterinary ai hindi]
+    og_description_en: "70 million dairy farmers. The nearest vet is 20km away. One sick cow = ₹80,000 loss. Pashu AI is the difference."
+    og_description_hi: "7 करोड़ दुग्ध किसान। सबसे पास का वेट 20km दूर। एक बीमार गाय = ₹80,000 का नुक़सान। Pashu AI यही अंतर है।"
+    bullets_en:
+      - "The cost of a sick animal — real numbers, real losses"
+      - "Photo diagnosis — FMD, mastitis, bloat, lameness"
+      - "Voice consultation in Hindi — what to say, what AI hears"
+      - "Medicine recommendation + generic alternatives"
+      - "Integration with Rashtriya Gokul Mission"
+    bullets_hi:
+      - "बीमार पशु की क़ीमत — असली अंक, असली नुक़सान"
+      - "फ़ोटो से निदान — FMD, mastitis, bloat, lameness"
+      - "हिंदी में voice consultation — क्या बोलें, AI क्या सुनती है"
+      - "दवा की सलाह + generic विकल्प"
+      - "राष्ट्रीय गोकुल मिशन से जुड़ाव"
+    image_prompt: |
+      A dairy farmer's hand holding a phone toward a calm cow in a
+      village stable at dawn, soft warm amber light, dust motes in air.
+      A gentle sky-blue camera-focus outline on the cow. Documentary,
+      dignified, no face focus.
+
+  - slug: pashu-ai-livestock-ai
+    title_en: "Livestock AI for rural dairy — beyond a photo app"
+    title_hi: "ग्रामीण डेयरी के लिए Livestock AI — photo app से आगे"
+    vertical: pashu
+    product: pashu
+    published_at: "2026-05-08"
+    keywords: [dairy farm ai, livestock tracker india, milk yield ai]
+    og_description_en: "Pashu AI isn't a diagnosis app. It's a dairy operations layer for 70 million Indian families."
+    og_description_hi: "Pashu AI निदान app नहीं है। यह 7 करोड़ भारतीय परिवारों के लिए dairy operations की परत है।"
+    bullets_en:
+      - "Milk yield tracking — per animal, per day"
+      - "Pregnancy calendar + artificial insemination booking"
+      - "Feed optimisation — cost per litre calc"
+      - "Vet visit history + medicine calendar"
+      - "Group buying — when 10 farmers pool for one tanker delivery"
+    bullets_hi:
+      - "दूध उपज tracking — प्रति पशु, प्रति दिन"
+      - "गर्भावस्था calendar + कृत्रिम गर्भाधान booking"
+      - "चारा optimisation — प्रति लीटर लागत गणना"
+      - "वेट visit इतिहास + दवा calendar"
+      - "साझा ख़रीदारी — 10 किसान मिलकर एक tanker मंगवाएँ"
+    image_prompt: |
+      A wide-format illustration of a small village dairy at sunrise,
+      mist rising, a row of cattle being milked, amber glow on the
+      horizon. A subtle sky-blue data-line traces through the scene
+      connecting the animals. Editorial, aspirational, not busy.
+
+  - slug: bima-ai-insurance
+    title_en: "40% of insurance claims rejected — AI fixes the paperwork"
+    title_hi: "40% बीमा claims रिजेक्ट होते हैं — AI paperwork ठीक करता है"
+    vertical: bima
+    product: bima
+    published_at: "2026-05-14"
+    keywords: [insurance claim ai india, ayushman bharat claim, health insurance automation]
+    og_description_en: "You bought insurance. The claim got rejected. Paperwork, not fraud. Bima AI drafts claims that insurers accept."
+    og_description_hi: "आपने बीमा लिया। Claim रिजेक्ट हो गया। Paperwork की वजह से, धोखाधड़ी नहीं। Bima AI ऐसे claims बनाती है जो insurer मानते हैं।"
+    bullets_en:
+      - "The 40% rejection rate — why, really"
+      - "What insurers scan for — wording, document order, amounts"
+      - "Bima AI's claim-drafting pipeline"
+      - "Escalation automation — when a rejection is wrong"
+      - "Ayushman Bharat + Star Health + HDFC Ergo integrations"
+    bullets_hi:
+      - "40% रिजेक्शन क्यों — असली कारण"
+      - "Insurers क्या scan करते हैं — wording, document क्रम, amounts"
+      - "Bima AI की claim-drafting pipeline"
+      - "Escalation का automation — जब रिजेक्शन ग़लत है"
+      - "Ayushman Bharat + Star Health + HDFC Ergo integrations"
+    image_prompt: |
+      A stack of medical bills and discharge summaries on a dim wooden
+      table, with one document subtly glowing sky-blue as if AI is
+      reading it. Amber ambient lighting. Serious, empathetic, editorial.
+
+  - slug: bima-ai-crop-pmfby
+    title_en: "PMFBY claims — why 90% of farmers don't file them"
+    title_hi: "PMFBY claims — 90% किसान क्यों नहीं भरते"
+    vertical: bima
+    product: bima
+    published_at: "2026-05-20"
+    keywords: [pmfby claim hindi, crop insurance ai, pradhan mantri fasal bima]
+    og_description_en: "Farmers pay PMFBY premiums faithfully. When the crop fails, they don't claim — because the form is impossible. Bima AI fixes this."
+    og_description_hi: "किसान ईमानदारी से PMFBY premium भरते हैं। फ़सल नष्ट हो जाए तो claim नहीं करते — क्योंकि form असंभव है। Bima AI यही ठीक करता है।"
+    bullets_en:
+      - "The PMFBY trust-gap — premium goes, claim never comes"
+      - "Why the form fails rural farmers"
+      - "Photo of damaged crop → auto-drafted claim"
+      - "Coordinating with patwari + KCC"
+      - "What happens to ₹30,000 that would have been lost"
+    bullets_hi:
+      - "PMFBY का विश्वास-गैप — premium जाता है, claim नहीं आता"
+      - "Form ग्रामीण किसान के लिए क्यों fail होता है"
+      - "फ़सल नष्ट होने की photo → auto-drafted claim"
+      - "पटवारी + KCC से coordination"
+      - "₹30,000 का क्या होता है जो खो जाता था"
+    image_prompt: |
+      A damaged paddy field under overcast light, a lone farmer in the
+      distance holding a phone up to photograph the field. Soft amber
+      horizon, quiet pathos. Editorial, respectful.
+
+  - slug: svayam-ai-forms
+    title_en: "Sarkari form, voice se bhar do — Svayam AI explained"
+    title_hi: "सरकारी form, voice से भर दो — Svayam AI"
+    vertical: svayam
+    product: svayam
+    published_at: "2026-05-26"
+    keywords: [sarkari form ai, govt form filling hindi, voice form filling]
+    og_description_en: "India has ~1500 government forms. Every one asks the same 15 fields. Svayam fills them all, by voice."
+    og_description_hi: "भारत में ~1500 सरकारी forms हैं। हर एक वही 15 fields माँगता है। Svayam voice से सब भरता है।"
+    bullets_en:
+      - "The form maze — 1500 forms, 15 common fields"
+      - "Speak once, fill forever — encrypted profile"
+      - "How voice-first OCR + form-field detection works"
+      - "Privacy design — data never leaves device unencrypted"
+      - "Where UMANG failed and Svayam starts"
+    bullets_hi:
+      - "Forms का भूल-भुलैया — 1500 forms, 15 common fields"
+      - "एक बार बोलो, हमेशा भरो — encrypted profile"
+      - "Voice-first OCR + form-field detection कैसे"
+      - "Privacy design — data बिना encryption device नहीं छोड़ता"
+      - "UMANG जहाँ fail हुआ, Svayam वहाँ से शुरू"
+    image_prompt: |
+      A stack of blank Indian government forms on a table, slowly being
+      auto-filled by an invisible presence — field outlines gently
+      glowing sky-blue as they get completed. Warm amber ambient light.
+      Editorial, almost magical, restrained.
+
+  - slug: svayam-ai-aadhaar
+    title_en: "Aadhaar update, passport, caste cert — one voice interface"
+    title_hi: "आधार update, passport, जाति प्रमाण — एक voice interface"
+    vertical: svayam
+    product: svayam
+    published_at: "2026-06-01"
+    keywords: [aadhaar update voice, passport form hindi, caste certificate ai]
+    og_description_en: "Every adult Indian deals with these 5 forms at least once a year. Svayam AI makes each one a 2-minute voice conversation."
+    og_description_hi: "हर वयस्क भारतीय को साल में इन 5 forms में से कम-से-कम एक भरना पड़ता है। Svayam AI हर को 2 मिनट की voice बातचीत बना देता है।"
+    bullets_en:
+      - "The 5 forms — Aadhaar, passport, voter, DL, caste cert"
+      - "Common failure modes — document upload, photo size, signature box"
+      - "Svayam's voice walk-through"
+      - "When a form needs Tehsildar / gram pradhan signature — what AI does"
+      - "What changes when filling feels like a conversation"
+    bullets_hi:
+      - "पाँच forms — आधार, passport, voter, DL, जाति प्रमाण"
+      - "आम fail — document upload, photo size, signature box"
+      - "Svayam का voice walk-through"
+      - "जब form पर Tehsildar / ग्राम प्रधान के signature चाहिए — AI क्या करती है"
+      - "Form भरना बातचीत जैसी लगे तो क्या बदलता है"
+    image_prompt: |
+      A gentle side-view of an older rural Indian man speaking to his
+      phone at a wooden desk, warm amber lamp light, phone emits a soft
+      sky-blue listening indicator. Respectful, dignified, no face
+      centrality. Cinematic.
+
+  - slug: adhikar-ai-pension
+    title_en: "Widow pension, old-age pension — why 30% don't receive what they're owed"
+    title_hi: "विधवा पेंशन, वृद्धावस्था पेंशन — 30% को उनका हक़ क्यों नहीं मिलता"
+    vertical: adhikar
+    product: adhikar
+    published_at: "2026-06-07"
+    keywords: [widow pension india app, old age pension tracking, adhikar ai welfare]
+    og_description_en: "₹50,000 crore of welfare doesn't reach beneficiaries each year. Adhikar AI is how we change that."
+    og_description_hi: "हर साल ₹50,000 करोड़ का कल्याण लाभार्थियों तक नहीं पहुँचता। Adhikar AI यही बदलता है।"
+    bullets_en:
+      - "The scale — 3Cr elderly + 4Cr widows + 2Cr disabled eligible"
+      - "Why benefits don't arrive — banks, forms, follow-up gaps"
+      - "Adhikar's eligibility → application → tracking pipeline"
+      - "RTI auto-drafter when things go silent"
+      - "Voice interface for the actually-elderly"
+    bullets_hi:
+      - "पैमाना — 3 करोड़ बुज़ुर्ग + 4 करोड़ विधवाएँ + 2 करोड़ दिव्यांग"
+      - "लाभ क्यों नहीं पहुँचते — bank, forms, follow-up की खाइयाँ"
+      - "Adhikar का eligibility → application → tracking pipeline"
+      - "जब चीज़ें शांत हो जाएँ — RTI auto-drafter"
+      - "असल में वृद्ध के लिए बना voice interface"
+    image_prompt: |
+      An elderly Indian woman in a simple cotton sari seated on a
+      charpai in the veranda of a mud-brick home, holding a basic phone
+      that emits a gentle sky-blue voice indicator. Warm amber sunset
+      light. Dignified, hopeful, not sentimental.
