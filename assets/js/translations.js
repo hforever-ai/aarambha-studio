@@ -22,8 +22,21 @@ const translations = {
     nav_about:       "Our Story",
     nav_philosophy:  "Philosophy",
     nav_blog:        "Blog",
+    nav_contact:     "Contact",
     nav_cta:         "Join Shrutam →",
     lang_toggle:     "हिंदी",
+
+    // Blog filters
+    blog_all:              "All",
+    blog_filter_shrutam:   "Education",
+    blog_filter_commerce:  "Commerce",
+    blog_filter_karta:     "Compliance",
+    blog_filter_pashu:     "Livestock",
+    blog_filter_bima:      "Insurance",
+    blog_filter_svayam:    "Govt Services",
+    blog_filter_adhikar:   "Welfare",
+    blog_filter_brand:     "Philosophy",
+    blog_filter_market:    "Market",
 
     // Hero
     hero_badge:      "🇮🇳 India's AI Studio",
@@ -52,8 +65,21 @@ const translations = {
     nav_about:       "हमारी कहानी",
     nav_philosophy:  "दर्शन",
     nav_blog:        "ब्लॉग",
+    nav_contact:     "संपर्क",
     nav_cta:         "श्रुतम् जॉइन करें →",
     lang_toggle:     "English",
+
+    // Blog filters
+    blog_all:              "सभी",
+    blog_filter_shrutam:   "शिक्षा",
+    blog_filter_commerce:  "व्यापार",
+    blog_filter_karta:     "Compliance",
+    blog_filter_pashu:     "पशुपालन",
+    blog_filter_bima:      "बीमा",
+    blog_filter_svayam:    "सरकारी सेवाएँ",
+    blog_filter_adhikar:   "कल्याण",
+    blog_filter_brand:     "दर्शन",
+    blog_filter_market:    "बाज़ार",
 
     // Hero
     hero_badge:      "🇮🇳 भारत का AI स्टूडियो",
