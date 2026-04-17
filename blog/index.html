@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Blog — Seekhte Rahenge | Aarambha</title>
+<meta name="description" content="Aarambha's blog — launching with Shrutam (May 20, 2026). Guides on AI for Bharat, Hindi-medium learning, and the long road from gaon to production.">
+<link rel="canonical" href="https://aarambhax.ai/blog/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aarambhax.ai/blog/">
+<meta property="og:title" content="Blog — Aarambha">
+<meta property="og:description" content="Seekhte Rahenge. Launching with Shrutam.">
+<meta property="og:site_name" content="Aarambha">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: {
+    colors: { primary: '#0ea5e9', 'primary-dark': '#0284c7', accent: '#f59e0b', 'accent-dark': '#d97706', cosmos: '#020710', dark: '#060d1a', card: '#0d1525' },
+    fontFamily: { sora: ['Sora', 'sans-serif'], hindi: ['Noto Sans Devanagari', 'sans-serif'] }
+  } } }
+</script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script src="/assets/js/translations.js?v=0098815000-51e22af7"></script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Sora', sans-serif; background: #060d1a; color: #e2e8f0; }
+  .hindi { font-family: 'Noto Sans Devanagari', sans-serif; }
+  .grad { background: linear-gradient(135deg, #0ea5e9, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  ::selection { background: #f59e0b; color: #060d1a; }
+</style>
+</head>
+<body>
+
+<!-- NAV — shared, identical per page -->
+<nav x-data="{ open: false }" class="sticky top-0 z-50 bg-dark/90 backdrop-blur-xl border-b border-white/[.07]">
+  <div class="max-w-6xl mx-auto px-4 md:px-8 h-[72px] flex items-center justify-between gap-4">
+    <a href="/" class="flex items-center gap-2 flex-shrink-0">
+      <span class="hindi text-2xl font-black text-accent leading-none">आरम्भ</span>
+      <span class="text-xs font-bold text-gray-500 tracking-[.14em] uppercase hidden sm:block">Aarambha</span>
+    </a>
+    <div class="hidden md:flex items-center gap-0.5">
+      <a href="/products/" x-text="$store.lang.t('nav_products')" class="text-sm font-medium text-gray-400 px-3.5 py-2 rounded-xl hover:text-primary hover:bg-primary/10 transition-all"></a>
+      <a href="/about/" x-text="$store.lang.t('nav_about')" class="text-sm font-medium text-gray-400 px-3.5 py-2 rounded-xl hover:text-primary hover:bg-primary/10 transition-all"></a>
+      <a href="/philosophy/" x-text="$store.lang.t('nav_philosophy')" class="text-sm font-medium text-gray-400 px-3.5 py-2 rounded-xl hover:text-primary hover:bg-primary/10 transition-all"></a>
+      <a href="/blog/" x-text="$store.lang.t('nav_blog')" class="text-sm font-medium text-gray-400 px-3.5 py-2 rounded-xl hover:text-primary hover:bg-primary/10 transition-all"></a>
+    </div>
+    <div class="flex items-center gap-2 flex-shrink-0">
+      <button @click="$store.lang.toggle()" x-text="$store.lang.t('lang_toggle')" class="hindi hidden sm:block text-xs font-bold text-gray-400 border border-white/[.12] px-2.5 py-1.5 rounded-lg hover:border-primary/50 hover:text-primary transition-all"></button>
+      <a href="/#waitlist" x-text="$store.lang.t('nav_cta')" class="hidden md:inline-flex text-sm font-bold bg-primary text-white px-4 py-2 rounded-xl hover:bg-primary-dark transition-all shadow-lg shadow-primary/20"></a>
+      <button @click="open = !open" class="md:hidden p-1.5 text-gray-400" aria-label="Menu">
+        <svg x-show="!open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg x-show="open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </div>
+  <div x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" class="md:hidden border-t border-white/[.07] bg-dark px-4 py-4 flex flex-col gap-1">
+    <a href="/products/" x-text="$store.lang.t('nav_products')" class="text-gray-300 px-3 py-2.5 rounded-xl hover:bg-white/5 transition-colors"></a>
+    <a href="/about/" x-text="$store.lang.t('nav_about')" class="text-gray-300 px-3 py-2.5 rounded-xl hover:bg-white/5 transition-colors"></a>
+    <a href="/philosophy/" x-text="$store.lang.t('nav_philosophy')" class="text-gray-300 px-3 py-2.5 rounded-xl hover:bg-white/5 transition-colors"></a>
+    <a href="/blog/" x-text="$store.lang.t('nav_blog')" class="text-gray-300 px-3 py-2.5 rounded-xl hover:bg-white/5 transition-colors"></a>
+    <div class="border-t border-white/[.07] mt-2 pt-3 flex flex-col gap-2">
+      <button @click="$store.lang.toggle()" x-text="$store.lang.t('lang_toggle')" class="hindi text-sm font-bold text-gray-400 border border-white/[.12] px-3 py-2 rounded-xl text-left hover:border-primary/50 transition-all"></button>
+      <a href="/#waitlist" x-text="$store.lang.t('nav_cta')" class="bg-primary text-white font-bold text-center px-4 py-3 rounded-xl hover:bg-primary-dark transition-all"></a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<section class="bg-cosmos min-h-[80vh] flex items-center justify-center px-4 md:px-8 py-24">
+  <div class="max-w-2xl mx-auto text-center">
+    <p class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em] uppercase mb-6">Blog</p>
+    <h1 class="text-4xl md:text-6xl font-black mb-4"><span class="grad">Seekhte Rahenge.</span></h1>
+    <p class="hindi text-xl md:text-2xl text-gray-400 mb-10">सीखते रहेंगे — The Aarambha Blog</p>
+
+    <div class="bg-card/60 border border-white/[.07] rounded-2xl p-8 md:p-10 text-left">
+      <p class="text-gray-300 text-lg leading-relaxed mb-6">
+        Coming soon — first posts drop with <strong class="text-primary">Shrutam launch (May 20, 2026)</strong>. Expect guides on building AI for Bharat, Hindi-medium learning, the long road from gaon to production.
+      </p>
+      <p class="text-gray-500 text-sm mb-6">Want to know when? Drop your email — zero spam, only Aarambha updates.</p>
+      <form action="mailto:hello@aarambhax.ai" method="get" enctype="text/plain" class="flex flex-col sm:flex-row gap-2">
+        <input type="hidden" name="subject" value="Aarambha Blog — Notify Me">
+        <input type="email" name="body" required placeholder="your@email.com"
+               class="flex-1 min-w-0 px-4 py-3 rounded-xl border border-white/[.12] bg-white/[.04] text-gray-100 placeholder:text-gray-500 focus:outline-none focus:border-primary/60">
+        <button type="submit" class="bg-primary hover:bg-primary-dark text-white font-bold px-5 py-3 rounded-xl transition-all whitespace-nowrap">Notify Me</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER — shared, identical per page -->
+<footer class="bg-cosmos border-t border-white/[.07] pt-16 pb-8">
+  <div class="max-w-6xl mx-auto px-4 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-10 border-b border-white/[.07] mb-8">
+      <div>
+        <div class="text-lg font-bold text-gray-100 mb-2">
+          <span class="hindi text-accent">आरम्भ</span>
+          <span class="text-gray-500 ml-1 text-sm">Aarambha</span>
+        </div>
+        <p x-text="$store.lang.t('footer_tagline')" class="text-sm text-gray-500 leading-relaxed mb-1"></p>
+        <p x-text="$store.lang.t('footer_india')" class="text-xs text-gray-600"></p>
+      </div>
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-[.14em] text-gray-500 mb-4">Products</h4>
+        <a href="/products/" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">All Products</a>
+        <a href="/products/#shrutam" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">Shrutam</a>
+        <a href="/products/#commerce" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">WhatsApp Commerce</a>
+      </div>
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-[.14em] text-gray-500 mb-4">Company</h4>
+        <a href="/about/" x-text="$store.lang.t('nav_about')" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors"></a>
+        <a href="/philosophy/" x-text="$store.lang.t('nav_philosophy')" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors"></a>
+        <a href="/blog/" x-text="$store.lang.t('nav_blog')" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors"></a>
+      </div>
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-[.14em] text-gray-500 mb-4">Connect</h4>
+        <a href="mailto:hello@aarambhax.ai" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">hello@aarambhax.ai</a>
+        <a href="/#waitlist" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">Join Waitlist</a>
+        <span class="block text-sm text-gray-500 mb-2.5">shrutam.ai <span class="text-gray-700">(soon)</span></span>
+      </div>
+    </div>
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+      <span x-text="$store.lang.t('footer_copy')" class="text-xs text-gray-600"></span>
+      <span class="text-xs text-gray-600">aarambhax.ai · shrutam.ai</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
