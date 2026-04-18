@@ -20,9 +20,13 @@
 <meta name="twitter:description" content="Baat karte hain — partnerships, press, hiring, feedback. India's AI Studio.">
 <meta name="twitter:image" content="https://aarambhax.ai/assets/images/og-default.webp">
 
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="alternate" type="application/rss+xml" title="Aarambha Blog" href="/feed.xml">
+<!-- FAVICON_V2 -->
 <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/images/logos/aarambha-logo-192.png" type="image/png" sizes="192x192">
+<link rel="icon" href="/assets/images/logos/aarambha-logo-512.png" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="alternate" type="application/rss+xml" title="Aarambha Blog" href="/feed.xml">
+
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +41,7 @@
 </script>
 
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<script src="/assets/js/translations.js?v=0343773000-6ff2605c"></script>
+<script src="/assets/js/translations.js?v=0232250000-e4d2de70"></script>
 
 <style>
   html { scroll-behavior: smooth; }
@@ -84,6 +88,17 @@
 }
 </script>
 <!-- BREADCRUMB_SCHEMA_END -->
+<style id="a11y-cloak">[x-cloak]{display:none!important}</style>
+<!-- GA4_BEGIN -->
+<!-- Google tag (gtag.js) — Aarambha GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YXJ32LD3H6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YXJ32LD3H6', { 'anonymize_ip': true });
+</script>
+<!-- GA4_END -->
 </head>
 <body>
 <a href="#main-content" class="sr-only-focusable fixed top-2 left-2 z-[100] bg-accent text-gray-900 font-bold px-4 py-2 rounded-lg opacity-0 pointer-events-none focus:opacity-100 focus:pointer-events-auto">Skip to main content</a>
@@ -92,7 +107,7 @@
 <nav x-data="{ open: false }" class="sticky top-0 z-50 bg-dark/90 backdrop-blur-xl border-b border-white/[.07]">
   <div class="max-w-6xl mx-auto px-4 md:px-8 h-[72px] flex items-center justify-between gap-4">
     <a href="/" class="flex items-center gap-2 flex-shrink-0">
-      <span class="hindi text-2xl font-black text-accent leading-none">आरम्भ</span>
+      <img src="/assets/images/logos/aarambha-logo-96.webp" alt="Aarambha logo" width="36" height="36" class="aarambha-nav-logo w-9 h-9 rounded-full ring-1 ring-accent/40 shadow-sm shadow-accent/20" loading="eager">
       <span class="text-xs font-bold text-gray-400 tracking-[.14em] uppercase hidden sm:block">Aarambha</span>
     </a>
     <div class="hidden md:flex items-center gap-0.5">
@@ -122,18 +137,29 @@
   </div>
 </nav>
 
-<main id="main-content">
-<section class="bg-cosmos pt-28 pb-16 px-4 md:px-8">
+<main id="main-content" x-data>
+<section x-show="$store.lang.current === 'en'" class="bg-cosmos pt-28 pb-16 px-4 md:px-8">
   <div class="max-w-3xl mx-auto text-center">
     <p class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em] uppercase mb-6">Contact</p>
-    <h1 class="text-4xl md:text-6xl font-black mb-4"><span class="grad">Baat karte hain.</span></h1>
+    <h1 class="text-[32px] md:text-5xl font-black mb-4"><span class="grad">Baat karte hain.</span></h1>
     <p class="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
       Partnership, press, press, hiring, or just want to say <em>namaste</em> — pick a channel below.
     </p>
   </div>
 </section>
 
-<section class="bg-dark py-20 px-4 md:px-8">
+<section x-cloak x-show="$store.lang.current === 'hi'" class="bg-cosmos pt-28 pb-16 px-4 md:px-8 hindi">
+<div class="max-w-3xl mx-auto text-center">
+<p class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em] uppercase mb-6 hindi">संपर्क करें</p>
+<h1 class="text-[32px] md:text-5xl font-black mb-4 hindi"><span class="grad">बात करते हैं।</span></h1>
+<p class="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed hindi">
+      पार्टनरशिप, प्रेस, हायरिंग, या बस नमस्ते कहना चाहते हैं — नीचे दिए गए तरीकों में से कोई भी चुनें।
+    </p>
+</div>
+</section>
+
+
+<section x-show="$store.lang.current === 'en'" class="bg-dark py-20 px-4 md:px-8">
   <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
     <a href="mailto:hello@aarambhax.ai" class="bg-card border border-white/[.07] hover:border-primary/40 rounded-2xl p-7 transition-all group block">
       <div class="text-3xl mb-3">📬</div>
@@ -162,7 +188,37 @@
   </div>
 </section>
 
-<section class="bg-cosmos py-20 px-4 md:px-8">
+<section x-cloak x-show="$store.lang.current === 'hi'" class="bg-dark py-20 px-4 md:px-8 hindi">
+<div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
+<a class="bg-card border border-white/[.07] hover:border-primary/40 rounded-2xl p-7 transition-all group block" href="mailto:hello@aarambhax.ai">
+<div class="text-3xl mb-3">📬</div>
+<h2 class="text-xl font-bold text-gray-100 mb-2 group-hover:text-primary transition-colors hindi">सामान्य</h2>
+<p class="text-gray-400 text-sm mb-3 hindi">और कुछ भी — सुझाव, विचार, या बस जिज्ञासा।</p>
+<p class="text-primary font-mono text-sm hindi">hello@aarambhax.ai →</p>
+</a>
+<a class="bg-card border border-white/[.07] hover:border-accent/40 rounded-2xl p-7 transition-all group block" href="mailto:partners@aarambhax.ai?subject=Partnership%20Enquiry">
+<div class="text-3xl mb-3">🤝</div>
+<h2 class="text-xl font-bold text-gray-100 mb-2 group-hover:text-accent transition-colors hindi">पार्टनर्स</h2>
+<p class="text-gray-400 text-sm mb-3 hindi">स्कूल, NGO, सरकारी संस्थान, डिस्ट्रीब्यूटर, सह-निर्माण।</p>
+<p class="text-accent font-mono text-sm hindi">partners@aarambhax.ai →</p>
+</a>
+<a class="bg-card border border-white/[.07] hover:border-primary/40 rounded-2xl p-7 transition-all group block" href="mailto:press@aarambhax.ai?subject=Press%20Enquiry">
+<div class="text-3xl mb-3">📰</div>
+<h2 class="text-xl font-bold text-gray-100 mb-2 group-hover:text-primary transition-colors hindi">प्रेस</h2>
+<p class="text-gray-400 text-sm mb-3 hindi">मीडिया, इंटरव्यू, पॉडकास्ट के निमंत्रण, स्टोरी के विचार।</p>
+<p class="text-primary font-mono text-sm hindi">press@aarambhax.ai →</p>
+</a>
+<a class="bg-card border border-white/[.07] hover:border-accent/40 rounded-2xl p-7 transition-all group block" href="mailto:hiring@aarambhax.ai?subject=Hiring%20Enquiry">
+<div class="text-3xl mb-3">🛠️</div>
+<h2 class="text-xl font-bold text-gray-100 mb-2 group-hover:text-accent transition-colors hindi">हमारे साथ जुड़ें</h2>
+<p class="text-gray-400 text-sm mb-3 hindi">इंजीनियर, डिज़ाइनर, कंटेंट के विशेषज्ञ। हिंदी-फर्स्ट बिल्डर्स।</p>
+<p class="text-accent font-mono text-sm hindi">hiring@aarambhax.ai →</p>
+</a>
+</div>
+</section>
+
+
+<section x-show="$store.lang.current === 'en'" class="bg-cosmos py-20 px-4 md:px-8">
   <div class="max-w-2xl mx-auto">
     <div class="bg-card/60 border border-white/[.07] rounded-2xl p-8 md:p-10">
       <h2 class="text-2xl font-bold text-gray-100 mb-3">Quick message</h2>
@@ -178,6 +234,24 @@
     </div>
   </div>
 </section>
+
+<section x-cloak x-show="$store.lang.current === 'hi'" class="bg-cosmos py-20 px-4 md:px-8 hindi">
+<div class="max-w-2xl mx-auto">
+<div class="bg-card/60 border border-white/[.07] rounded-2xl p-8 md:p-10">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hindi">एक छोटा सा संदेश</h2>
+<p class="text-gray-400 text-sm mb-5 hindi">हमें बताएं कि आप क्या बना रहे हैं / क्या सोच रहे हैं / कहाँ अटक गए हैं। हम हर संदेश पढ़ते हैं।</p>
+<form action="mailto:hello@aarambhax.ai" class="flex flex-col gap-3" enctype="text/plain" method="get">
+<label class="sr-only" for="contact-subject hindi">विषय</label>
+<input aria-label="Subject" class="px-4 py-3 rounded-xl border border-white/[.12] bg-white/[.04] text-gray-100 placeholder:text-gray-400 focus:outline-none focus:border-primary/60" id="contact-subject" name="subject" placeholder="विषय (पार्टनरशिप, प्रेस, फीडबैक...)" required="" type="text"/>
+<label class="sr-only" for="contact-body hindi">संदेश</label>
+<textarea aria-label="Message" class="px-4 py-3 rounded-xl border border-white/[.12] bg-white/[.04] text-gray-100 placeholder:text-gray-400 focus:outline-none focus:border-primary/60" id="contact-body" name="body" placeholder="आपका संदेश..." required="" rows="5"></textarea>
+<button class="bg-primary hover:bg-primary-dark text-white font-bold px-5 py-3 rounded-xl transition-all self-start hindi" type="submit">संदेश भेजें →</button>
+</form>
+<p class="text-xs text-gray-600 mt-3 hindi">यह आपके ईमेल क्लाइंट को पहले से भरे हुए संदेश के साथ खोलेगा।</p>
+</div>
+</div>
+</section>
+
 </main>
 
 <!-- FOOTER — shared, identical per page -->

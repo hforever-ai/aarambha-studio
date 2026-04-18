@@ -1,9 +1,20 @@
 #!/usr/bin/env bash
-# Pre-commit hook: rewrite cache-bust on translations.js references in HTML
-# before every commit so HTML and JS stay in lockstep.
+# Pre-commit hook: keep generated assets in lockstep with source across every commit.
+# - Cache-bust translations.js/CSS references
+# - Inject GA4 tag into any new HTML page
+# - Inject breadcrumb JSON-LD into any new HTML page
+# - Apply a11y/SEO patches (skip-link, focus styles, tap targets, aria-current, etc.)
+# - Regenerate Atom feed from briefs.yaml
 
 set -e
 ROOT="$(git rev-parse --show-toplevel)"
+
 python3 "$ROOT/scripts/set_cache_bust.py"
-# Stage any HTML changes the script made so they land in this commit.
-git add "$ROOT"/*.html "$ROOT"/*/*.html 2>/dev/null || true
+python3 "$ROOT/scripts/add_ga.py"
+python3 "$ROOT/scripts/wire_logos.py" 2>/dev/null || true
+python3 "$ROOT/scripts/add_breadcrumbs.py" 2>/dev/null || true
+python3 "$ROOT/scripts/a11y_seo_patch.py"  2>/dev/null || true
+python3 "$ROOT/scripts/generate_feed.py"   2>/dev/null || true
+
+# Stage any HTML / feed changes the scripts made so they land in this commit.
+git add "$ROOT"/*.html "$ROOT"/*/*.html "$ROOT"/feed.xml 2>/dev/null || true

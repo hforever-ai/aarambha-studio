@@ -1,0 +1,2690 @@
+7b8511e8d7bbd21f:
+  page: index.html
+  en: "<section class=\"relative bg-cosmos min-h-screen flex items-center justify-center overflow-hidden px-4 md:px-8\">\n\
+    <div class=\"absolute inset-0 overflow-hidden pointer-events-none\" id=\"starfield\"></div>\n<div class=\"absolute inset-0\
+    \ pointer-events-none\" style=\"background:\n    radial-gradient(ellipse at 20% 20%, rgba(14,165,233,0.18), transparent\
+    \ 50%),\n    radial-gradient(ellipse at 80% 80%, rgba(245,158,11,0.14), transparent 55%);\"></div>\n<div class=\"relative\
+    \ z-10 max-w-5xl mx-auto text-center py-24\">\n<p class=\"inline-flex items-center gap-2 px-4 py-1.5 rounded-full border\
+    \ border-primary/30 bg-primary/5 text-xs font-semibold text-primary tracking-[.18em] uppercase mb-10\" x-text=\"$store.lang.t('hero_badge')\"\
+    ></p>\n<h1 class=\"hindi text-[6rem] md:text-[10rem] font-black text-accent leading-none mb-4\" style=\"text-shadow: 0\
+    \ 0 80px rgba(245,158,11,0.35);\">आरम्भ</h1>\n<p class=\"text-xl md:text-2xl text-gray-400 tracking-wider font-medium\
+    \ mb-6\" x-text=\"$store.lang.t('hero_tagline')\"></p>\n<p class=\"text-gray-400 text-lg leading-relaxed max-w-2xl mx-auto\
+    \ mb-10\" x-text=\"$store.lang.t('hero_sub')\"></p>\n<div class=\"flex flex-col sm:flex-row items-center justify-center\
+    \ gap-3 mb-12\">\n<a class=\"inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-gray-900 font-bold px-7\
+    \ py-3.5 rounded-xl shadow-lg shadow-accent/20 transition-all\" href=\"/products/\" x-text=\"$store.lang.t('hero_cta1')\"\
+    ></a>\n<a class=\"inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold px-7 py-3.5 rounded-xl\
+    \ shadow-lg shadow-primary/20 transition-all\" href=\"/#waitlist\" x-text=\"$store.lang.t('hero_cta2')\"></a>\n</div>\n\
+    <div class=\"inline-flex flex-wrap items-center justify-center gap-6 md:gap-10 bg-card/60 backdrop-blur-sm border border-white/[.07]\
+    \ rounded-2xl px-6 md:px-10 py-5\">\n<div class=\"text-center\"><div class=\"text-2xl md:text-3xl font-black text-primary\
+    \ leading-none\">1.2B+</div><div class=\"text-[10px] text-gray-400 tracking-[.14em] uppercase mt-1\">Indians</div></div>\n\
+    <div class=\"text-center\"><div class=\"text-2xl md:text-3xl font-black text-accent leading-none\">2</div><div class=\"\
+    text-[10px] text-gray-400 tracking-[.14em] uppercase mt-1\">Products</div></div>\n<div class=\"text-center\"><div class=\"\
+    text-2xl md:text-3xl font-black text-primary leading-none\">22+</div><div class=\"text-[10px] text-gray-400 tracking-[.14em]\
+    \ uppercase mt-1\">Years AI</div></div>\n<div class=\"text-center\"><div class=\"text-2xl md:text-3xl font-black text-accent\
+    \ leading-none\">5</div><div class=\"text-[10px] text-gray-400 tracking-[.14em] uppercase mt-1\">Languages</div></div>\n\
+    </div>\n</div>\n</section>"
+  hi: "<section class=\"relative bg-cosmos min-h-screen flex items-center justify-center overflow-hidden px-4 md:px-8 hindi\"\
+    >\n<div class=\"absolute inset-0 overflow-hidden pointer-events-none\" id=\"starfield\"></div>\n<div class=\"absolute\
+    \ inset-0 pointer-events-none\" style=\"background:\n    radial-gradient(ellipse at 20% 20%, rgba(14,165,233,0.18), transparent\
+    \ 50%),\n    radial-gradient(ellipse at 80% 80%, rgba(245,158,11,0.14), transparent 55%);\"></div>\n<div class=\"relative\
+    \ z-10 max-w-5xl mx-auto text-center py-24\">\n<p class=\"inline-flex items-center gap-2 px-4 py-1.5 rounded-full border\
+    \ border-primary/30 bg-primary/5 text-xs font-semibold text-primary tracking-[.18em] uppercase mb-10 hindi\" x-text=\"\
+    $store.lang.t('hero_badge')\"></p>\n<h1 class=\"hindi text-[6rem] md:text-[10rem] font-black text-accent leading-none\
+    \ mb-4\" style=\"text-shadow: 0 0 80px rgba(245,158,11,0.35);\">आरम्भ</h1>\n<p class=\"text-xl md:text-2xl text-gray-400\
+    \ tracking-wider font-medium mb-6 hindi\" x-text=\"$store.lang.t('hero_tagline')\"></p>\n<p class=\"text-gray-400 text-lg\
+    \ leading-relaxed max-w-2xl mx-auto mb-10 hindi\" x-text=\"$store.lang.t('hero_sub')\"></p>\n<div class=\"flex flex-col\
+    \ sm:flex-row items-center justify-center gap-3 mb-12\">\n<a class=\"inline-flex items-center gap-2 bg-accent hover:bg-accent-dark\
+    \ text-gray-900 font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-accent/20 transition-all hindi\" href=\"/products/\"\
+    \ x-text=\"$store.lang.t('hero_cta1')\"></a>\n<a class=\"inline-flex items-center gap-2 bg-primary hover:bg-primary-dark\
+    \ text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-primary/20 transition-all hindi\" href=\"/#waitlist\" x-text=\"\
+    $store.lang.t('hero_cta2')\"></a>\n</div>\n<div class=\"inline-flex flex-wrap items-center justify-center gap-6 md:gap-10\
+    \ bg-card/60 backdrop-blur-sm border border-white/[.07] rounded-2xl px-6 md:px-10 py-5\">\n<div class=\"text-center\"\
+    ><div class=\"text-2xl md:text-3xl font-black text-primary leading-none hindi\">1.2B+</div><div class=\"text-[10px] text-gray-400\
+    \ tracking-[.14em] uppercase mt-1 hindi\">भारतीय</div></div>\n<div class=\"text-center\"><div class=\"text-2xl md:text-3xl\
+    \ font-black text-accent leading-none hindi\">2</div><div class=\"text-[10px] text-gray-400 tracking-[.14em] uppercase\
+    \ mt-1 hindi\">उत्पाद</div></div>\n<div class=\"text-center\"><div class=\"text-2xl md:text-3xl font-black text-primary\
+    \ leading-none hindi\">22+</div><div class=\"text-[10px] text-gray-400 tracking-[.14em] uppercase mt-1 hindi\">साल का\
+    \ AI अनुभव</div></div>\n<div class=\"text-center\"><div class=\"text-2xl md:text-3xl font-black text-accent leading-none\
+    \ hindi\">5</div><div class=\"text-[10px] text-gray-400 tracking-[.14em] uppercase mt-1 hindi\">भाषाएँ</div></div>\n</div>\n\
+    </div>\n</section>"
+753468c7c70e5c14:
+  page: index.html
+  en: '<section class="bg-dark py-24 px-4 md:px-8">
+
+    <div class="max-w-4xl mx-auto text-center">
+
+    <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold
+    text-accent tracking-[.18em] uppercase mb-8">Our Mission</p>
+
+    <p class="text-3xl md:text-4xl font-bold leading-relaxed text-gray-100 mb-10" x-text="$store.lang.t(''manifesto'')"></p>
+
+    <div class="flex flex-wrap justify-center gap-2.5">
+
+    <span class="bg-white/5 border border-white/[.10] text-gray-300 rounded-full px-4 py-1.5 text-sm">🇮🇳 India First</span>
+
+    <span class="bg-white/5 border border-white/[.10] text-gray-300 rounded-full px-4 py-1.5 text-sm">🗣️ Bhasha First</span>
+
+    <span class="bg-white/5 border border-white/[.10] text-gray-300 rounded-full px-4 py-1.5 text-sm">🏘️ Bharat First</span>
+
+    <span class="bg-white/5 border border-white/[.10] text-gray-300 rounded-full px-4 py-1.5 text-sm">♿ Accessible First</span>
+
+    </div>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-dark py-24 px-4 md:px-8 hindi">
+
+    <div class="max-w-4xl mx-auto text-center">
+
+    <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold
+    text-accent tracking-[.18em] uppercase mb-8 hindi">हमारा मिशन</p>
+
+    <p class="text-3xl md:text-4xl font-bold leading-relaxed text-gray-100 mb-10 hindi" x-text="$store.lang.t(''manifesto'')"></p>
+
+    <div class="flex flex-wrap justify-center gap-2.5">
+
+    <span class="bg-white/5 border border-white/[.10] text-gray-300 rounded-full px-4 py-1.5 text-sm hindi">🇮🇳 India First</span>
+
+    <span class="bg-white/5 border border-white/[.10] text-gray-300 rounded-full px-4 py-1.5 text-sm hindi">🗣️ भाषा First</span>
+
+    <span class="bg-white/5 border border-white/[.10] text-gray-300 rounded-full px-4 py-1.5 text-sm hindi">🏘️ भारत First</span>
+
+    <span class="bg-white/5 border border-white/[.10] text-gray-300 rounded-full px-4 py-1.5 text-sm hindi">♿ Accessible First</span>
+
+    </div>
+
+    </div>
+
+    </section>'
+aa0e0ca14bb55304:
+  page: index.html
+  en: '<section class="bg-cosmos py-24 px-4 md:px-8">
+
+    <div class="max-w-6xl mx-auto">
+
+    <p class="inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold text-gray-400
+    tracking-[.18em] uppercase mb-5">The Opportunity</p>
+
+    <h2 class="text-3xl md:text-5xl font-black mb-4">India Ka <span class="grad">AI Paradox</span></h2>
+
+    <p class="text-gray-400 text-lg max-w-2xl mb-14">Three numbers explain the gap — and the opening we''re building for.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+    <article class="bg-card border border-white/[.07] rounded-2xl p-8 relative overflow-hidden">
+
+    <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-primary to-accent"></div>
+
+    <div class="text-5xl md:text-6xl font-black text-primary mb-2 leading-none">1.2B+</div>
+
+    <div class="text-gray-300 font-semibold mb-3">Indians without native AI</div>
+
+    <p class="text-sm text-gray-400 leading-relaxed">1.4 billion total. 200 million speak English. 1.2 billion left behind
+    by every AI company building for the West.</p>
+
+    </article>
+
+    <article class="bg-card border border-white/[.07] rounded-2xl p-8 relative overflow-hidden">
+
+    <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-primary to-accent"></div>
+
+    <div class="text-5xl md:text-6xl font-black text-accent mb-2 leading-none">68%</div>
+
+    <div class="text-gray-300 font-semibold mb-3">Students rote-learn. Zero understanding.</div>
+
+    <p class="text-sm text-gray-400 leading-relaxed">250M+ school students. Most can''t afford a private tutor. The system
+    teaches memorisation, not thinking.</p>
+
+    </article>
+
+    <article class="bg-card border border-white/[.07] rounded-2xl p-8 relative overflow-hidden">
+
+    <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-primary to-accent"></div>
+
+    <div class="text-5xl md:text-6xl font-black text-gray-200 mb-2 leading-none">63M</div>
+
+    <div class="text-gray-300 font-semibold mb-3">MSMEs with zero AI commerce tools</div>
+
+    <p class="text-sm text-gray-400 leading-relaxed">WhatsApp + Excel. That''s the stack. Aarambha''s next product fixes this.</p>
+
+    </article>
+
+    </div>
+
+    <p class="mt-12 text-center hindi text-xl md:text-2xl font-semibold text-accent">हम यहाँ हैं — यह gap मिटाने के लिए।</p>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-cosmos py-24 px-4 md:px-8 hindi">
+
+    <div class="max-w-6xl mx-auto">
+
+    <p class="inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold text-gray-400
+    tracking-[.18em] uppercase mb-5 hindi">अवसर</p>
+
+    <h2 class="text-3xl md:text-5xl font-black mb-4 hindi">भारत का <span class="grad">AI Paradox</span></h2>
+
+    <p class="text-gray-400 text-lg max-w-2xl mb-14 hindi">तीन आंकड़े इस अंतर और जिस अवसर पर हम काम कर रहे हैं, उसे समझाते
+    हैं।</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+    <article class="bg-card border border-white/[.07] rounded-2xl p-8 relative overflow-hidden">
+
+    <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-primary to-accent"></div>
+
+    <div class="text-5xl md:text-6xl font-black text-primary mb-2 leading-none hindi">1.2B+</div>
+
+    <div class="text-gray-300 font-semibold mb-3 hindi">भारतीयों के लिए कोई native AI नहीं</div>
+
+    <p class="text-sm text-gray-400 leading-relaxed hindi">कुल 1.4 अरब लोग हैं। 200 मिलियन इंग्लिश बोलते हैं। 1.2 अरब लोग
+    पीछे छूट गए हैं क्योंकि हर AI कंपनी पश्चिम के लिए बना रही है।</p>
+
+    </article>
+
+    <article class="bg-card border border-white/[.07] rounded-2xl p-8 relative overflow-hidden">
+
+    <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-primary to-accent"></div>
+
+    <div class="text-5xl md:text-6xl font-black text-accent mb-2 leading-none hindi">68%</div>
+
+    <div class="text-gray-300 font-semibold mb-3 hindi">छात्र रटते हैं। समझ कुछ नहीं।</div>
+
+    <p class="text-sm text-gray-400 leading-relaxed hindi">250 मिलियन से ज़्यादा स्कूली छात्र हैं। ज़्यादातर प्राइवेट ट्यूटर
+    नहीं रख सकते। हमारा सिस्टम रटने पर ज़ोर देता है, सोचने पर नहीं।</p>
+
+    </article>
+
+    <article class="bg-card border border-white/[.07] rounded-2xl p-8 relative overflow-hidden">
+
+    <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-primary to-accent"></div>
+
+    <div class="text-5xl md:text-6xl font-black text-gray-200 mb-2 leading-none hindi">63M</div>
+
+    <div class="text-gray-300 font-semibold mb-3 hindi">MSMEs के पास AI commerce tools नहीं</div>
+
+    <p class="text-sm text-gray-400 leading-relaxed hindi">WhatsApp + Excel. बस यही है उनका stack. Aarambha का अगला प्रोडक्ट
+    इसे ठीक करेगा।</p>
+
+    </article>
+
+    </div>
+
+    <p class="mt-12 text-center hindi text-xl md:text-2xl font-semibold text-accent">हम यहाँ हैं — यह gap मिटाने के लिए।</p>
+
+    </div>
+
+    </section>'
+e44c2dd0441efd80:
+  page: index.html
+  en: '<section class="bg-dark py-24 px-4 md:px-8">
+
+    <div class="max-w-6xl mx-auto">
+
+    <div class="text-center max-w-2xl mx-auto mb-14">
+
+    <p class="inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold text-gray-400
+    tracking-[.18em] uppercase mb-5">Pancha Bhoota · 7 Products</p>
+
+    <h2 class="text-3xl md:text-5xl font-black mb-4">We build <span class="grad">AI for Bharat</span>, not just apps.</h2>
+
+    <p class="text-gray-400 text-lg leading-relaxed">Five elements. Two shipping. Five building. Every one solves a Bharat
+    problem no one has built AI for yet.</p>
+
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+    <a class="bg-card border border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block" href="/products/#shrutam">
+
+    <div class="flex items-center gap-2 mb-3"><span class="text-2xl">🌍</span><span class="hindi text-accent text-sm font-bold">पृथ्वी</span></div>
+
+    <h3 class="text-gray-100 font-black text-lg mb-1"><span class="hindi mr-1">श्रुतम्</span>Shrutam</h3>
+
+    <p class="text-gray-400 text-xs mb-3">Audio-first AI tutor for CG+CBSE Class 6–10</p>
+
+    <span class="inline-block text-[10px] bg-green-500/15 text-green-400 border border-green-500/30 rounded-full px-2 py-0.5
+    uppercase tracking-[.12em] font-bold">🟢 May 20</span>
+
+    </a>
+
+    <a class="bg-card border border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block" href="/products/#commerce">
+
+    <div class="flex items-center gap-2 mb-3"><span class="text-2xl">🌬️</span><span class="hindi text-accent text-sm font-bold">वायु</span></div>
+
+    <h3 class="text-gray-100 font-black text-lg mb-1">WhatsApp Commerce</h3>
+
+    <p class="text-gray-400 text-xs mb-3">Kirana-to-enterprise B2B ordering AI</p>
+
+    <span class="inline-block text-[10px] bg-green-500/15 text-green-400 border border-green-500/30 rounded-full px-2 py-0.5
+    uppercase tracking-[.12em] font-bold">🟢 LIVE</span>
+
+    </a>
+
+    <a class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block"
+    href="/products/#karta">
+
+    <div class="flex items-center gap-2 mb-3"><span class="text-2xl">🔥</span><span class="hindi text-accent text-sm font-bold">तेजस्</span></div>
+
+    <h3 class="text-gray-100 font-black text-lg mb-1">Karta AI</h3>
+
+    <p class="text-gray-400 text-xs mb-3">GST + ITR voice-filing for MSMEs</p>
+
+    <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase
+    tracking-[.12em] font-bold">⚡ 2026</span>
+
+    </a>
+
+    <a class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block"
+    href="/products/#pashu">
+
+    <div class="flex items-center gap-2 mb-3"><span class="text-2xl">💧</span><span class="hindi text-accent text-sm font-bold">जल</span></div>
+
+    <h3 class="text-gray-100 font-black text-lg mb-1">Pashu AI</h3>
+
+    <p class="text-gray-400 text-xs mb-3">Cattle doctor in your pocket</p>
+
+    <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase
+    tracking-[.12em] font-bold">⚡ 2026</span>
+
+    </a>
+
+    <a class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block"
+    href="/products/#bima">
+
+    <div class="flex items-center gap-2 mb-3"><span class="text-2xl">💧</span><span class="hindi text-accent text-sm font-bold">जल</span></div>
+
+    <h3 class="text-gray-100 font-black text-lg mb-1">Bima AI</h3>
+
+    <p class="text-gray-400 text-xs mb-3">Insurance claim automation</p>
+
+    <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase
+    tracking-[.12em] font-bold">⚡ 2026</span>
+
+    </a>
+
+    <a class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block"
+    href="/products/#svayam">
+
+    <div class="flex items-center gap-2 mb-3"><span class="text-2xl">✨</span><span class="hindi text-accent text-sm font-bold">आकाश</span></div>
+
+    <h3 class="text-gray-100 font-black text-lg mb-1">Svayam AI</h3>
+
+    <p class="text-gray-400 text-xs mb-3">Voice-first sarkari form filling</p>
+
+    <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase
+    tracking-[.12em] font-bold">⚡ 2026</span>
+
+    </a>
+
+    <a class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block"
+    href="/products/#adhikar">
+
+    <div class="flex items-center gap-2 mb-3"><span class="text-2xl">✨</span><span class="hindi text-accent text-sm font-bold">आकाश</span></div>
+
+    <h3 class="text-gray-100 font-black text-lg mb-1">Adhikar AI</h3>
+
+    <p class="text-gray-400 text-xs mb-3">Pension + welfare entitlement tracker</p>
+
+    <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase
+    tracking-[.12em] font-bold">⚡ 2026</span>
+
+    </a>
+
+    <a class="bg-card/30 border border-dashed border-accent/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all flex
+    flex-col items-center justify-center text-center" href="/products/">
+
+    <div class="text-3xl mb-2">🧭</div>
+
+    <p class="text-gray-300 font-bold text-sm">Explore all 7</p>
+
+    <p class="text-gray-400 text-xs mt-1">Pancha Bhoota portfolio →</p>
+
+    </a>
+
+    </div>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-dark py-24 px-4 md:px-8 hindi">
+
+    <div class="max-w-6xl mx-auto">
+
+    <div class="text-center max-w-2xl mx-auto mb-14">
+
+    <p class="inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold text-gray-400
+    tracking-[.18em] uppercase mb-5 hindi">पंच भूता · 7 प्रोडक्ट्स</p>
+
+    <h2 class="text-3xl md:text-5xl font-black mb-4 hindi">हम सिर्फ ऐप्स नहीं, <span class="grad">भारत के लिए AI</span> बनाते
+    हैं।</h2>
+
+    <p class="text-gray-400 text-lg leading-relaxed hindi">पांच तत्व। दो शिपिंग के लिए तैयार। पांच निर्माणाधीन। हर एक भारत
+    की ऐसी समस्या का समाधान करता है, जिसके लिए अभी तक किसी ने AI नहीं बनाया है।</p>
+
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+    <a class="bg-card border border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block" href="/products/#shrutam">
+
+    <div class="flex items-center gap-2 mb-3"><span class="text-2xl">🌍</span><span class="hindi text-accent text-sm font-bold">पृथ्वी</span></div>
+
+    <h3 class="text-gray-100 font-black text-lg mb-1"><span class="hindi mr-1">श्रुतम्</span>Shrutam</h3>
+
+    <p class="text-gray-400 text-xs mb-3 hindi">कक्षा 6-10 के CG+CBSE छात्रों के लिए ऑडियो-फर्स्ट AI ट्यूटर</p>
+
+    <span class="inline-block text-[10px] bg-green-500/15 text-green-400 border border-green-500/30 rounded-full px-2 py-0.5
+    uppercase tracking-[.12em] font-bold hindi">🟢 20 मई</span>
+
+    </a>
+
+    <a class="bg-card border border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block" href="/products/#commerce">
+
+    <div class="flex items-center gap-2 mb-3"><span class="text-2xl">🌬️</span><span class="hindi text-accent text-sm font-bold">वायु</span></div>
+
+    <h3 class="text-gray-100 font-black text-lg mb-1 hindi">WhatsApp Commerce</h3>
+
+    <p class="text-gray-400 text-xs mb-3 hindi">किराना से एंटरप्राइज के लिए B2B ऑर्डरिंग AI</p>
+
+    <span class="inline-block text-[10px] bg-green-500/15 text-green-400 border border-green-500/30 rounded-full px-2 py-0.5
+    uppercase tracking-[.12em] font-bold hindi">🟢 लाइव</span>
+
+    </a>
+
+    <a class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block"
+    href="/products/#karta">
+
+    <div class="flex items-center gap-2 mb-3"><span class="text-2xl">🔥</span><span class="hindi text-accent text-sm font-bold">तेजस्</span></div>
+
+    <h3 class="text-gray-100 font-black text-lg mb-1 hindi">Karta AI</h3>
+
+    <p class="text-gray-400 text-xs mb-3 hindi">MSMEs के लिए GST + ITR वॉइस-फाइलिंग</p>
+
+    <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase
+    tracking-[.12em] font-bold hindi">⚡ 2026</span>
+
+    </a>
+
+    <a class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block"
+    href="/products/#pashu">
+
+    <div class="flex items-center gap-2 mb-3"><span class="text-2xl">💧</span><span class="hindi text-accent text-sm font-bold">जल</span></div>
+
+    <h3 class="text-gray-100 font-black text-lg mb-1 hindi">Pashu AI</h3>
+
+    <p class="text-gray-400 text-xs mb-3 hindi">आपकी जेब में पशु डॉक्टर</p>
+
+    <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase
+    tracking-[.12em] font-bold hindi">⚡ 2026</span>
+
+    </a>
+
+    <a class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block"
+    href="/products/#bima">
+
+    <div class="flex items-center gap-2 mb-3"><span class="text-2xl">💧</span><span class="hindi text-accent text-sm font-bold">जल</span></div>
+
+    <h3 class="text-gray-100 font-black text-lg mb-1 hindi">Bima AI</h3>
+
+    <p class="text-gray-400 text-xs mb-3 hindi">बीमा क्लेम ऑटोमेशन</p>
+
+    <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase
+    tracking-[.12em] font-bold hindi">⚡ 2026</span>
+
+    </a>
+
+    <a class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block"
+    href="/products/#svayam">
+
+    <div class="flex items-center gap-2 mb-3"><span class="text-2xl">✨</span><span class="hindi text-accent text-sm font-bold">आकाश</span></div>
+
+    <h3 class="text-gray-100 font-black text-lg mb-1 hindi">Svayam AI</h3>
+
+    <p class="text-gray-400 text-xs mb-3 hindi">वॉइस-फर्स्ट सरकारी फॉर्म भरना</p>
+
+    <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase
+    tracking-[.12em] font-bold hindi">⚡ 2026</span>
+
+    </a>
+
+    <a class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block"
+    href="/products/#adhikar">
+
+    <div class="flex items-center gap-2 mb-3"><span class="text-2xl">✨</span><span class="hindi text-accent text-sm font-bold">आकाश</span></div>
+
+    <h3 class="text-gray-100 font-black text-lg mb-1 hindi">Adhikar AI</h3>
+
+    <p class="text-gray-400 text-xs mb-3 hindi">पेंशन + कल्याण पात्रता ट्रैकर</p>
+
+    <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase
+    tracking-[.12em] font-bold hindi">⚡ 2026</span>
+
+    </a>
+
+    <a class="bg-card/30 border border-dashed border-accent/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all flex
+    flex-col items-center justify-center text-center" href="/products/">
+
+    <div class="text-3xl mb-2">🧭</div>
+
+    <p class="text-gray-300 font-bold text-sm hindi">सभी 7 देखें</p>
+
+    <p class="text-gray-400 text-xs mt-1 hindi">पंच भूता पोर्टफोलियो →</p>
+
+    </a>
+
+    </div>
+
+    </div>
+
+    </section>'
+9d94810b65eaf0ca:
+  page: index.html
+  en: "<section class=\"bg-cosmos py-24 px-4 md:px-8\">\n<div class=\"max-w-3xl mx-auto\">\n<div class=\"bg-card/60 border\
+    \ border-accent/20 rounded-2xl p-8 md:p-12 text-center relative\">\n<span class=\"absolute -top-3 left-1/2 -translate-x-1/2\
+    \ bg-cosmos border border-accent/30 text-accent px-4 py-1 rounded-full text-xs font-bold tracking-[.20em] uppercase\"\
+    \ x-text=\"$store.lang.t('founder_badge')\"></span>\n<p class=\"hindi italic text-2xl md:text-3xl text-accent leading-relaxed\
+    \ mt-4 mb-6\">\n        एक गाँव से निकले थे।<br/>\n        22 साल बाद — एक सवाल आया:<br/>\n        यह सब गाँव तक क्यों\
+    \ नहीं पहुँचा?<br/>\n        वही सवाल है आरम्भ।\n      </p>\n<p class=\"text-gray-400 text-base md:text-lg leading-relaxed\
+    \ mb-8\" x-text=\"$store.lang.t('founder_quote')\"></p>\n<a class=\"inline-flex items-center gap-2 border border-accent/40\
+    \ text-accent hover:bg-accent/10 font-semibold px-6 py-3 rounded-xl transition-all\" href=\"/about/\" x-text=\"$store.lang.t('founder_cta')\"\
+    ></a>\n</div>\n</div>\n</section>"
+  hi: "<section class=\"bg-cosmos py-24 px-4 md:px-8 hindi\">\n<div class=\"max-w-3xl mx-auto\">\n<div class=\"bg-card/60\
+    \ border border-accent/20 rounded-2xl p-8 md:p-12 text-center relative\">\n<span class=\"absolute -top-3 left-1/2 -translate-x-1/2\
+    \ bg-cosmos border border-accent/30 text-accent px-4 py-1 rounded-full text-xs font-bold tracking-[.20em] uppercase\"\
+    \ x-text=\"$store.lang.t('founder_badge')\"></span>\n<p class=\"hindi italic text-2xl md:text-3xl text-accent leading-relaxed\
+    \ mt-4 mb-6\">\n        हम एक गाँव से निकले थे।<br/>\n        दो दशक बाद — यह सवाल आया:<br/>\n        यह सब गाँव तक क्यों\
+    \ नहीं पहुँचा?<br/>\n        वही सवाल है Aarambha।\n      </p>\n<p class=\"text-gray-400 text-base md:text-lg leading-relaxed\
+    \ mb-8 hindi\" x-text=\"$store.lang.t('founder_quote')\"></p>\n<a class=\"inline-flex items-center gap-2 border border-accent/40\
+    \ text-accent hover:bg-accent/10 font-semibold px-6 py-3 rounded-xl transition-all hindi\" href=\"/about/\" x-text=\"\
+    $store.lang.t('founder_cta')\"></a>\n</div>\n</div>\n</section>"
+a2d018ddf154d127:
+  page: index.html
+  en: '<section class="bg-dark py-24 px-4 md:px-8">
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+    <div>
+
+    <p class="inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold text-gray-400
+    tracking-[.18em] uppercase mb-4">Philosophy</p>
+
+    <h2 class="text-3xl md:text-4xl font-black mb-4 hindi">22/7 — <span class="text-accent">तेज़ नहीं, सही।</span></h2>
+
+    <p class="text-gray-400 leading-relaxed mb-6">Two woodcutters. One works 24 hours nonstop. The other works 22 — and spends
+    2 hours sharpening the axe. The second one cuts more wood. That''s how we build.</p>
+
+    <div class="flex flex-wrap gap-2 mb-6">
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3.5 py-1.5 text-sm">⏸️ Pause</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3.5 py-1.5 text-sm">🎯 Optimize</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3.5 py-1.5 text-sm">🔥 Build Right</span>
+
+    </div>
+
+    <a class="inline-flex items-center gap-2 border border-white/20 hover:border-accent/50 text-gray-300 hover:text-accent
+    font-semibold px-6 py-3 rounded-xl transition-all" href="/philosophy/">Read Our Philosophy →</a>
+
+    </div>
+
+    <div class="bg-card border border-white/[.07] rounded-2xl p-10 text-center">
+
+    <div class="text-6xl mb-4">🪓</div>
+
+    <div class="text-xs text-gray-400 uppercase tracking-[.14em] mb-2">The Principle</div>
+
+    <div class="text-4xl font-black grad mb-2">22 + 2</div>
+
+    <div class="text-sm text-gray-400">22 hours of work. 2 hours of sharpening.<br/>More wood. Every day.</div>
+
+    </div>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-dark py-24 px-4 md:px-8 hindi">
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+    <div>
+
+    <p class="inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold text-gray-400
+    tracking-[.18em] uppercase mb-4 hindi">हमारी सोच</p>
+
+    <h2 class="text-3xl md:text-4xl font-black mb-4 hindi">22/7 — <span class="text-accent">तेज़ नहीं, सही।</span></h2>
+
+    <p class="text-gray-400 leading-relaxed mb-6 hindi">दो लकड़हारे। एक बिना रुके 24 घंटे काम करता है। दूसरा 22 घंटे काम करता
+    है और 2 घंटे कुल्हाड़ी की धार तेज़ करता है। दूसरा लकड़हारा ज़्यादा लकड़ी काटता है। हम भी इसी तरह काम करते हैं।</p>
+
+    <div class="flex flex-wrap gap-2 mb-6">
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3.5 py-1.5 text-sm hindi">⏸️ रुकें</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3.5 py-1.5 text-sm hindi">🎯 बेहतर करें</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3.5 py-1.5 text-sm hindi">🔥 सही बनाएँ</span>
+
+    </div>
+
+    <a class="inline-flex items-center gap-2 border border-white/20 hover:border-accent/50 text-gray-300 hover:text-accent
+    font-semibold px-6 py-3 rounded-xl transition-all hindi" href="/philosophy/">हमारी सोच जानें →</a>
+
+    </div>
+
+    <div class="bg-card border border-white/[.07] rounded-2xl p-10 text-center">
+
+    <div class="text-6xl mb-4">🪓</div>
+
+    <div class="text-xs text-gray-400 uppercase tracking-[.14em] mb-2 hindi">हमारा सिद्धांत</div>
+
+    <div class="text-4xl font-black grad mb-2">22 + 2</div>
+
+    <div class="text-sm text-gray-400 hindi">22 घंटे काम। 2 घंटे धार तेज़ करना।<br/>रोज़ ज़्यादा लकड़ी।</div>
+
+    </div>
+
+    </div>
+
+    </section>'
+2ebf3fbc9db4bdc1:
+  page: index.html
+  en: '<section class="bg-cosmos py-20 px-4 md:px-8">
+
+    <div class="max-w-5xl mx-auto">
+
+    <div class="text-center max-w-2xl mx-auto mb-12">
+
+    <p class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em]
+    uppercase mb-4">Partner With Us</p>
+
+    <h2 class="text-3xl md:text-4xl font-black mb-3">School chahiye partnership? <span class="grad">Baat karte hain.</span></h2>
+
+    <p class="text-gray-400 text-base leading-relaxed">Schools, NGOs, govt agencies, distributors — if you serve Bharat, we
+    want to build with you.</p>
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+    <div class="bg-card border border-white/[.07] rounded-2xl p-6">
+
+    <div class="text-3xl mb-3">🏫</div>
+
+    <h3 class="text-gray-100 font-bold mb-2">Schools</h3>
+
+    <p class="text-gray-400 text-sm leading-relaxed mb-4">Shrutam for your students — bulk pricing, teacher dashboard, offline
+    mode for weak networks.</p>
+
+    <a class="text-accent font-bold text-sm hover:underline" href="mailto:partners@aarambhax.ai?subject=School%20Partnership">partners@aarambhax.ai
+    →</a>
+
+    </div>
+
+    <div class="bg-card border border-white/[.07] rounded-2xl p-6">
+
+    <div class="text-3xl mb-3">🤝</div>
+
+    <h3 class="text-gray-100 font-bold mb-2">NGOs &amp; Foundations</h3>
+
+    <p class="text-gray-400 text-sm leading-relaxed mb-4">Deploy Aarambha products at scale. Rural schools, women SHGs, farmer
+    cooperatives.</p>
+
+    <a class="text-accent font-bold text-sm hover:underline" href="mailto:partners@aarambhax.ai?subject=NGO%20Partnership">partners@aarambhax.ai
+    →</a>
+
+    </div>
+
+    <div class="bg-card border border-white/[.07] rounded-2xl p-6">
+
+    <div class="text-3xl mb-3">🏛️</div>
+
+    <h3 class="text-gray-100 font-bold mb-2">Govt &amp; Public</h3>
+
+    <p class="text-gray-400 text-sm leading-relaxed mb-4">CSR, public-interest pilots, integration with MGNREGA / Ayushman
+    / PMFBY.</p>
+
+    <a class="text-accent font-bold text-sm hover:underline" href="mailto:partners@aarambhax.ai?subject=Govt%20Partnership">partners@aarambhax.ai
+    →</a>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-cosmos py-20 px-4 md:px-8 hindi">
+
+    <div class="max-w-5xl mx-auto">
+
+    <div class="text-center max-w-2xl mx-auto mb-12">
+
+    <p class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em]
+    uppercase mb-4 hindi">हमारे साथ जुड़ें</p>
+
+    <h2 class="text-3xl md:text-4xl font-black mb-3 hindi">पार्टनरशिप चाहिए? <span class="grad">बात करते हैं।</span></h2>
+
+    <p class="text-gray-400 text-base leading-relaxed hindi">स्कूल, NGO, सरकारी एजेंसियां, डिस्ट्रीब्यूटर — अगर आप भारत की
+    सेवा कर रहे हैं, तो हम आपके साथ मिलकर बनाना चाहते हैं।</p>
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+    <div class="bg-card border border-white/[.07] rounded-2xl p-6">
+
+    <div class="text-3xl mb-3">🏫</div>
+
+    <h3 class="text-gray-100 font-bold mb-2 hindi">स्कूल</h3>
+
+    <p class="text-gray-400 text-sm leading-relaxed mb-4 hindi">आपके छात्रों के लिए Shrutam — बल्क प्राइसिंग, टीचर डैशबोर्ड,
+    कमजोर नेटवर्क के लिए ऑफलाइन मोड।</p>
+
+    <a class="text-accent font-bold text-sm hover:underline" href="mailto:partners@aarambhax.ai?subject=School%20Partnership">partners@aarambhax.ai
+    →</a>
+
+    </div>
+
+    <div class="bg-card border border-white/[.07] rounded-2xl p-6">
+
+    <div class="text-3xl mb-3">🤝</div>
+
+    <h3 class="text-gray-100 font-bold mb-2 hindi">NGOs और फाउंडेशन</h3>
+
+    <p class="text-gray-400 text-sm leading-relaxed mb-4 hindi">Aarambha के प्रोडक्ट्स को बड़े पैमाने पर लागू करें। ग्रामीण
+    स्कूल, महिला SHG, किसान सहकारी समितियां।</p>
+
+    <a class="text-accent font-bold text-sm hover:underline" href="mailto:partners@aarambhax.ai?subject=NGO%20Partnership">partners@aarambhax.ai
+    →</a>
+
+    </div>
+
+    <div class="bg-card border border-white/[.07] rounded-2xl p-6">
+
+    <div class="text-3xl mb-3">🏛️</div>
+
+    <h3 class="text-gray-100 font-bold mb-2 hindi">सरकार और पब्लिक</h3>
+
+    <p class="text-gray-400 text-sm leading-relaxed mb-4 hindi">CSR, जनहित पायलट, MGNREGA / Ayushman / PMFBY के साथ इंटीग्रेशन।</p>
+
+    <a class="text-accent font-bold text-sm hover:underline" href="mailto:partners@aarambhax.ai?subject=Govt%20Partnership">partners@aarambhax.ai
+    →</a>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </section>'
+2b4a719dc1abb638:
+  page: index.html
+  en: '<section class="bg-dark py-16 px-4 md:px-8 border-t border-white/[.05] border-b border-white/[.05]">
+
+    <div class="max-w-6xl mx-auto text-center">
+
+    <p class="text-xs font-bold text-gray-400 tracking-[.20em] uppercase mb-6">As seen in (coming soon)</p>
+
+    <div class="flex flex-wrap justify-center items-center gap-x-10 gap-y-4 opacity-50">
+
+    <span class="text-gray-400 font-bold text-sm">Your Story</span>
+
+    <span class="text-gray-400 font-bold text-sm">Inc42</span>
+
+    <span class="text-gray-400 font-bold text-sm">Entrackr</span>
+
+    <span class="text-gray-400 font-bold text-sm">The Ken</span>
+
+    <span class="text-gray-400 font-bold text-sm">Economic Times</span>
+
+    <span class="text-gray-400 font-bold text-sm">FactorDaily</span>
+
+    </div>
+
+    <p class="text-xs text-gray-600 mt-4">We''ll replace with real press links as they come in. <a class="text-primary hover:underline"
+    href="mailto:press@aarambhax.ai">Media? press@aarambhax.ai</a></p>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-dark py-16 px-4 md:px-8 border-t border-white/[.05] border-b border-white/[.05] hindi">
+
+    <div class="max-w-6xl mx-auto text-center">
+
+    <p class="text-xs font-bold text-gray-400 tracking-[.20em] uppercase mb-6 hindi">जैसा कि दिखाया गया है (जल्द आ रहा है)</p>
+
+    <div class="flex flex-wrap justify-center items-center gap-x-10 gap-y-4 opacity-50">
+
+    <span class="text-gray-400 font-bold text-sm hindi">Your Story</span>
+
+    <span class="text-gray-400 font-bold text-sm hindi">Inc42</span>
+
+    <span class="text-gray-400 font-bold text-sm hindi">Entrackr</span>
+
+    <span class="text-gray-400 font-bold text-sm hindi">The Ken</span>
+
+    <span class="text-gray-400 font-bold text-sm hindi">Economic Times</span>
+
+    <span class="text-gray-400 font-bold text-sm hindi">FactorDaily</span>
+
+    </div>
+
+    <p class="text-xs text-gray-600 mt-4 hindi">जैसे ही हमें प्रेस कवरेज मिलेगा, हम उसे यहाँ अपडेट कर देंगे। <a class="text-primary
+    hover:underline" href="mailto:press@aarambhax.ai">मीडिया से हैं? press@aarambhax.ai</a></p>
+
+    </div>
+
+    </section>'
+49ce63d8e4f6d5ef:
+  page: index.html
+  en: "<section class=\"bg-cosmos py-24 px-4 md:px-8 relative overflow-hidden\" id=\"waitlist\">\n<div class=\"absolute inset-0\
+    \ pointer-events-none\" style=\"background:\n    radial-gradient(ellipse at 50% 40%, rgba(14,165,233,0.18), transparent\
+    \ 55%),\n    radial-gradient(ellipse at 50% 80%, rgba(245,158,11,0.10), transparent 50%);\"></div>\n<div class=\"relative\
+    \ z-10 max-w-3xl mx-auto text-center\">\n<h2 class=\"text-3xl md:text-5xl font-black leading-tight mb-2\">India ki AI\
+    \ ki aarambh mein</h2>\n<h2 class=\"text-3xl md:text-5xl font-black leading-tight grad mb-6\">shamil ho jaao.</h2>\n<p\
+    \ class=\"hindi text-gray-400 text-lg md:text-xl mb-10\">भारत के लिए AI — साथ बनाएँगे।</p>\n<div class=\"flex flex-col\
+    \ sm:flex-row justify-center gap-3 mb-10\">\n<a class=\"inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark\
+    \ text-white font-bold px-6 py-3.5 rounded-xl transition-all\" href=\"#waitlist-form\">\U0001F393 Join Shrutam Waitlist</a>\n\
+    <a class=\"inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark text-gray-900 font-bold px-6 py-3.5\
+    \ rounded-xl transition-all\" href=\"mailto:hello@aarambhax.ai?subject=Partnership\">\U0001F91D Partner With Us</a>\n\
+    <a class=\"inline-flex items-center justify-center gap-2 border border-white/20 hover:border-primary/50 text-gray-300\
+    \ hover:text-primary font-semibold px-6 py-3.5 rounded-xl transition-all\" href=\"mailto:hello@aarambhax.ai\">\U0001F4EC\
+    \ hello@aarambhax.ai</a>\n</div>\n<form action=\"mailto:hello@aarambhax.ai\" class=\"max-w-md mx-auto flex flex-col sm:flex-row\
+    \ gap-2\" enctype=\"text/plain\" id=\"waitlist-form\" method=\"get\">\n<input name=\"subject\" type=\"hidden\" value=\"\
+    Shrutam Waitlist — Aarambhax\"/>\n<label class=\"sr-only\" for=\"waitlist-email\">Email</label>\n<input class=\"flex-1\
+    \ min-w-0 px-4 py-3 rounded-xl border border-white/[.12] bg-white/[.04] text-gray-100 placeholder:text-gray-400 focus:outline-none\
+    \ focus:border-primary/60 focus:bg-white/[.06] transition-all\" id=\"waitlist-email\" name=\"body\" placeholder=\"your@email.com\"\
+    \ required=\"\" type=\"email\"/>\n<button class=\"bg-primary hover:bg-primary-dark text-white font-bold px-5 py-3 rounded-xl\
+    \ transition-all\" type=\"submit\">Stay Updated</button>\n</form>\n<p class=\"text-xs text-gray-600 mt-3\">Submitting\
+    \ opens your email client. No spam. Promise.</p>\n</div>\n</section>"
+  hi: "<section class=\"bg-cosmos py-24 px-4 md:px-8 relative overflow-hidden hindi\" id=\"waitlist\">\n<div class=\"absolute\
+    \ inset-0 pointer-events-none\" style=\"background:\n    radial-gradient(ellipse at 50% 40%, rgba(14,165,233,0.18), transparent\
+    \ 55%),\n    radial-gradient(ellipse at 50% 80%, rgba(245,158,11,0.10), transparent 50%);\"></div>\n<div class=\"relative\
+    \ z-10 max-w-3xl mx-auto text-center\">\n<h2 class=\"text-3xl md:text-5xl font-black leading-tight mb-2 hindi\">भारत में\
+    \ AI के नए युग की शुरुआत में</h2>\n<h2 class=\"text-3xl md:text-5xl font-black leading-tight grad mb-6 hindi\">हमारा साथ\
+    \ दें।</h2>\n<p class=\"hindi text-gray-400 text-lg md:text-xl mb-10 hindi\">भारत के लिए AI — साथ बनाएँगे।</p>\n<div class=\"\
+    flex flex-col sm:flex-row justify-center gap-3 mb-10\">\n<a class=\"inline-flex items-center justify-center gap-2 bg-primary\
+    \ hover:bg-primary-dark text-white font-bold px-6 py-3.5 rounded-xl transition-all hindi\" href=\"#waitlist-form\">\U0001F393\
+    \ Shrutam वेटलिस्ट में शामिल हों</a>\n<a class=\"inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark\
+    \ text-gray-900 font-bold px-6 py-3.5 rounded-xl transition-all hindi\" href=\"mailto:hello@aarambhax.ai?subject=Partnership\"\
+    >\U0001F91D हमारे साथ पार्टनर बनें</a>\n<a class=\"inline-flex items-center justify-center gap-2 border border-white/20\
+    \ hover:border-primary/50 text-gray-300 hover:text-primary font-semibold px-6 py-3.5 rounded-xl transition-all hindi\"\
+    \ href=\"mailto:hello@aarambhax.ai\">\U0001F4EC hello@aarambhax.ai</a>\n</div>\n<form action=\"mailto:hello@aarambhax.ai\"\
+    \ class=\"max-w-md mx-auto flex flex-col sm:flex-row gap-2\" enctype=\"text/plain\" id=\"waitlist-form\" method=\"get\"\
+    >\n<input name=\"subject\" type=\"hidden\" value=\"Shrutam Waitlist — Aarambhax\"/>\n<label class=\"sr-only hindi\" for=\"\
+    waitlist-email\">ईमेल</label>\n<input class=\"flex-1 min-w-0 px-4 py-3 rounded-xl border border-white/[.12] bg-white/[.04]\
+    \ text-gray-100 placeholder:text-gray-400 focus:outline-none focus:border-primary/60 focus:bg-white/[.06] transition-all\"\
+    \ id=\"waitlist-email\" name=\"body\" placeholder=\"your@email.com\" required=\"\" type=\"email\"/>\n<button class=\"\
+    bg-primary hover:bg-primary-dark text-white font-bold px-5 py-3 rounded-xl transition-all hindi\" type=\"submit\">अपडेट\
+    \ रहें</button>\n</form>\n<p class=\"text-xs text-gray-600 mt-3 hindi\">सबमिट करने पर आपका ईमेल क्लाइंट खुल जाएगा। कोई\
+    \ स्पैम नहीं। हमारा वादा है।</p>\n</div>\n</section>"
+e3a7be995455ab6b:
+  page: about/index.html
+  en: "<section class=\"bg-cosmos min-h-[60vh] flex items-center justify-center px-4 md:px-8 pt-20 pb-16 relative overflow-hidden\"\
+    >\n<div class=\"absolute inset-0 pointer-events-none\" style=\"background:\n    radial-gradient(ellipse at 30% 30%, rgba(245,158,11,0.12),\
+    \ transparent 55%),\n    radial-gradient(ellipse at 70% 70%, rgba(14,165,233,0.10), transparent 55%);\"></div>\n<div class=\"\
+    relative z-10 max-w-4xl mx-auto text-center\">\n<p class=\"inline-block px-3 py-1 rounded-full border border-accent/30\
+    \ bg-accent/5 text-xs font-bold text-accent tracking-[.20em] uppercase mb-8\">Our Story</p>\n<h1 class=\"hindi text-5xl\
+    \ md:text-7xl font-black text-accent leading-tight mb-2\">गाँव से US.</h1>\n<h1 class=\"text-4xl md:text-6xl font-black\
+    \ text-primary leading-tight mb-8\">US se Gaon ke liye.</h1>\n<p class=\"text-lg md:text-xl text-gray-400 max-w-2xl mx-auto\"\
+    >22 saal. Do duniya. Ek sawaal. Ek mission.</p>\n</div>\n</section>"
+  hi: "<section class=\"bg-cosmos min-h-[60vh] flex items-center justify-center px-4 md:px-8 pt-20 pb-16 relative overflow-hidden\
+    \ hindi\">\n<div class=\"absolute inset-0 pointer-events-none\" style=\"background:\n    radial-gradient(ellipse at 30%\
+    \ 30%, rgba(245,158,11,0.12), transparent 55%),\n    radial-gradient(ellipse at 70% 70%, rgba(14,165,233,0.10), transparent\
+    \ 55%);\"></div>\n<div class=\"relative z-10 max-w-4xl mx-auto text-center\">\n<p class=\"inline-block px-3 py-1 rounded-full\
+    \ border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em] uppercase mb-8 hindi\">हमारी कहानी</p>\n\
+    <h1 class=\"hindi text-5xl md:text-7xl font-black text-accent leading-tight mb-2\">गाँव से US.</h1>\n<h1 class=\"text-4xl\
+    \ md:text-6xl font-black text-primary leading-tight mb-8 hindi\">US से गाँव के लिए.</h1>\n<p class=\"text-lg md:text-xl\
+    \ text-gray-400 max-w-2xl mx-auto hindi\">22 साल. दो दुनिया. एक सवाल. एक मिशन.</p>\n</div>\n</section>"
+bcc8030b45c87d3b:
+  page: about/index.html
+  en: '<section class="bg-dark py-24 px-4 md:px-8">
+
+    <div class="max-w-3xl mx-auto">
+
+    <div class="text-center mb-14">
+
+    <h2 class="text-3xl md:text-5xl font-black mb-3 grad">The Journey</h2>
+
+    <p class="text-gray-400">Eight beats. No names. Universal by design.</p>
+
+    </div>
+
+    <ol class="relative border-l-2 border-accent/30 pl-7 md:pl-10 space-y-5">
+
+    <li class="relative">
+
+    <span class="absolute -left-[34px] md:-left-[44px] top-4 w-3 h-3 rounded-full bg-accent shadow-[0_0_10px_#f59e0b]"></span>
+
+    <div class="bg-card/50 border border-white/[.07] rounded-xl p-5 md:p-6">
+
+    <div class="text-xs text-accent font-bold uppercase tracking-[.18em] mb-2">🌱 Start</div>
+
+    <p class="text-gray-300 leading-relaxed">Ek gaon. Ek kamra. Ek sapna — engineer banna.</p>
+
+    </div>
+
+    </li>
+
+    <li class="relative">
+
+    <span class="absolute -left-[34px] md:-left-[44px] top-4 w-3 h-3 rounded-full bg-accent shadow-[0_0_10px_#f59e0b]"></span>
+
+    <div class="bg-card/50 border border-white/[.07] rounded-xl p-5 md:p-6">
+
+    <div class="text-xs text-accent font-bold uppercase tracking-[.18em] mb-2">🎓 College</div>
+
+    <p class="text-gray-300 leading-relaxed">Pehli generation jo shahar gayi. Engineering complete. Aankhon mein duniya.</p>
+
+    </div>
+
+    </li>
+
+    <li class="relative">
+
+    <span class="absolute -left-[34px] md:-left-[44px] top-4 w-3 h-3 rounded-full bg-accent shadow-[0_0_10px_#f59e0b]"></span>
+
+    <div class="bg-card/50 border border-white/[.07] rounded-xl p-5 md:p-6">
+
+    <div class="text-xs text-accent font-bold uppercase tracking-[.18em] mb-2">💼 First Job</div>
+
+    <p class="text-gray-300 leading-relaxed">Software engineer. Chhota office. Bada seekhna.</p>
+
+    </div>
+
+    </li>
+
+    <li class="relative">
+
+    <span class="absolute -left-[34px] md:-left-[44px] top-4 w-3 h-3 rounded-full bg-accent shadow-[0_0_10px_#f59e0b]"></span>
+
+    <div class="bg-card/50 border border-white/[.07] rounded-xl p-5 md:p-6">
+
+    <div class="text-xs text-accent font-bold uppercase tracking-[.18em] mb-2">✈️ Departure</div>
+
+    <p class="text-gray-300 leading-relaxed">Ek call aaya. Bahar jaane ka mauka. Haan bol diya.</p>
+
+    </div>
+
+    </li>
+
+    <li class="relative">
+
+    <span class="absolute -left-[34px] md:-left-[44px] top-4 w-3 h-3 rounded-full bg-accent shadow-[0_0_10px_#f59e0b]"></span>
+
+    <div class="bg-card/50 border border-white/[.07] rounded-xl p-5 md:p-6">
+
+    <div class="text-xs text-accent font-bold uppercase tracking-[.18em] mb-2">🏢 22 Years</div>
+
+    <p class="text-gray-300 leading-relaxed">Fortune 500 companies. Kafka architectures. Search systems. AI pipelines. Unke
+    liye banaya jinke paas sab tha. Jinke paas nahi tha — unke baare mein koi nahi socha.</p>
+
+    </div>
+
+    </li>
+
+    <li class="relative">
+
+    <span class="absolute -left-[34px] md:-left-[44px] top-4 w-3 h-3 rounded-full bg-accent shadow-[0_0_10px_#f59e0b]"></span>
+
+    <div class="bg-card/50 border border-white/[.07] rounded-xl p-5 md:p-6">
+
+    <div class="text-xs text-accent font-bold uppercase tracking-[.18em] mb-2">📱 The Message</div>
+
+    <p class="text-gray-300 leading-relaxed">Ek WhatsApp aaya. Ghar se. "Yahan teacher nahi hai. Bacche samajh nahi pa rahe.
+    Koi app nahi jo Hindi mein samjhaye." 22 saal enterprise AI. Ek message.</p>
+
+    </div>
+
+    </li>
+
+    <li class="relative">
+
+    <span class="absolute -left-[34px] md:-left-[44px] top-4 w-3 h-3 rounded-full bg-accent shadow-[0_0_10px_#f59e0b]"></span>
+
+    <div class="bg-card/50 border border-white/[.07] rounded-xl p-5 md:p-6">
+
+    <div class="text-xs text-accent font-bold uppercase tracking-[.18em] mb-2">💡 The Question</div>
+
+    <p class="text-gray-300 leading-relaxed">"Yeh sab gaon tak kyun nahi pahuncha?" Yeh sawaal — raat bhar nahi sone diya.</p>
+
+    </div>
+
+    </li>
+
+    <li class="relative">
+
+    <span class="absolute -left-[34px] md:-left-[44px] top-4 w-3 h-3 rounded-full bg-primary shadow-[0_0_12px_#0ea5e9]"></span>
+
+    <div class="bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/30 rounded-xl p-5 md:p-6">
+
+    <div class="text-xs text-primary font-bold uppercase tracking-[.18em] mb-2">🌅 Aarambha</div>
+
+    <p class="text-gray-200 leading-relaxed font-medium">India mein AI ki aarambha. Unke liye jo peeche reh gaye — nahi kyunki
+    woh kam the, balki kyunki tools unki bhasha nahi bolte the.</p>
+
+    </div>
+
+    </li>
+
+    </ol>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-dark py-24 px-4 md:px-8 hindi">
+
+    <div class="max-w-3xl mx-auto">
+
+    <div class="text-center mb-14">
+
+    <h2 class="text-3xl md:text-5xl font-black mb-3 grad hindi">हमारी यात्रा</h2>
+
+    <p class="text-gray-400 hindi">आठ पड़ाव। कोई नाम नहीं। डिज़ाइन से ही सार्वभौमिक।</p>
+
+    </div>
+
+    <ol class="relative border-l-2 border-accent/30 pl-7 md:pl-10 space-y-5">
+
+    <li class="relative">
+
+    <span class="absolute -left-[34px] md:-left-[44px] top-4 w-3 h-3 rounded-full bg-accent shadow-[0_0_10px_#f59e0b]"></span>
+
+    <div class="bg-card/50 border border-white/[.07] rounded-xl p-5 md:p-6">
+
+    <div class="text-xs text-accent font-bold uppercase tracking-[.18em] mb-2 hindi">🌱 शुरुआत</div>
+
+    <p class="text-gray-300 leading-relaxed hindi">एक गाँव। एक कमरा। एक सपना — इंजीनियर बनना।</p>
+
+    </div>
+
+    </li>
+
+    <li class="relative">
+
+    <span class="absolute -left-[34px] md:-left-[44px] top-4 w-3 h-3 rounded-full bg-accent shadow-[0_0_10px_#f59e0b]"></span>
+
+    <div class="bg-card/50 border border-white/[.07] rounded-xl p-5 md:p-6">
+
+    <div class="text-xs text-accent font-bold uppercase tracking-[.18em] mb-2 hindi">🎓 कॉलेज</div>
+
+    <p class="text-gray-300 leading-relaxed hindi">पहली पीढ़ी जो शहर गई। इंजीनियरिंग पूरी हुई। आँखों में दुनिया थी।</p>
+
+    </div>
+
+    </li>
+
+    <li class="relative">
+
+    <span class="absolute -left-[34px] md:-left-[44px] top-4 w-3 h-3 rounded-full bg-accent shadow-[0_0_10px_#f59e0b]"></span>
+
+    <div class="bg-card/50 border border-white/[.07] rounded-xl p-5 md:p-6">
+
+    <div class="text-xs text-accent font-bold uppercase tracking-[.18em] mb-2 hindi">💼 पहली नौकरी</div>
+
+    <p class="text-gray-300 leading-relaxed hindi">सॉफ्टवेयर इंजीनियर। छोटा ऑफिस। बड़ी सीख मिली।</p>
+
+    </div>
+
+    </li>
+
+    <li class="relative">
+
+    <span class="absolute -left-[34px] md:-left-[44px] top-4 w-3 h-3 rounded-full bg-accent shadow-[0_0_10px_#f59e0b]"></span>
+
+    <div class="bg-card/50 border border-white/[.07] rounded-xl p-5 md:p-6">
+
+    <div class="text-xs text-accent font-bold uppercase tracking-[.18em] mb-2 hindi">✈️ प्रस्थान</div>
+
+    <p class="text-gray-300 leading-relaxed hindi">एक कॉल आया। बाहर जाने का मौका मिला। हाँ बोल दिया।</p>
+
+    </div>
+
+    </li>
+
+    <li class="relative">
+
+    <span class="absolute -left-[34px] md:-left-[44px] top-4 w-3 h-3 rounded-full bg-accent shadow-[0_0_10px_#f59e0b]"></span>
+
+    <div class="bg-card/50 border border-white/[.07] rounded-xl p-5 md:p-6">
+
+    <div class="text-xs text-accent font-bold uppercase tracking-[.18em] mb-2 hindi">🏢 22 साल</div>
+
+    <p class="text-gray-300 leading-relaxed hindi">Fortune 500 कंपनियों के लिए काम किया। Kafka आर्किटेक्चर। सर्च सिस्टम। AI
+    पाइपलाइन। उनके लिए बनाया जिनके पास सब कुछ था। जिनके पास नहीं था — उनके बारे में किसी ने नहीं सोचा।</p>
+
+    </div>
+
+    </li>
+
+    <li class="relative">
+
+    <span class="absolute -left-[34px] md:-left-[44px] top-4 w-3 h-3 rounded-full bg-accent shadow-[0_0_10px_#f59e0b]"></span>
+
+    <div class="bg-card/50 border border-white/[.07] rounded-xl p-5 md:p-6">
+
+    <div class="text-xs text-accent font-bold uppercase tracking-[.18em] mb-2 hindi">📱 वह संदेश</div>
+
+    <p class="text-gray-300 leading-relaxed hindi">एक WhatsApp आया। घर से। "यहाँ टीचर नहीं है। बच्चे समझ नहीं पा रहे। कोई
+    ऐप नहीं जो हिंदी में समझाए।" 22 साल Enterprise AI में काम किया। बस एक संदेश।</p>
+
+    </div>
+
+    </li>
+
+    <li class="relative">
+
+    <span class="absolute -left-[34px] md:-left-[44px] top-4 w-3 h-3 rounded-full bg-accent shadow-[0_0_10px_#f59e0b]"></span>
+
+    <div class="bg-card/50 border border-white/[.07] rounded-xl p-5 md:p-6">
+
+    <div class="text-xs text-accent font-bold uppercase tracking-[.18em] mb-2 hindi">💡 वह सवाल</div>
+
+    <p class="text-gray-300 leading-relaxed hindi">"यह सब गाँव तक क्यों नहीं पहुँचा?" इस सवाल ने — रात भर सोने नहीं दिया।</p>
+
+    </div>
+
+    </li>
+
+    <li class="relative">
+
+    <span class="absolute -left-[34px] md:-left-[44px] top-4 w-3 h-3 rounded-full bg-primary shadow-[0_0_12px_#0ea5e9]"></span>
+
+    <div class="bg-gradient-to-br from-primary/10 to-accent/5 border border-primary/30 rounded-xl p-5 md:p-6">
+
+    <div class="text-xs text-primary font-bold uppercase tracking-[.18em] mb-2 hindi">🌅 Aarambha</div>
+
+    <p class="text-gray-200 leading-relaxed font-medium hindi">भारत में AI की Aarambha। उनके लिए जो पीछे रह गए — इसलिए नहीं
+    कि वे कम थे, बल्कि इसलिए कि टूल्स उनकी भाषा नहीं बोलते थे।</p>
+
+    </div>
+
+    </li>
+
+    </ol>
+
+    </div>
+
+    </section>'
+dec4f974eeee0ca0:
+  page: about/index.html
+  en: '<section class="bg-cosmos py-24 px-4 md:px-8">
+
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+
+    <div>
+
+    <p class="inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold text-gray-400
+    tracking-[.18em] uppercase mb-4">The Gap</p>
+
+    <h3 class="text-2xl md:text-3xl font-black mb-4 text-gray-100">Ek paradox.</h3>
+
+    <p class="text-gray-400 leading-relaxed">India mein ek paradox hai. 1.4 billion log. 200 million English speakers. Har
+    AI tool unke liye bana. 1.2 billion? Left behind. Intelligence ki kami nahi — tools ki bhasha galat thi.</p>
+
+    </div>
+
+    <div>
+
+    <p class="inline-block px-3 py-1 rounded-full border border-primary/30 bg-primary/5 text-xs font-bold text-primary tracking-[.18em]
+    uppercase mb-4">The Answer</p>
+
+    <h3 class="text-2xl md:text-3xl font-black mb-4 text-gray-100">Reimagination.</h3>
+
+    <p class="text-gray-400 leading-relaxed">SAAVI didi kabhi nahi bolti: "See the diagram." Woh bolti hai: "Ek circle socho..."
+    Yeh fark hai. Translation nahi — reimagination. Aarambha 1.2 billion ke liye banata hai.</p>
+
+    </div>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-cosmos py-24 px-4 md:px-8 hindi">
+
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+
+    <div>
+
+    <p class="inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold text-gray-400
+    tracking-[.18em] uppercase mb-4 hindi">समस्या</p>
+
+    <h3 class="text-2xl md:text-3xl font-black mb-4 text-gray-100 hindi">एक विरोधाभास।</h3>
+
+    <p class="text-gray-400 leading-relaxed hindi">भारत में एक विरोधाभास है। 1.4 अरब लोग। 200 मिलियन इंग्लिश बोलने वाले। हर
+    AI टूल उन्हीं के लिए बना। 1.2 अरब? पीछे छूट गए। इंटेलिजेंस की कमी नहीं — टूल्स की भाषा गलत थी।</p>
+
+    </div>
+
+    <div>
+
+    <p class="inline-block px-3 py-1 rounded-full border border-primary/30 bg-primary/5 text-xs font-bold text-primary tracking-[.18em]
+    uppercase mb-4 hindi">समाधान</p>
+
+    <h3 class="text-2xl md:text-3xl font-black mb-4 text-gray-100 hindi">पुनर्कल्पना।</h3>
+
+    <p class="text-gray-400 leading-relaxed hindi">SAAVI दीदी कभी नहीं बोलतीं: "See the diagram." वो बोलती हैं: "एक सर्कल
+    सोचो..." यह फर्क है। ट्रांसलेशन नहीं — पुनर्कल्पना। Aarambha 1.2 अरब लोगों के लिए बनाता है।</p>
+
+    </div>
+
+    </div>
+
+    </section>'
+d2cd566c2705185c:
+  page: about/index.html
+  en: '<section class="bg-dark py-24 px-4 md:px-8">
+
+    <div class="max-w-6xl mx-auto">
+
+    <div class="text-center mb-12">
+
+    <p class="inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold text-gray-400
+    tracking-[.18em] uppercase mb-4">Values</p>
+
+    <h2 class="text-3xl md:text-4xl font-black">How we build.</h2>
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+    <article class="bg-card border border-white/[.07] rounded-2xl p-7">
+
+    <div class="text-3xl mb-3">🎯</div>
+
+    <h3 class="text-lg font-bold text-gray-100 mb-2">Build for Real India</h3>
+
+    <p class="text-gray-400 text-sm leading-relaxed">Tier 2/3/4, not metro conferences. Villages, Hindi medium, unmetro India.</p>
+
+    </article>
+
+    <article class="bg-card border border-white/[.07] rounded-2xl p-7">
+
+    <div class="text-3xl mb-3">🗣️</div>
+
+    <h3 class="text-lg font-bold text-gray-100 mb-2">Native AI</h3>
+
+    <p class="text-gray-400 text-sm leading-relaxed">Hindi mein sochte hain, translate nahi karte. Hinglish is a feature,
+    not a bug.</p>
+
+    </article>
+
+    <article class="bg-card border border-white/[.07] rounded-2xl p-7">
+
+    <div class="text-3xl mb-3">♿</div>
+
+    <h3 class="text-lg font-bold text-gray-100 mb-2">Include Everyone</h3>
+
+    <p class="text-gray-400 text-sm leading-relaxed">Blind mode, weak readers, rural students. 50 lakh blind students — zero
+    other edtech serves them.</p>
+
+    </article>
+
+    <article class="bg-card border border-white/[.07] rounded-2xl p-7">
+
+    <div class="text-3xl mb-3">🔬</div>
+
+    <h3 class="text-lg font-bold text-gray-100 mb-2">Quality &gt; Speed</h3>
+
+    <p class="text-gray-400 text-sm leading-relaxed">22/7 — ship right, not fast. No feature launches until it''s actually
+    good.</p>
+
+    </article>
+
+    </div>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-dark py-24 px-4 md:px-8 hindi">
+
+    <div class="max-w-6xl mx-auto">
+
+    <div class="text-center mb-12">
+
+    <p class="inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold text-gray-400
+    tracking-[.18em] uppercase mb-4 hindi">मूल्य (Values)</p>
+
+    <h2 class="text-3xl md:text-4xl font-black hindi">हम कैसे बनाते हैं।</h2>
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+    <article class="bg-card border border-white/[.07] rounded-2xl p-7">
+
+    <div class="text-3xl mb-3">🎯</div>
+
+    <h3 class="text-lg font-bold text-gray-100 mb-2 hindi">असली भारत के लिए निर्माण</h3>
+
+    <p class="text-gray-400 text-sm leading-relaxed hindi">मेट्रो कॉन्फ़्रेंस नहीं, बल्कि टियर 2/3/4 के लिए। गाँव, हिंदी मीडियम,
+    अनमेट्रो इंडिया के लिए।</p>
+
+    </article>
+
+    <article class="bg-card border border-white/[.07] rounded-2xl p-7">
+
+    <div class="text-3xl mb-3">🗣️</div>
+
+    <h3 class="text-lg font-bold text-gray-100 mb-2 hindi">नेटिव AI</h3>
+
+    <p class="text-gray-400 text-sm leading-relaxed hindi">हम हिंदी में सोचते हैं, ट्रांसलेट नहीं करते। हिंग्लिश एक फ़ीचर
+    है, कोई बग नहीं।</p>
+
+    </article>
+
+    <article class="bg-card border border-white/[.07] rounded-2xl p-7">
+
+    <div class="text-3xl mb-3">♿</div>
+
+    <h3 class="text-lg font-bold text-gray-100 mb-2 hindi">सभी को शामिल करें</h3>
+
+    <p class="text-gray-400 text-sm leading-relaxed hindi">ब्लाइंड मोड, कमज़ोर पाठक, ग्रामीण छात्र। 50 लाख दृष्टिहीन छात्र
+    — कोई और एडटेक उनकी सेवा नहीं करता।</p>
+
+    </article>
+
+    <article class="bg-card border border-white/[.07] rounded-2xl p-7">
+
+    <div class="text-3xl mb-3">🔬</div>
+
+    <h3 class="text-lg font-bold text-gray-100 mb-2 hindi">गुणवत्ता > गति</h3>
+
+    <p class="text-gray-400 text-sm leading-relaxed hindi">22/7 — सही तरीक़े से शिप करें, जल्दी नहीं। जब तक क्वालिटी अच्छी
+    न हो, कोई फ़ीचर लॉन्च नहीं।</p>
+
+    </article>
+
+    </div>
+
+    </div>
+
+    </section>'
+c05ff11e84bb9545:
+  page: products/index.html
+  en: '<section class="bg-cosmos pt-28 pb-16 px-4 md:px-8">
+
+    <div class="max-w-6xl mx-auto text-center">
+
+    <p class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em]
+    uppercase mb-6">Aarambha Studio</p>
+
+    <h1 class="text-4xl md:text-6xl font-black mb-4"><span class="grad">7 Products</span> · 5 Elements · 1 Mission</h1>
+
+    <p class="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">Pancha Bhoota — five elements of ancient Indian thought.
+    Each element holds AI products we build for Bharat. Two shipping. Five in build. Every one solving a real problem.</p>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-cosmos pt-28 pb-16 px-4 md:px-8 hindi">
+
+    <div class="max-w-6xl mx-auto text-center">
+
+    <p class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em]
+    uppercase mb-6 hindi">Aarambha Studio</p>
+
+    <h1 class="text-4xl md:text-6xl font-black mb-4 hindi"><span class="grad">7 प्रोडक्ट्स</span> · 5 तत्व · 1 मिशन</h1>
+
+    <p class="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed hindi">पंचभूत — प्राचीन भारतीय विचार के पाँच तत्व। हर
+    तत्व में भारत के लिए हम जो AI प्रोडक्ट्स बनाते हैं, वे शामिल हैं। दो शिपिंग के लिए तैयार। पाँच निर्माणाधीन। हर एक एक वास्तविक
+    समस्या का समाधान कर रहा है।</p>
+
+    </div>
+
+    </section>'
+72cc4186a200b82f:
+  page: products/index.html
+  en: '<section class="bg-dark py-16 px-4 md:px-8 scroll-mt-24" id="shrutam">
+
+    <div class="max-w-6xl mx-auto">
+
+    <article class="bg-card border border-primary/30 rounded-2xl p-8 md:p-12 shadow-[0_0_60px_rgba(14,165,233,0.12)] relative
+    overflow-hidden">
+
+    <div class="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-80"></div>
+
+    <div class="grid md:grid-cols-[2fr,1fr] gap-10">
+
+    <div>
+
+    <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/30 text-xs font-bold
+    text-green-400 uppercase tracking-[.12em] mb-4">🟢 Launching May 20, 2026</p>
+
+    <p class="text-xs text-gray-400 uppercase tracking-[.14em] mb-2">🌍 Prithvi — Knowledge is Foundation</p>
+
+    <h2 class="text-3xl md:text-5xl font-black mb-3"><span class="hindi text-accent mr-2">श्रुतम्</span><span class="text-gray-100">SHRUTAM</span></h2>
+
+    <p class="hindi text-primary text-xl mb-5">सुनते हैं, सीखते हैं।</p>
+
+    <p class="text-gray-300 leading-relaxed mb-5">AI-powered audio-first learning for CG Board &amp; CBSE Class 6-10. SAAVI
+    didi teaches Science &amp; Math in Hinglish. Audio over text. Hinglish over English. Privacy over paywall-shame.</p>
+
+    <div class="bg-accent/10 border border-accent/30 rounded-xl p-4 mb-5">
+
+    <p class="text-accent font-bold">♿ Blind Mode — India''s first. FREE forever.</p>
+
+    <p class="text-gray-400 text-xs">50 lakh visually-impaired students. Zero edtech serves them. Shrutam does.</p>
+
+    </div>
+
+    <div class="flex flex-wrap gap-3">
+
+    <a class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold px-5 py-2.5 rounded-xl
+    transition-all text-sm" href="/#waitlist">Join Waitlist →</a>
+
+    <a class="inline-flex items-center gap-2 border border-white/20 hover:border-primary/50 text-gray-300 hover:text-primary
+    font-semibold px-5 py-2.5 rounded-xl transition-all text-sm" href="mailto:hello@aarambhax.ai?subject=Shrutam%20Info">Learn
+    More →</a>
+
+    </div>
+
+    </div>
+
+    <div class="grid grid-cols-2 gap-2 content-center">
+
+    <div class="bg-white/[.03] border border-white/[.07] rounded-xl p-3 text-center"><div class="text-xs text-gray-400">Class</div><div
+    class="font-bold text-gray-100 text-sm">6–10</div></div>
+
+    <div class="bg-white/[.03] border border-white/[.07] rounded-xl p-3 text-center"><div class="text-xs text-gray-400">Board</div><div
+    class="font-bold text-gray-100 text-sm">CG+CBSE</div></div>
+
+    <div class="bg-white/[.03] border border-white/[.07] rounded-xl p-3 text-center"><div class="text-xs text-gray-400">Price</div><div
+    class="font-bold text-gray-100 text-sm">₹199/mo</div></div>
+
+    <div class="bg-white/[.03] border border-white/[.07] rounded-xl p-3 text-center"><div class="text-xs text-gray-400">Blind</div><div
+    class="font-bold text-accent text-sm">FREE</div></div>
+
+    <div class="col-span-2 bg-white/[.03] border border-white/[.07] rounded-xl p-3 text-center"><div class="text-xs text-gray-400">Languages</div><div
+    class="font-bold text-gray-100 text-xs">Hindi · Hinglish · English · Telugu · Marathi</div></div>
+
+    </div>
+
+    </div>
+
+    </article>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-dark py-16 px-4 md:px-8 scroll-mt-24 hindi" id="shrutam">
+
+    <div class="max-w-6xl mx-auto">
+
+    <article class="bg-card border border-primary/30 rounded-2xl p-8 md:p-12 shadow-[0_0_60px_rgba(14,165,233,0.12)] relative
+    overflow-hidden">
+
+    <div class="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-80"></div>
+
+    <div class="grid md:grid-cols-[2fr,1fr] gap-10">
+
+    <div>
+
+    <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/30 text-xs font-bold
+    text-green-400 uppercase tracking-[.12em] mb-4 hindi">🟢 20 मई, 2026 को लॉन्च हो रहा है</p>
+
+    <p class="text-xs text-gray-400 uppercase tracking-[.14em] mb-2 hindi">🌍 पृथ्वी — ज्ञान ही आधार है</p>
+
+    <h2 class="text-3xl md:text-5xl font-black mb-3"><span class="hindi text-accent mr-2">श्रुतम्</span><span class="text-gray-100">SHRUTAM</span></h2>
+
+    <p class="hindi text-primary text-xl mb-5">सुनते हैं, सीखते हैं।</p>
+
+    <p class="text-gray-300 leading-relaxed mb-5 hindi">CG बोर्ड और CBSE कक्षा 6-10 के लिए AI-पावर्ड ऑडियो-फर्स्ट लर्निंग।
+    SAAVI दीदी Hinglish में साइंस और मैथ्स पढ़ाती हैं। टेक्स्ट के बजाय ऑडियो। इंग्लिश के बजाय Hinglish। पेवॉल-शेम के बजाय
+    प्राइवेसी।</p>
+
+    <div class="bg-accent/10 border border-accent/30 rounded-xl p-4 mb-5">
+
+    <p class="text-accent font-bold hindi">♿ ब्लाइंड मोड — भारत का पहला। हमेशा के लिए मुफ़्त।</p>
+
+    <p class="text-gray-400 text-xs hindi">50 लाख दृष्टिबाधित छात्र। कोई भी एडटेक उनकी मदद नहीं करता। श्रुतम् करता है।</p>
+
+    </div>
+
+    <div class="flex flex-wrap gap-3">
+
+    <a class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold px-5 py-2.5 rounded-xl
+    transition-all text-sm hindi" href="/#waitlist">वेटलिस्ट में शामिल हों →</a>
+
+    <a class="inline-flex items-center gap-2 border border-white/20 hover:border-primary/50 text-gray-300 hover:text-primary
+    font-semibold px-5 py-2.5 rounded-xl transition-all text-sm hindi" href="mailto:hello@aarambhax.ai?subject=Shrutam%20Info">और
+    जानें →</a>
+
+    </div>
+
+    </div>
+
+    <div class="grid grid-cols-2 gap-2 content-center">
+
+    <div class="bg-white/[.03] border border-white/[.07] rounded-xl p-3 text-center"><div class="text-xs text-gray-400 hindi">कक्षा</div><div
+    class="font-bold text-gray-100 text-sm">6–10</div></div>
+
+    <div class="bg-white/[.03] border border-white/[.07] rounded-xl p-3 text-center"><div class="text-xs text-gray-400 hindi">बोर्ड</div><div
+    class="font-bold text-gray-100 text-sm">CG+CBSE</div></div>
+
+    <div class="bg-white/[.03] border border-white/[.07] rounded-xl p-3 text-center"><div class="text-xs text-gray-400 hindi">कीमत</div><div
+    class="font-bold text-gray-100 text-sm">₹199/माह</div></div>
+
+    <div class="bg-white/[.03] border border-white/[.07] rounded-xl p-3 text-center"><div class="text-xs text-gray-400 hindi">दृष्टिबाधित</div><div
+    class="font-bold text-accent text-sm">मुफ़्त</div></div>
+
+    <div class="col-span-2 bg-white/[.03] border border-white/[.07] rounded-xl p-3 text-center"><div class="text-xs text-gray-400
+    hindi">भाषाएँ</div><div class="font-bold text-gray-100 text-xs">Hindi · Hinglish · English · Telugu · Marathi</div></div>
+
+    </div>
+
+    </div>
+
+    </article>
+
+    </div>
+
+    </section>'
+b81a4a4d79b7f521:
+  page: products/index.html
+  en: '<section class="bg-cosmos py-16 px-4 md:px-8 scroll-mt-24" id="commerce">
+
+    <div class="max-w-6xl mx-auto">
+
+    <article class="bg-card border border-primary/30 rounded-2xl p-8 md:p-12 shadow-[0_0_60px_rgba(14,165,233,0.12)] relative
+    overflow-hidden">
+
+    <div class="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-80"></div>
+
+    <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/30 text-xs font-bold
+    text-green-400 uppercase tracking-[.12em] mb-4">🟢 LIVE</p>
+
+    <p class="text-xs text-gray-400 uppercase tracking-[.14em] mb-2">🌬️ Vayu — Commerce Flows Like Air</p>
+
+    <h2 class="text-3xl md:text-4xl font-black mb-3 text-gray-100">WhatsApp Commerce AI</h2>
+
+    <p class="text-primary text-lg mb-5">Kirana se enterprise tak.</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-accent mb-2">The problem</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm">63 million MSMEs run India on WhatsApp + Excel. Orders lost, catalogs
+    off, reorders miss the window — nothing speaks the trade''s language.</p>
+
+    </div>
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-primary mb-2">The solution</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm">WhatsApp-native. Hindi voice. 4-layer NLP pipeline. Catalog matching
+    AI. Smart reorder prediction. Meets the trade where it already works.</p>
+
+    </div>
+
+    </div>
+
+    <div class="flex flex-wrap gap-2 mb-5">
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">Kirana</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">Pharma</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">FMCG</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">B2B Distributors</span>
+
+    </div>
+
+    <div class="flex flex-wrap gap-3">
+
+    <a class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold px-5 py-2.5 rounded-xl
+    transition-all text-sm" href="mailto:hello@aarambhax.ai?subject=WhatsApp%20Commerce%20Demo">Request Demo →</a>
+
+    <a class="inline-flex items-center gap-2 border border-white/20 hover:border-primary/50 text-gray-300 hover:text-primary
+    font-semibold px-5 py-2.5 rounded-xl transition-all text-sm" href="mailto:partners@aarambhax.ai?subject=WhatsApp%20Commerce%20Partnership">Partner
+    with us →</a>
+
+    </div>
+
+    </article>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-cosmos py-16 px-4 md:px-8 scroll-mt-24 hindi" id="commerce">
+
+    <div class="max-w-6xl mx-auto">
+
+    <article class="bg-card border border-primary/30 rounded-2xl p-8 md:p-12 shadow-[0_0_60px_rgba(14,165,233,0.12)] relative
+    overflow-hidden">
+
+    <div class="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-80"></div>
+
+    <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/30 text-xs font-bold
+    text-green-400 uppercase tracking-[.12em] mb-4 hindi">🟢 लाइव</p>
+
+    <p class="text-xs text-gray-400 uppercase tracking-[.14em] mb-2 hindi">🌬️ वायु — व्यापार हवा की तरह प्रवाहित होता है</p>
+
+    <h2 class="text-3xl md:text-4xl font-black mb-3 text-gray-100 hindi">WhatsApp कॉमर्स AI</h2>
+
+    <p class="text-primary text-lg mb-5 hindi">किराना से एंटरप्राइज़ तक।</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-accent mb-2 hindi">समस्या</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm hindi">भारत के 6.3 करोड़ MSME WhatsApp और Excel पर काम करते हैं। ऑर्डर
+    छूट जाते हैं, कैटलॉग सही नहीं होते, रीऑर्डर समय पर नहीं होते — कोई भी सिस्टम व्यापार की भाषा नहीं समझता।</p>
+
+    </div>
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-primary mb-2 hindi">समाधान</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm hindi">WhatsApp-नेटिव। हिंदी वॉयस। 4-लेयर NLP पाइपलाइन। कैटलॉग मैचिंग
+    AI। स्मार्ट रीऑर्डर प्रेडिक्शन। यह व्यापार से वहीं जुड़ता है जहाँ वह पहले से काम कर रहा है।</p>
+
+    </div>
+
+    </div>
+
+    <div class="flex flex-wrap gap-2 mb-5">
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">किराना</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">फार्मा</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">FMCG</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">B2B डिस्ट्रीब्यूटर्स</span>
+
+    </div>
+
+    <div class="flex flex-wrap gap-3">
+
+    <a class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold px-5 py-2.5 rounded-xl
+    transition-all text-sm hindi" href="mailto:hello@aarambhax.ai?subject=WhatsApp%20Commerce%20Demo">डेमो का अनुरोध करें
+    →</a>
+
+    <a class="inline-flex items-center gap-2 border border-white/20 hover:border-primary/50 text-gray-300 hover:text-primary
+    font-semibold px-5 py-2.5 rounded-xl transition-all text-sm hindi" href="mailto:partners@aarambhax.ai?subject=WhatsApp%20Commerce%20Partnership">हमारे
+    साथ पार्टनर बनें →</a>
+
+    </div>
+
+    </article>
+
+    </div>
+
+    </section>'
+004f9d5ef80f980f:
+  page: products/index.html
+  en: '<section class="bg-dark py-16 px-4 md:px-8 scroll-mt-24" id="karta">
+
+    <div class="max-w-6xl mx-auto">
+
+    <article class="bg-card border border-dashed border-primary/30 rounded-2xl p-8 md:p-10">
+
+    <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs font-bold
+    text-primary uppercase tracking-[.12em] mb-4">⚡ In Development — 2026</p>
+
+    <p class="text-xs text-gray-400 uppercase tracking-[.14em] mb-2">🔥 Tejas — Light the Compliance Path</p>
+
+    <h2 class="text-3xl md:text-4xl font-black mb-3 text-gray-100">Karta AI</h2>
+
+    <p class="text-primary text-lg mb-5">Compliance ki clarity.</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-accent mb-2">The problem</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm">63 million MSMEs file GSTR-1 / GSTR-3B every month. 80 million salaried
+    Indians file ITR. ClearTax / Quicko are English-only and urban-designed. Hindi voice-first filing doesn''t exist. Compliance
+    is mandatory, not optional.</p>
+
+    </div>
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-primary mb-2">The solution</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm">Photo your invoices → Karta AI categorizes, generates GSTR return, files
+    it. ITR via voice: "Meri salary 8 lakh, HRA hai, LIC bhara" → filled ITR in 3 minutes. Hindi. Free first 3 returns.</p>
+
+    </div>
+
+    </div>
+
+    <div class="flex flex-wrap gap-2 mb-5">
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">GSTR-1</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">GSTR-3B</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">ITR-1/2/4</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">Invoice OCR</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">Hindi Voice</span>
+
+    </div>
+
+    <a class="inline-flex items-center gap-2 border border-primary/40 text-primary hover:bg-primary/10 font-semibold px-5
+    py-2.5 rounded-xl transition-all text-sm" href="mailto:hello@aarambhax.ai?subject=Karta%20AI%20Interest">Express Interest
+    →</a>
+
+    </article>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-dark py-16 px-4 md:px-8 scroll-mt-24 hindi" id="karta">
+
+    <div class="max-w-6xl mx-auto">
+
+    <article class="bg-card border border-dashed border-primary/30 rounded-2xl p-8 md:p-10">
+
+    <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs font-bold
+    text-primary uppercase tracking-[.12em] mb-4 hindi">⚡ डेवलपमेंट में — 2026</p>
+
+    <p class="text-xs text-gray-400 uppercase tracking-[.14em] mb-2 hindi">🔥 तेजस — कंप्लायंस की राह रोशन करें</p>
+
+    <h2 class="text-3xl md:text-4xl font-black mb-3 text-gray-100 hindi">कर्ता AI</h2>
+
+    <p class="text-primary text-lg mb-5 hindi">कंप्लायंस की क्लैरिटी।</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-accent mb-2 hindi">समस्या</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm hindi">63 मिलियन MSME हर महीने GSTR-1 / GSTR-3B फाइल करते हैं। 80 मिलियन
+    वेतनभोगी भारतीय ITR फाइल करते हैं। ClearTax / Quicko केवल अंग्रेजी में और शहरी डिज़ाइन वाले हैं। हिंदी वॉइस-फर्स्ट फाइलिंग
+    मौजूद नहीं है। कंप्लायंस अनिवार्य है, वैकल्पिक नहीं।</p>
+
+    </div>
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-primary mb-2 hindi">समाधान</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm hindi">अपने इनवॉइस की फोटो लें → कर्ता AI उन्हें कैटेगराइज़ करता है, GSTR
+    रिटर्न बनाता है, और फाइल करता है। वॉइस के जरिए ITR: "हमारी सैलरी 8 लाख, HRA है, LIC भरा है" → 3 मिनट में ITR भर जाता है।
+    हिंदी में। पहले 3 रिटर्न मुफ़्त।</p>
+
+    </div>
+
+    </div>
+
+    <div class="flex flex-wrap gap-2 mb-5">
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">GSTR-1</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">GSTR-3B</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">ITR-1/2/4</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">इनवॉइस OCR</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">हिंदी वॉइस</span>
+
+    </div>
+
+    <a class="inline-flex items-center gap-2 border border-primary/40 text-primary hover:bg-primary/10 font-semibold px-5
+    py-2.5 rounded-xl transition-all text-sm hindi" href="mailto:hello@aarambhax.ai?subject=Karta%20AI%20Interest">रुचि व्यक्त
+    करें →</a>
+
+    </article>
+
+    </div>
+
+    </section>'
+442e8b5e491595e7:
+  page: products/index.html
+  en: '<section class="bg-cosmos py-16 px-4 md:px-8 scroll-mt-24" id="pashu">
+
+    <div class="max-w-6xl mx-auto">
+
+    <article class="bg-card border border-dashed border-primary/30 rounded-2xl p-8 md:p-10">
+
+    <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs font-bold
+    text-primary uppercase tracking-[.12em] mb-4">⚡ In Development — 2026</p>
+
+    <p class="text-xs text-gray-400 uppercase tracking-[.14em] mb-2">💧 Jal — Life &amp; Sustenance</p>
+
+    <h2 class="text-3xl md:text-4xl font-black mb-3 text-gray-100">Pashu AI</h2>
+
+    <p class="text-primary text-lg mb-5">Pashu ka doctor, aapke phone mein.</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-accent mb-2">The problem</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm">70 million dairy farmers. One sick cow = ₹80,000 loss. The vet is 20
+    km away. Quacks misdiagnose. Govt veterinary scheme unused. No AI-native cattle doctor exists in Hindi.</p>
+
+    </div>
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-primary mb-2">The solution</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm">Photo or 10-second video → AI detects FMD, mastitis, bloat, lameness.
+    Voice: "meri bhains do din se khana nahi kha rahi." Medicine + dosage + generic. Nearest govt vet. Milk yield tracker.
+    Artificial insemination booking.</p>
+
+    </div>
+
+    </div>
+
+    <div class="flex flex-wrap gap-2 mb-5">
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">Cattle · Buffalo · Goat</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">Photo Diagnosis</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">Hindi Voice</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">Rashtriya Gokul Mission</span>
+
+    </div>
+
+    <a class="inline-flex items-center gap-2 border border-primary/40 text-primary hover:bg-primary/10 font-semibold px-5
+    py-2.5 rounded-xl transition-all text-sm" href="mailto:hello@aarambhax.ai?subject=Pashu%20AI%20Interest">Express Interest
+    →</a>
+
+    </article>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-cosmos py-16 px-4 md:px-8 scroll-mt-24 hindi" id="pashu">
+
+    <div class="max-w-6xl mx-auto">
+
+    <article class="bg-card border border-dashed border-primary/30 rounded-2xl p-8 md:p-10">
+
+    <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs font-bold
+    text-primary uppercase tracking-[.12em] mb-4 hindi">⚡ डेवलपमेंट में — 2026</p>
+
+    <p class="text-xs text-gray-400 uppercase tracking-[.14em] mb-2 hindi">💧 जल — जीवन और पोषण</p>
+
+    <h2 class="text-3xl md:text-4xl font-black mb-3 text-gray-100 hindi">पशु AI</h2>
+
+    <p class="text-primary text-lg mb-5 hindi">पशु का डॉक्टर, आपके फोन में।</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-accent mb-2 hindi">समस्या</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm hindi">7 करोड़ डेयरी किसान। एक बीमार गाय = ₹80,000 का नुकसान। पशु चिकित्सक
+    20 किमी दूर। झोलाछाप गलत इलाज करते हैं। सरकारी पशु चिकित्सा योजनाएं इस्तेमाल नहीं होतीं। हिंदी में AI-नेटिव मवेशी डॉक्टर
+    नहीं है।</p>
+
+    </div>
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-primary mb-2 hindi">समाधान</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm hindi">फोटो या 10-सेकंड का वीडियो → AI FMD, मैस्टाइटिस, ब्लोट, लंगड़ापन
+    का पता लगाता है। वॉयस: "मेरी भैंस दो दिन से खाना नहीं खा रही।" दवा + खुराक + जेनेरिक। नज़दीकी सरकारी पशु चिकित्सक। दूध
+    उत्पादन ट्रैकर। आर्टिफिशियल इनसेमिनेशन बुकिंग।</p>
+
+    </div>
+
+    </div>
+
+    <div class="flex flex-wrap gap-2 mb-5">
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">मवेशी · भैंस · बकरी</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">फोटो से डायग्नोसिस</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">हिंदी वॉयस</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">राष्ट्रीय गोकुल मिशन</span>
+
+    </div>
+
+    <a class="inline-flex items-center gap-2 border border-primary/40 text-primary hover:bg-primary/10 font-semibold px-5
+    py-2.5 rounded-xl transition-all text-sm hindi" href="mailto:hello@aarambhax.ai?subject=Pashu%20AI%20Interest">रुचि व्यक्त
+    करें →</a>
+
+    </article>
+
+    </div>
+
+    </section>'
+960b8a64e2c9fb07:
+  page: products/index.html
+  en: '<section class="bg-dark py-16 px-4 md:px-8 scroll-mt-24" id="bima">
+
+    <div class="max-w-6xl mx-auto">
+
+    <article class="bg-card border border-dashed border-primary/30 rounded-2xl p-8 md:p-10">
+
+    <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs font-bold
+    text-primary uppercase tracking-[.12em] mb-4">⚡ In Development — 2026</p>
+
+    <p class="text-xs text-gray-400 uppercase tracking-[.14em] mb-2">💧 Jal — Life &amp; Protection</p>
+
+    <h2 class="text-3xl md:text-4xl font-black mb-3 text-gray-100">Bima AI</h2>
+
+    <p class="text-primary text-lg mb-5">Claim automation, rejection nahi.</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-accent mb-2">The problem</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm">40%+ of health / crop / vehicle insurance claims rejected for paperwork
+    errors. Farmers pay PMFBY premium for 5 years, crop fails, claim never gets filed because the form is impossible. PolicyBazaar
+    compares; nobody helps you CLAIM.</p>
+
+    </div>
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-primary mb-2">The solution</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm">Scan bills + discharge summary + crop-damage photo → AI drafts the claim
+    with the exact wording the insurer won''t reject. Filed in Star Health / HDFC Ergo / PMFBY / Bajaj Allianz portals. Hindi
+    + tracking + grievance escalation if rejected.</p>
+
+    </div>
+
+    </div>
+
+    <div class="flex flex-wrap gap-2 mb-5">
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">Health Claims</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">PMFBY Crop</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">Motor</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">Ayushman Bharat</span>
+
+    </div>
+
+    <a class="inline-flex items-center gap-2 border border-primary/40 text-primary hover:bg-primary/10 font-semibold px-5
+    py-2.5 rounded-xl transition-all text-sm" href="mailto:hello@aarambhax.ai?subject=Bima%20AI%20Interest">Express Interest
+    →</a>
+
+    </article>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-dark py-16 px-4 md:px-8 scroll-mt-24 hindi" id="bima">
+
+    <div class="max-w-6xl mx-auto">
+
+    <article class="bg-card border border-dashed border-primary/30 rounded-2xl p-8 md:p-10">
+
+    <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs font-bold
+    text-primary uppercase tracking-[.12em] mb-4 hindi">⚡ डेवलपमेंट में — 2026</p>
+
+    <p class="text-xs text-gray-400 uppercase tracking-[.14em] mb-2 hindi">💧 जल — जीवन और सुरक्षा</p>
+
+    <h2 class="text-3xl md:text-4xl font-black mb-3 text-gray-100 hindi">Bima AI</h2>
+
+    <p class="text-primary text-lg mb-5 hindi">दावा ऑटोमेशन, रिजेक्शन नहीं।</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-accent mb-2 hindi">समस्या</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm hindi">हेल्थ / फसल / वाहन बीमा के 40%+ दावे कागजी गलतियों के कारण खारिज
+    हो जाते हैं। किसान 5 साल तक PMFBY प्रीमियम भरते हैं, फसल खराब हो जाती है, लेकिन फॉर्म इतना मुश्किल होता है कि दावा कभी
+    फाइल ही नहीं हो पाता। PolicyBazaar तुलना तो कराता है; पर दावा करने में कोई मदद नहीं करता।</p>
+
+    </div>
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-primary mb-2 hindi">समाधान</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm hindi">बिल + डिस्चार्ज समरी + फसल-क्षति की फोटो स्कैन करें → AI सटीक शब्दों
+    के साथ दावा तैयार करता है जिसे बीमाकर्ता खारिज नहीं करेगा। Star Health / HDFC Ergo / PMFBY / Bajaj Allianz पोर्टल्स पर
+    फाइल किया जाता है। हिंदी + ट्रैकिंग + खारिज होने पर शिकायत का निपटारा भी।</p>
+
+    </div>
+
+    </div>
+
+    <div class="flex flex-wrap gap-2 mb-5">
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">हेल्थ क्लेम्स</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">PMFBY फसल</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">मोटर</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">आयुष्मान भारत</span>
+
+    </div>
+
+    <a class="inline-flex items-center gap-2 border border-primary/40 text-primary hover:bg-primary/10 font-semibold px-5
+    py-2.5 rounded-xl transition-all text-sm hindi" href="mailto:hello@aarambhax.ai?subject=Bima%20AI%20Interest">रुचि व्यक्त
+    करें →</a>
+
+    </article>
+
+    </div>
+
+    </section>'
+c29c69dad14103b8:
+  page: products/index.html
+  en: '<section class="bg-cosmos py-16 px-4 md:px-8 scroll-mt-24" id="svayam">
+
+    <div class="max-w-6xl mx-auto">
+
+    <article class="bg-card border border-dashed border-primary/30 rounded-2xl p-8 md:p-10">
+
+    <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs font-bold
+    text-primary uppercase tracking-[.12em] mb-4">⚡ In Development — 2026</p>
+
+    <p class="text-xs text-gray-400 uppercase tracking-[.14em] mb-2">✨ Akasha — The Connective Space</p>
+
+    <h2 class="text-3xl md:text-4xl font-black mb-3 text-gray-100">Svayam AI</h2>
+
+    <p class="text-primary text-lg mb-5">Sarkari form, voice se bhar do.</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-accent mb-2">The problem</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm">India has ~1500 government forms — DL, passport, Aadhaar update, voter
+    ID, caste / income / scholarship / ration card, KCC. Every form asks the same 15 fields. 90% of rural India fears these
+    forms. UMANG is unusable.</p>
+
+    </div>
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-primary mb-2">The solution</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm">Speak your details once in Hindi → AI stores encrypted profile → auto-fills
+    ANY form (PDF, web, photo of paper). Warns about missing docs. Tracks submission. Hindi voice-first. Privacy-preserving
+    (data never leaves your phone unencrypted).</p>
+
+    </div>
+
+    </div>
+
+    <div class="flex flex-wrap gap-2 mb-5">
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">Aadhaar Update</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">DL · Passport</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">Caste · Income Cert</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">Scholarship · KCC</span>
+
+    </div>
+
+    <a class="inline-flex items-center gap-2 border border-primary/40 text-primary hover:bg-primary/10 font-semibold px-5
+    py-2.5 rounded-xl transition-all text-sm" href="mailto:hello@aarambhax.ai?subject=Svayam%20AI%20Interest">Express Interest
+    →</a>
+
+    </article>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-cosmos py-16 px-4 md:px-8 scroll-mt-24 hindi" id="svayam">
+
+    <div class="max-w-6xl mx-auto">
+
+    <article class="bg-card border border-dashed border-primary/30 rounded-2xl p-8 md:p-10">
+
+    <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs font-bold
+    text-primary uppercase tracking-[.12em] mb-4 hindi">⚡ डेवलपमेंट में — 2026</p>
+
+    <p class="text-xs text-gray-400 uppercase tracking-[.14em] mb-2 hindi">✨ आकाश — द कनेक्टिव स्पेस</p>
+
+    <h2 class="text-3xl md:text-4xl font-black mb-3 text-gray-100 hindi">स्वयं AI</h2>
+
+    <p class="text-primary text-lg mb-5 hindi">सरकारी फॉर्म, वॉइस से भर दो।</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-accent mb-2 hindi">समस्या</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm hindi">भारत में लगभग 1500 सरकारी फॉर्म हैं — DL, पासपोर्ट, Aadhaar अपडेट,
+    वोटर ID, जाति/आय/स्कॉलरशिप/राशन कार्ड, KCC। हर फॉर्म में वही 15 फील्ड्स पूछी जाती हैं। ग्रामीण भारत का 90% इन फॉर्म्स
+    से डरता है। UMANG इस्तेमाल करना मुश्किल है।</p>
+
+    </div>
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-primary mb-2 hindi">समाधान</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm hindi">अपनी डिटेल्स एक बार हिंदी में बोलें → AI एन्क्रिप्टेड प्रोफाइल
+    स्टोर करता है → किसी भी फॉर्म (PDF, वेब, पेपर की फोटो) को ऑटो-फिल करता है। गुम हुए डॉक्युमेंट्स के बारे में चेतावनी देता
+    है। सबमिशन ट्रैक करता है। हिंदी वॉइस-फर्स्ट। प्राइवेसी-प्रिजर्विंग (डेटा आपके फोन से कभी भी अनएन्क्रिप्टेड बाहर नहीं जाता)।</p>
+
+    </div>
+
+    </div>
+
+    <div class="flex flex-wrap gap-2 mb-5">
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">आधार अपडेट</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">DL · पासपोर्ट</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">जाति · आय प्रमाण पत्र</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">स्कॉलरशिप · KCC</span>
+
+    </div>
+
+    <a class="inline-flex items-center gap-2 border border-primary/40 text-primary hover:bg-primary/10 font-semibold px-5
+    py-2.5 rounded-xl transition-all text-sm hindi" href="mailto:hello@aarambhax.ai?subject=Svayam%20AI%20Interest">अपनी रुचि
+    व्यक्त करें →</a>
+
+    </article>
+
+    </div>
+
+    </section>'
+21a737dde410d9d2:
+  page: products/index.html
+  en: '<section class="bg-dark py-16 px-4 md:px-8 scroll-mt-24" id="adhikar">
+
+    <div class="max-w-6xl mx-auto">
+
+    <article class="bg-card border border-dashed border-primary/30 rounded-2xl p-8 md:p-10">
+
+    <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs font-bold
+    text-primary uppercase tracking-[.12em] mb-4">⚡ In Development — 2026</p>
+
+    <p class="text-xs text-gray-400 uppercase tracking-[.14em] mb-2">✨ Akasha — Every Right Connected</p>
+
+    <h2 class="text-3xl md:text-4xl font-black mb-3 text-gray-100">Adhikar AI</h2>
+
+    <p class="text-primary text-lg mb-5">Pension, welfare, apne haq ka paisa.</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-accent mb-2">The problem</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm">3 crore elderly + 4 crore widows + 2 crore disabled eligible for pensions
+    (₹1000–₹3000/month). 30–70% never receive them. ₹50,000 crore of govt welfare doesn''t reach beneficiaries annually. Forms
+    are broken. Banks lose applications. Nobody follows up.</p>
+
+    </div>
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-primary mb-2">The solution</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm">Voice: "mere papa 68 saal ke hain, pension milni chahiye?" → AI checks
+    state-specific eligibility, drafts application, tracks status weekly. MGNREGA wages tracker. Pension delay? Auto-drafts
+    RTI + grievance. Voice interface built for the actually-elderly.</p>
+
+    </div>
+
+    </div>
+
+    <div class="flex flex-wrap gap-2 mb-5">
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">Old Age Pension</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">Widow Pension</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">Disability Pension</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">MGNREGA Wages</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs">RTI Auto-drafter</span>
+
+    </div>
+
+    <a class="inline-flex items-center gap-2 border border-primary/40 text-primary hover:bg-primary/10 font-semibold px-5
+    py-2.5 rounded-xl transition-all text-sm" href="mailto:hello@aarambhax.ai?subject=Adhikar%20AI%20Interest">Express Interest
+    →</a>
+
+    </article>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-dark py-16 px-4 md:px-8 scroll-mt-24 hindi" id="adhikar">
+
+    <div class="max-w-6xl mx-auto">
+
+    <article class="bg-card border border-dashed border-primary/30 rounded-2xl p-8 md:p-10">
+
+    <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs font-bold
+    text-primary uppercase tracking-[.12em] mb-4 hindi">⚡ डेवलपमेंट में — 2026</p>
+
+    <p class="text-xs text-gray-400 uppercase tracking-[.14em] mb-2 hindi">✨ आकाश — हर अधिकार जुड़ा हुआ</p>
+
+    <h2 class="text-3xl md:text-4xl font-black mb-3 text-gray-100 hindi">अधिकार AI</h2>
+
+    <p class="text-primary text-lg mb-5 hindi">पेंशन, वेलफेयर, अपने हक़ का पैसा।</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-accent mb-2 hindi">समस्या</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm hindi">3 करोड़ बुजुर्ग + 4 करोड़ विधवाएँ + 2 करोड़ दिव्यांग पेंशन के पात्र
+    हैं (₹1000–₹3000/माह)। इनमें से 30–70% को कभी पेंशन नहीं मिलती। सरकार की ₹50,000 करोड़ की वेलफेयर राशि हर साल लाभार्थियों
+    तक नहीं पहुँच पाती। फॉर्म गलत होते हैं। बैंक आवेदन खो देते हैं। कोई फॉलो-अप नहीं करता।</p>
+
+    </div>
+
+    <div>
+
+    <h3 class="text-xs font-bold uppercase tracking-[.14em] text-primary mb-2 hindi">समाधान</h3>
+
+    <p class="text-gray-400 leading-relaxed text-sm hindi">वॉइस: "मेरे पापा 68 साल के हैं, पेंशन मिलनी चाहिए?" → AI राज्य-विशेष
+    पात्रता की जाँच करता है, आवेदन का ड्राफ्ट तैयार करता है, साप्ताहिक स्टेटस ट्रैक करता है। MGNREGA वेतन ट्रैकर। पेंशन में
+    देरी? ऑटो-ड्राफ्ट RTI + शिकायत। यह वॉइस इंटरफ़ेस विशेष रूप से बुजुर्गों के लिए बनाया गया है।</p>
+
+    </div>
+
+    </div>
+
+    <div class="flex flex-wrap gap-2 mb-5">
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">वृद्धावस्था पेंशन</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">विधवा पेंशन</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">दिव्यांगता पेंशन</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">MGNREGA मज़दूरी</span>
+
+    <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3 py-1 text-xs hindi">RTI ऑटो-ड्राफ्टर</span>
+
+    </div>
+
+    <a class="inline-flex items-center gap-2 border border-primary/40 text-primary hover:bg-primary/10 font-semibold px-5
+    py-2.5 rounded-xl transition-all text-sm hindi" href="mailto:hello@aarambhax.ai?subject=Adhikar%20AI%20Interest">अपनी
+    रुचि व्यक्त करें →</a>
+
+    </article>
+
+    </div>
+
+    </section>'
+20f698feaa82f1f2:
+  page: products/index.html
+  en: '<section class="bg-cosmos py-16 px-4 md:px-8">
+
+    <div class="max-w-4xl mx-auto text-center">
+
+    <p class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em]
+    uppercase mb-4">Pancha Bhoota</p>
+
+    <h2 class="text-2xl md:text-3xl font-black mb-3">Five elements. <span class="grad">Seven products. One mission.</span></h2>
+
+    <p class="hindi text-xl md:text-2xl font-bold text-accent mb-3">आरम्भ — sab ki aarambh।</p>
+
+    <p class="text-gray-400 leading-relaxed max-w-2xl mx-auto mb-8">The framework isn''t a marketing frame. It''s how we think
+    about what to build next: problems grounded in real Indian life, mapped to elements our grandparents named thousands of
+    years ago.</p>
+
+    <a class="inline-flex items-center gap-2 border border-accent/40 text-accent hover:bg-accent/10 font-semibold px-6 py-3
+    rounded-xl transition-all" href="/philosophy/">Read the Philosophy →</a>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-cosmos py-16 px-4 md:px-8 hindi">
+
+    <div class="max-w-4xl mx-auto text-center">
+
+    <p class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em]
+    uppercase mb-4 hindi">Pancha Bhoota</p>
+
+    <h2 class="text-2xl md:text-3xl font-black mb-3 hindi">पाँच तत्व। <span class="grad">सात प्रोडक्ट्स। एक मिशन।</span></h2>
+
+    <p class="hindi text-xl md:text-2xl font-bold text-accent mb-3">आरम्भ — सब की आरम्भ।</p>
+
+    <p class="text-gray-400 leading-relaxed max-w-2xl mx-auto mb-8 hindi">यह फ्रेमवर्क सिर्फ मार्केटिंग के लिए नहीं है। यह
+    हमें यह सोचने में मदद करता है कि आगे क्या बनाना है: ऐसी समस्याएँ जो वास्तविक भारतीय जीवन से जुड़ी हैं और जिन्हें हमारे
+    पूर्वजों ने हज़ारों साल पहले जिन तत्वों का नाम दिया था, उनके साथ जोड़ा गया है।</p>
+
+    <a class="inline-flex items-center gap-2 border border-accent/40 text-accent hover:bg-accent/10 font-semibold px-6 py-3
+    rounded-xl transition-all hindi" href="/philosophy/">हमारी फिलॉसफी पढ़ें →</a>
+
+    </div>
+
+    </section>'
+6e3efc48f9a2c703:
+  page: philosophy/index.html
+  en: '<section class="bg-cosmos pt-28 pb-16 px-4 md:px-8">
+
+    <div class="max-w-4xl mx-auto text-center">
+
+    <p class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em]
+    uppercase mb-6">Philosophy</p>
+
+    <h1 class="hindi text-5xl md:text-7xl font-black text-accent mb-3 leading-tight">तेज़ नहीं, सही।</h1>
+
+    <h1 class="text-3xl md:text-5xl font-black text-primary mb-6">Not Fast. Right.</h1>
+
+    <p class="text-gray-400 text-lg max-w-2xl mx-auto">The thinking behind how we build AI for India.</p>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-cosmos pt-28 pb-16 px-4 md:px-8 hindi">
+
+    <div class="max-w-4xl mx-auto text-center">
+
+    <p class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em]
+    uppercase mb-6 hindi">दर्शन</p>
+
+    <h1 class="hindi text-5xl md:text-7xl font-black text-accent mb-3 leading-tight">तेज़ नहीं, सही।</h1>
+
+    <h1 class="text-3xl md:text-5xl font-black text-primary mb-6 hindi">तेज़ नहीं, सही।</h1>
+
+    <p class="text-gray-400 text-lg max-w-2xl mx-auto hindi">हम भारत के लिए AI कैसे बनाते हैं, उसके पीछे की सोच।</p>
+
+    </div>
+
+    </section>'
+0ccc9fe0001eb4b4:
+  page: philosophy/index.html
+  en: "<section class=\"bg-dark py-24 px-4 md:px-8\">\n<div class=\"max-w-4xl mx-auto\">\n<h2 class=\"text-3xl md:text-5xl\
+    \ font-black mb-10\">22/7 — <span class=\"grad\">The Woodcutter Principle</span></h2>\n<blockquote class=\"border-l-4\
+    \ border-accent bg-card/50 rounded-r-2xl italic text-gray-300 p-6 md:p-8 text-lg md:text-xl leading-relaxed mb-12\">\n\
+    \      Do lakkadhaare the. Competition tha.<br/>\n      Pehle ne kaha: 24 ghante kaam karunga. Nonstop.<br/>\n      Doosre\
+    \ ne kaha: Main 22 ghante kaam karunga. 2 ghante kulhaadi tej karunga.<br/>\n<br/>\n      Din bhar kaam kiya.<br/>\n<span\
+    \ class=\"text-accent font-bold not-italic\">22 ghante wale ne zyada lakdi kaati.</span><br/>\n<br/>\n      Kyunki tez\
+    \ kulhaadi — thodi mehnat mein zyada karta hai.\n    </blockquote>\n<div class=\"grid grid-cols-1 md:grid-cols-3 gap-5\
+    \ mb-14\">\n<article class=\"bg-card border border-white/[.07] rounded-2xl p-6 hover:border-accent/40 transition-all\"\
+    >\n<div class=\"text-3xl mb-3\">⏸️</div>\n<div class=\"text-xs text-accent font-bold uppercase tracking-[.14em] mb-2\"\
+    >Pause to Sharpen</div>\n<h3 class=\"text-lg font-bold text-gray-100 mb-2\">Stop. Reflect. Rebuild.</h3>\n<p class=\"\
+    text-gray-400 text-sm leading-relaxed\">No feature ships until it's right. We'd rather delay than ship broken.</p>\n</article>\n\
+    <article class=\"bg-card border border-white/[.07] rounded-2xl p-6 hover:border-accent/40 transition-all\">\n<div class=\"\
+    text-3xl mb-3\">\U0001F3AF</div>\n<div class=\"text-xs text-accent font-bold uppercase tracking-[.14em] mb-2\">Optimize\
+    \ First</div>\n<h3 class=\"text-lg font-bold text-gray-100 mb-2\">Don't scale broken things.</h3>\n<p class=\"text-gray-400\
+    \ text-sm leading-relaxed\">Fix the core until it's perfect, then 10x it. Scale amplifies flaws.</p>\n</article>\n<article\
+    \ class=\"bg-card border border-white/[.07] rounded-2xl p-6 hover:border-accent/40 transition-all\">\n<div class=\"text-3xl\
+    \ mb-3\">\U0001F525</div>\n<div class=\"text-xs text-accent font-bold uppercase tracking-[.14em] mb-2\">Build Right</div>\n\
+    <h3 class=\"text-lg font-bold text-gray-100 mb-2\">Ship once, correctly.</h3>\n<p class=\"text-gray-400 text-sm leading-relaxed\"\
+    >Not ten times, broken. Quality compounds — so does technical debt.</p>\n</article>\n</div>\n<div class=\"bg-card/60 border\
+    \ border-primary/20 rounded-2xl p-6 md:p-8\">\n<p class=\"text-xs text-primary font-bold uppercase tracking-[.14em] mb-3\"\
+    >Applied to Shrutam</p>\n<p class=\"text-gray-300 leading-relaxed\">Shrutam ki ek ek cheez soch ke bani hai. \"Mother\
+    \ tongue first\" — ek feature nahi, ek decision tha. Blind mode — 50 lakh students ke liye, revenue zero. Kyunki yahi\
+    \ sahi tha.</p>\n</div>\n</div>\n</section>"
+  hi: "<section class=\"bg-dark py-24 px-4 md:px-8 hindi\">\n<div class=\"max-w-4xl mx-auto\">\n<h2 class=\"text-3xl md:text-5xl\
+    \ font-black mb-10 hindi\">22/7 — <span class=\"grad\">कुल्हाड़ी तेज करने का सिद्धांत</span></h2>\n<blockquote class=\"\
+    border-l-4 border-accent bg-card/50 rounded-r-2xl italic text-gray-300 p-6 md:p-8 text-lg md:text-xl leading-relaxed mb-12\
+    \ hindi\">\n      दो लकड़हारे थे। Competition था।<br/>\n      पहले ने कहा: 24 घंटे काम करूँगा। Nonstop।<br/>\n      दूसरे\
+    \ ने कहा: मैं 22 घंटे काम करूँगा। 2 घंटे कुल्हाड़ी तेज करूँगा।<br/>\n<br/>\n      दिन भर काम किया।<br/>\n<span class=\"\
+    text-accent font-bold not-italic hindi\">22 घंटे वाले ने ज़्यादा लकड़ी काटी।</span><br/>\n<br/>\n      क्योंकि तेज़ कुल्हाड़ी\
+    \ — थोड़ी मेहनत में ज़्यादा करती है।\n    </blockquote>\n<div class=\"grid grid-cols-1 md:grid-cols-3 gap-5 mb-14\">\n\
+    <article class=\"bg-card border border-white/[.07] rounded-2xl p-6 hover:border-accent/40 transition-all\">\n<div class=\"\
+    text-3xl mb-3\">⏸️</div>\n<div class=\"text-xs text-accent font-bold uppercase tracking-[.14em] mb-2 hindi\">रुककर धार\
+    \ दें</div>\n<h3 class=\"text-lg font-bold text-gray-100 mb-2 hindi\">रुकें। सोचें। फिर से बनाएँ।</h3>\n<p class=\"text-gray-400\
+    \ text-sm leading-relaxed hindi\">कोई भी फीचर तब तक लॉन्च नहीं होगा जब तक वह सही न हो। हम अधूरा काम देने से बेहतर देरी\
+    \ पसंद करते हैं।</p>\n</article>\n<article class=\"bg-card border border-white/[.07] rounded-2xl p-6 hover:border-accent/40\
+    \ transition-all\">\n<div class=\"text-3xl mb-3\">\U0001F3AF</div>\n<div class=\"text-xs text-accent font-bold uppercase\
+    \ tracking-[.14em] mb-2 hindi\">पहले ऑप्टिमाइज़ करें</div>\n<h3 class=\"text-lg font-bold text-gray-100 mb-2 hindi\">खराब\
+    \ चीजों को बड़ा न करें।</h3>\n<p class=\"text-gray-400 text-sm leading-relaxed hindi\">मुख्य चीज़ को तब तक ठीक करें जब\
+    \ तक वह परफेक्ट न हो जाए, फिर उसे 10 गुना बढ़ाएँ। स्केल कमियों को बड़ा करता है।</p>\n</article>\n<article class=\"bg-card\
+    \ border border-white/[.07] rounded-2xl p-6 hover:border-accent/40 transition-all\">\n<div class=\"text-3xl mb-3\">\U0001F525\
+    </div>\n<div class=\"text-xs text-accent font-bold uppercase tracking-[.14em] mb-2 hindi\">सही बनाएँ</div>\n<h3 class=\"\
+    text-lg font-bold text-gray-100 mb-2 hindi\">एक बार में, सही ढंग से लॉन्च करें।</h3>\n<p class=\"text-gray-400 text-sm\
+    \ leading-relaxed hindi\">दस बार, खराब नहीं। क्वालिटी बढ़ती है — और तकनीकी कर्ज भी।</p>\n</article>\n</div>\n<div class=\"\
+    bg-card/60 border border-primary/20 rounded-2xl p-6 md:p-8\">\n<p class=\"text-xs text-primary font-bold uppercase tracking-[.14em]\
+    \ mb-3 hindi\">श्रुतम् पर लागू</p>\n<p class=\"text-gray-300 leading-relaxed hindi\">श्रुतम् की एक-एक चीज़ सोच के बनी\
+    \ है। \"Mother tongue first\" — एक फीचर नहीं, एक डिसीजन था। Blind mode — 50 लाख स्टूडेंट्स के लिए, रेवेन्यू ज़ीरो। क्योंकि\
+    \ यही सही था।</p>\n</div>\n</div>\n</section>"
+96fa8a8c912df92c:
+  page: philosophy/index.html
+  en: "<section class=\"bg-cosmos py-24 px-4 md:px-8\">\n<div class=\"max-w-6xl mx-auto\">\n<div class=\"text-center mb-12\"\
+    >\n<p class=\"inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold text-gray-400\
+    \ tracking-[.18em] uppercase mb-4\">Pancha Bhoota</p>\n<h2 class=\"text-3xl md:text-5xl font-black mb-4\">The Five Elements</h2>\n\
+    <p class=\"text-gray-400 text-lg max-w-2xl mx-auto\">Ancient Indian wisdom. Modern AI products.</p>\n</div>\n<blockquote\
+    \ class=\"max-w-3xl mx-auto text-center italic text-gray-300 text-lg md:text-xl leading-relaxed mb-14\">\n      \"Hinduism\
+    \ mein Pancha Bhoota — 5 elements create the universe. Prithvi, Vayu, Tejas, Jal, Akasha. Aarambha ke 5 products usi philosophy\
+    \ pe bane hain.\"\n    </blockquote>\n<div class=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto\"\
+    >\n<article class=\"bg-card border border-primary/30 rounded-2xl p-6 md:p-7\">\n<div class=\"text-5xl mb-3\">\U0001F30D\
+    </div>\n<div class=\"hindi text-accent text-lg font-bold mb-1\">पृथ्वी</div>\n<div class=\"text-gray-100 text-xl font-black\
+    \ mb-1\">Prithvi</div>\n<p class=\"text-gray-400 text-xs mb-4\">Knowledge grounds everything.</p>\n<div class=\"space-y-2\"\
+    >\n<a class=\"block bg-white/[.03] border border-white/[.07] rounded-lg p-3 hover:border-primary/40 transition-all\" href=\"\
+    /products/#shrutam\">\n<div class=\"font-bold text-gray-100 text-sm\"><span class=\"hindi mr-1\">श्रुतम्</span>Shrutam</div>\n\
+    <div class=\"text-[10px] text-green-400 mt-0.5\">\U0001F7E2 May 20, 2026</div>\n</a>\n</div>\n</article>\n<article class=\"\
+    bg-card border border-primary/30 rounded-2xl p-6 md:p-7\">\n<div class=\"text-5xl mb-3\">\U0001F32C️</div>\n<div class=\"\
+    hindi text-accent text-lg font-bold mb-1\">वायु</div>\n<div class=\"text-gray-100 text-xl font-black mb-1\">Vayu</div>\n\
+    <p class=\"text-gray-400 text-xs mb-4\">Commerce flows like air.</p>\n<div class=\"space-y-2\">\n<a class=\"block bg-white/[.03]\
+    \ border border-white/[.07] rounded-lg p-3 hover:border-primary/40 transition-all\" href=\"/products/#commerce\">\n<div\
+    \ class=\"font-bold text-gray-100 text-sm\">WhatsApp Commerce</div>\n<div class=\"text-[10px] text-green-400 mt-0.5\"\
+    >\U0001F7E2 LIVE</div>\n</a>\n</div>\n</article>\n<article class=\"bg-card border border-dashed border-accent/30 rounded-2xl\
+    \ p-6 md:p-7\">\n<div class=\"text-5xl mb-3\">\U0001F525</div>\n<div class=\"hindi text-accent text-lg font-bold mb-1\"\
+    >तेजस्</div>\n<div class=\"text-gray-100 text-xl font-black mb-1\">Tejas</div>\n<p class=\"text-gray-400 text-xs mb-4\"\
+    >Clarity ignited.</p>\n<div class=\"space-y-2\">\n<a class=\"block bg-white/[.03] border border-white/[.07] rounded-lg\
+    \ p-3 hover:border-primary/40 transition-all\" href=\"/products/#karta\">\n<div class=\"font-bold text-gray-100 text-sm\"\
+    >Karta AI</div>\n<div class=\"text-[10px] text-primary mt-0.5\">⚡ 2026 — GST + ITR</div>\n</a>\n</div>\n</article>\n<article\
+    \ class=\"bg-card border border-dashed border-accent/30 rounded-2xl p-6 md:p-7\">\n<div class=\"text-5xl mb-3\">\U0001F4A7\
+    </div>\n<div class=\"hindi text-accent text-lg font-bold mb-1\">जल</div>\n<div class=\"text-gray-100 text-xl font-black\
+    \ mb-1\">Jal</div>\n<p class=\"text-gray-400 text-xs mb-4\">Life-giving.</p>\n<div class=\"space-y-2\">\n<a class=\"block\
+    \ bg-white/[.03] border border-white/[.07] rounded-lg p-3 hover:border-primary/40 transition-all\" href=\"/products/#pashu\"\
+    >\n<div class=\"font-bold text-gray-100 text-sm\">Pashu AI</div>\n<div class=\"text-[10px] text-primary mt-0.5\">⚡ 2026\
+    \ — Cattle doctor</div>\n</a>\n<a class=\"block bg-white/[.03] border border-white/[.07] rounded-lg p-3 hover:border-primary/40\
+    \ transition-all\" href=\"/products/#bima\">\n<div class=\"font-bold text-gray-100 text-sm\">Bima AI</div>\n<div class=\"\
+    text-[10px] text-primary mt-0.5\">⚡ 2026 — Insurance claims</div>\n</a>\n</div>\n</article>\n<article class=\"bg-card\
+    \ border border-dashed border-accent/30 rounded-2xl p-6 md:p-7\">\n<div class=\"text-5xl mb-3\">✨</div>\n<div class=\"\
+    hindi text-accent text-lg font-bold mb-1\">आकाश</div>\n<div class=\"text-gray-100 text-xl font-black mb-1\">Akasha</div>\n\
+    <p class=\"text-gray-400 text-xs mb-4\">The connective space.</p>\n<div class=\"space-y-2\">\n<a class=\"block bg-white/[.03]\
+    \ border border-white/[.07] rounded-lg p-3 hover:border-primary/40 transition-all\" href=\"/products/#svayam\">\n<div\
+    \ class=\"font-bold text-gray-100 text-sm\">Svayam AI</div>\n<div class=\"text-[10px] text-primary mt-0.5\">⚡ 2026 — Govt\
+    \ form filling</div>\n</a>\n<a class=\"block bg-white/[.03] border border-white/[.07] rounded-lg p-3 hover:border-primary/40\
+    \ transition-all\" href=\"/products/#adhikar\">\n<div class=\"font-bold text-gray-100 text-sm\">Adhikar AI</div>\n<div\
+    \ class=\"text-[10px] text-primary mt-0.5\">⚡ 2026 — Pensions + welfare</div>\n</a>\n</div>\n</article>\n<article class=\"\
+    bg-card/30 border border-dashed border-accent/20 rounded-2xl p-6 md:p-7 flex flex-col items-center justify-center text-center\"\
+    >\n<div class=\"text-4xl mb-3\">\U0001F9ED</div>\n<div class=\"text-gray-300 font-bold mb-1\">+ More to come</div>\n<p\
+    \ class=\"text-gray-400 text-xs\">Pancha Bhoota holds more than 7 products. As India's real problems surface, new ones\
+    \ land here.</p>\n</article>\n</div>\n<p class=\"text-center hindi text-2xl md:text-3xl font-bold text-accent mt-14\"\
+    >आरम्भ — sab ki aarambh।</p>\n</div>\n</section>"
+  hi: "<section class=\"bg-cosmos py-24 px-4 md:px-8 hindi\">\n<div class=\"max-w-6xl mx-auto\">\n<div class=\"text-center\
+    \ mb-12\">\n<p class=\"inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold\
+    \ text-gray-400 tracking-[.18em] uppercase mb-4 hindi\">पंचभूत</p>\n<h2 class=\"text-3xl md:text-5xl font-black mb-4 hindi\"\
+    >पंच तत्व</h2>\n<p class=\"text-gray-400 text-lg max-w-2xl mx-auto hindi\">प्राचीन भारतीय ज्ञान। आधुनिक AI उत्पाद।</p>\n\
+    </div>\n<blockquote class=\"max-w-3xl mx-auto text-center italic text-gray-300 text-lg md:text-xl leading-relaxed mb-14\
+    \ hindi\">\n      \"हिंदू धर्म में पंचभूत — 5 तत्व ब्रह्मांड का निर्माण करते हैं। पृथ्वी, वायु, तेजस्, जल, आकाश। आरम्भ\
+    \ के 5 उत्पाद इसी दर्शन पर आधारित हैं।\"\n    </blockquote>\n<div class=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3\
+    \ gap-4 max-w-5xl mx-auto\">\n<article class=\"bg-card border border-primary/30 rounded-2xl p-6 md:p-7\">\n<div class=\"\
+    text-5xl mb-3\">\U0001F30D</div>\n<div class=\"hindi text-accent text-lg font-bold mb-1\">पृथ्वी</div>\n<div class=\"\
+    text-gray-100 text-xl font-black mb-1\">Prithvi</div>\n<p class=\"text-gray-400 text-xs mb-4 hindi\">ज्ञान हर चीज़ का\
+    \ आधार है।</p>\n<div class=\"space-y-2\">\n<a class=\"block bg-white/[.03] border border-white/[.07] rounded-lg p-3 hover:border-primary/40\
+    \ transition-all\" href=\"/products/#shrutam\">\n<div class=\"font-bold text-gray-100 text-sm\"><span class=\"hindi mr-1\"\
+    >श्रुतम्</span>Shrutam</div>\n<div class=\"text-[10px] text-green-400 mt-0.5\">\U0001F7E2 May 20, 2026</div>\n</a>\n</div>\n\
+    </article>\n<article class=\"bg-card border border-primary/30 rounded-2xl p-6 md:p-7\">\n<div class=\"text-5xl mb-3\"\
+    >\U0001F32C️</div>\n<div class=\"hindi text-accent text-lg font-bold mb-1\">वायु</div>\n<div class=\"text-gray-100 text-xl\
+    \ font-black mb-1\">Vayu</div>\n<p class=\"text-gray-400 text-xs mb-4 hindi\">व्यापार वायु की तरह बहता है।</p>\n<div class=\"\
+    space-y-2\">\n<a class=\"block bg-white/[.03] border border-white/[.07] rounded-lg p-3 hover:border-primary/40 transition-all\"\
+    \ href=\"/products/#commerce\">\n<div class=\"font-bold text-gray-100 text-sm\">WhatsApp Commerce</div>\n<div class=\"\
+    text-[10px] text-green-400 mt-0.5\">\U0001F7E2 LIVE</div>\n</a>\n</div>\n</article>\n<article class=\"bg-card border border-dashed\
+    \ border-accent/30 rounded-2xl p-6 md:p-7\">\n<div class=\"text-5xl mb-3\">\U0001F525</div>\n<div class=\"hindi text-accent\
+    \ text-lg font-bold mb-1\">तेजस्</div>\n<div class=\"text-gray-100 text-xl font-black mb-1\">Tejas</div>\n<p class=\"\
+    text-gray-400 text-xs mb-4 hindi\">स्पष्टता प्रज्वलित हुई।</p>\n<div class=\"space-y-2\">\n<a class=\"block bg-white/[.03]\
+    \ border border-white/[.07] rounded-lg p-3 hover:border-primary/40 transition-all\" href=\"/products/#karta\">\n<div class=\"\
+    font-bold text-gray-100 text-sm\">Karta AI</div>\n<div class=\"text-[10px] text-primary mt-0.5\">⚡ 2026 — GST + ITR</div>\n\
+    </a>\n</div>\n</article>\n<article class=\"bg-card border border-dashed border-accent/30 rounded-2xl p-6 md:p-7\">\n<div\
+    \ class=\"text-5xl mb-3\">\U0001F4A7</div>\n<div class=\"hindi text-accent text-lg font-bold mb-1\">जल</div>\n<div class=\"\
+    text-gray-100 text-xl font-black mb-1\">Jal</div>\n<p class=\"text-gray-400 text-xs mb-4 hindi\">जीवन-दायक।</p>\n<div\
+    \ class=\"space-y-2\">\n<a class=\"block bg-white/[.03] border border-white/[.07] rounded-lg p-3 hover:border-primary/40\
+    \ transition-all\" href=\"/products/#pashu\">\n<div class=\"font-bold text-gray-100 text-sm\">Pashu AI</div>\n<div class=\"\
+    text-[10px] text-primary mt-0.5\">⚡ 2026 — Cattle doctor</div>\n</a>\n<a class=\"block bg-white/[.03] border border-white/[.07]\
+    \ rounded-lg p-3 hover:border-primary/40 transition-all\" href=\"/products/#bima\">\n<div class=\"font-bold text-gray-100\
+    \ text-sm\">Bima AI</div>\n<div class=\"text-[10px] text-primary mt-0.5\">⚡ 2026 — Insurance claims</div>\n</a>\n</div>\n\
+    </article>\n<article class=\"bg-card border border-dashed border-accent/30 rounded-2xl p-6 md:p-7\">\n<div class=\"text-5xl\
+    \ mb-3\">✨</div>\n<div class=\"hindi text-accent text-lg font-bold mb-1\">आकाश</div>\n<div class=\"text-gray-100 text-xl\
+    \ font-black mb-1\">Akasha</div>\n<p class=\"text-gray-400 text-xs mb-4 hindi\">जोड़ने वाला स्थान।</p>\n<div class=\"\
+    space-y-2\">\n<a class=\"block bg-white/[.03] border border-white/[.07] rounded-lg p-3 hover:border-primary/40 transition-all\"\
+    \ href=\"/products/#svayam\">\n<div class=\"font-bold text-gray-100 text-sm\">Svayam AI</div>\n<div class=\"text-[10px]\
+    \ text-primary mt-0.5\">⚡ 2026 — Govt form filling</div>\n</a>\n<a class=\"block bg-white/[.03] border border-white/[.07]\
+    \ rounded-lg p-3 hover:border-primary/40 transition-all\" href=\"/products/#adhikar\">\n<div class=\"font-bold text-gray-100\
+    \ text-sm\">Adhikar AI</div>\n<div class=\"text-[10px] text-primary mt-0.5\">⚡ 2026 — Pensions + welfare</div>\n</a>\n\
+    </div>\n</article>\n<article class=\"bg-card/30 border border-dashed border-accent/20 rounded-2xl p-6 md:p-7 flex flex-col\
+    \ items-center justify-center text-center\">\n<div class=\"text-4xl mb-3\">\U0001F9ED</div>\n<div class=\"text-gray-300\
+    \ font-bold mb-1 hindi\">+ और भी आने वाले हैं</div>\n<p class=\"text-gray-400 text-xs hindi\">पंचभूत में 7 से अधिक उत्पाद\
+    \ हैं। जैसे-जैसे भारत की वास्तविक समस्याएँ सामने आती हैं, नए उत्पाद यहाँ आते रहेंगे।</p>\n</article>\n</div>\n<p class=\"\
+    text-center hindi text-2xl md:text-3xl font-bold text-accent mt-14\">आरम्भ — सब की आरम्भ।</p>\n</div>\n</section>"
+9bc4ae93469dd375:
+  page: philosophy/index.html
+  en: "<section class=\"bg-dark py-24 px-4 md:px-8\">\n<div class=\"max-w-4xl mx-auto\">\n<p class=\"inline-block px-3 py-1\
+    \ rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.18em] uppercase mb-4\">Positioning</p>\n\
+    <h2 class=\"text-3xl md:text-5xl font-black mb-6\">Bharat First — <span class=\"grad\">Not India First.</span></h2>\n\
+    <p class=\"text-gray-400 leading-relaxed text-lg mb-10\">\n      \"India\" that gets funded: metro cities, English speakers.\
+    \ \"Bharat\" that needs AI: villages, Hindi speakers, no tutor, tight budget. Aarambha builds for Bharat.\n    </p>\n\
+    <ul class=\"space-y-4\">\n<li class=\"flex items-start gap-4 bg-card/50 border border-white/[.07] rounded-xl p-5\">\n\
+    <span class=\"text-2xl flex-shrink-0\">\U0001F3D8️</span>\n<div><div class=\"text-gray-100 font-bold mb-1\">600,000+ villages\
+    \ with internet</div><p class=\"text-gray-400 text-sm leading-relaxed\">Infrastructure is there. Native AI isn't. We close\
+    \ that gap.</p></div>\n</li>\n<li class=\"flex items-start gap-4 bg-card/50 border border-white/[.07] rounded-xl p-5\"\
+    >\n<span class=\"text-2xl flex-shrink-0\">\U0001F5E3️</span>\n<div><div class=\"text-gray-100 font-bold mb-1\">5 languages\
+    \ — native, not translated</div><p class=\"text-gray-400 text-sm leading-relaxed\">SAAVI thinks in Hindi. The model wasn't\
+    \ trained on English and retrofitted. That's the difference.</p></div>\n</li>\n<li class=\"flex items-start gap-4 bg-card/50\
+    \ border border-white/[.07] rounded-xl p-5\">\n<span class=\"text-2xl flex-shrink-0\">♿</span>\n<div><div class=\"text-gray-100\
+    \ font-bold mb-1\">Blind mode — built in, not bolted on</div><p class=\"text-gray-400 text-sm leading-relaxed\">50 lakh\
+    \ visually-impaired students. Zero other edtech serves them. Shrutam does — free, forever.</p></div>\n</li>\n</ul>\n</div>\n\
+    </section>"
+  hi: "<section class=\"bg-dark py-24 px-4 md:px-8 hindi\">\n<div class=\"max-w-4xl mx-auto\">\n<p class=\"inline-block px-3\
+    \ py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.18em] uppercase mb-4\
+    \ hindi\">पोजिशनिंग</p>\n<h2 class=\"text-3xl md:text-5xl font-black mb-6 hindi\">भारत फर्स्ट — <span class=\"grad\">इंडिया\
+    \ फर्स्ट नहीं।</span></h2>\n<p class=\"text-gray-400 leading-relaxed text-lg mb-10 hindi\">\n      \"इंडिया\" जिसे फंडिंग\
+    \ मिलती है: मेट्रो शहर, इंग्लिश बोलने वाले। \"भारत\" जिसे AI की ज़रूरत है: गाँव, हिंदी बोलने वाले, कोई ट्यूटर नहीं, सीमित\
+    \ बजट। Aarambha भारत के लिए बनाता है।\n    </p>\n<ul class=\"space-y-4\">\n<li class=\"flex items-start gap-4 bg-card/50\
+    \ border border-white/[.07] rounded-xl p-5\">\n<span class=\"text-2xl flex-shrink-0\">\U0001F3D8️</span>\n<div><div class=\"\
+    text-gray-100 font-bold mb-1 hindi\">600,000+ गाँव इंटरनेट से जुड़े हुए</div><p class=\"text-gray-400 text-sm leading-relaxed\
+    \ hindi\">इंफ्रास्ट्रक्चर मौजूद है। नेटिव AI नहीं है। हम उस कमी को पूरा करते हैं।</p></div>\n</li>\n<li class=\"flex items-start\
+    \ gap-4 bg-card/50 border border-white/[.07] rounded-xl p-5\">\n<span class=\"text-2xl flex-shrink-0\">\U0001F5E3️</span>\n\
+    <div><div class=\"text-gray-100 font-bold mb-1 hindi\">5 भाषाएँ — नेटिव, अनुवादित नहीं</div><p class=\"text-gray-400 text-sm\
+    \ leading-relaxed hindi\">SAAVI हिंदी में सोचता है। मॉडल को इंग्लिश पर प्रशिक्षित करके बाद में नहीं बदला गया। यही फर्क\
+    \ है।</p></div>\n</li>\n<li class=\"flex items-start gap-4 bg-card/50 border border-white/[.07] rounded-xl p-5\">\n<span\
+    \ class=\"text-2xl flex-shrink-0\">♿</span>\n<div><div class=\"text-gray-100 font-bold mb-1 hindi\">ब्लाइंड मोड — इनबिल्ट,\
+    \ अलग से नहीं जोड़ा गया</div><p class=\"text-gray-400 text-sm leading-relaxed hindi\">50 लाख दृष्टिबाधित छात्र। कोई और\
+    \ एडटेक उनकी सेवा नहीं करता। Shrutam करता है — मुफ्त, हमेशा के लिए।</p></div>\n</li>\n</ul>\n</div>\n</section>"
+6bd086418d4965a7:
+  page: contact/index.html
+  en: "<section class=\"bg-cosmos pt-28 pb-16 px-4 md:px-8\">\n<div class=\"max-w-3xl mx-auto text-center\">\n<p class=\"\
+    inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em]\
+    \ uppercase mb-6\">Contact</p>\n<h1 class=\"text-4xl md:text-6xl font-black mb-4\"><span class=\"grad\">Baat karte hain.</span></h1>\n\
+    <p class=\"text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed\">\n      Partnership, press, press, hiring, or just\
+    \ want to say <em>namaste</em> — pick a channel below.\n    </p>\n</div>\n</section>"
+  hi: "<section class=\"bg-cosmos pt-28 pb-16 px-4 md:px-8 hindi\">\n<div class=\"max-w-3xl mx-auto text-center\">\n<p class=\"\
+    inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em]\
+    \ uppercase mb-6 hindi\">संपर्क करें</p>\n<h1 class=\"text-4xl md:text-6xl font-black mb-4 hindi\"><span class=\"grad\"\
+    >बात करते हैं।</span></h1>\n<p class=\"text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed hindi\">\n      पार्टनरशिप,\
+    \ प्रेस, हायरिंग, या बस नमस्ते कहना चाहते हैं — नीचे दिए गए तरीकों में से कोई भी चुनें।\n    </p>\n</div>\n</section>"
+c8c68f0ea8ec2345:
+  page: contact/index.html
+  en: '<section class="bg-dark py-20 px-4 md:px-8">
+
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
+
+    <a class="bg-card border border-white/[.07] hover:border-primary/40 rounded-2xl p-7 transition-all group block" href="mailto:hello@aarambhax.ai">
+
+    <div class="text-3xl mb-3">📬</div>
+
+    <h2 class="text-xl font-bold text-gray-100 mb-2 group-hover:text-primary transition-colors">General</h2>
+
+    <p class="text-gray-400 text-sm mb-3">Anything else — feedback, ideas, curiosity.</p>
+
+    <p class="text-primary font-mono text-sm">hello@aarambhax.ai →</p>
+
+    </a>
+
+    <a class="bg-card border border-white/[.07] hover:border-accent/40 rounded-2xl p-7 transition-all group block" href="mailto:partners@aarambhax.ai?subject=Partnership%20Enquiry">
+
+    <div class="text-3xl mb-3">🤝</div>
+
+    <h2 class="text-xl font-bold text-gray-100 mb-2 group-hover:text-accent transition-colors">Partners</h2>
+
+    <p class="text-gray-400 text-sm mb-3">Schools, NGOs, govt. bodies, distributors, co-build.</p>
+
+    <p class="text-accent font-mono text-sm">partners@aarambhax.ai →</p>
+
+    </a>
+
+    <a class="bg-card border border-white/[.07] hover:border-primary/40 rounded-2xl p-7 transition-all group block" href="mailto:press@aarambhax.ai?subject=Press%20Enquiry">
+
+    <div class="text-3xl mb-3">📰</div>
+
+    <h2 class="text-xl font-bold text-gray-100 mb-2 group-hover:text-primary transition-colors">Press</h2>
+
+    <p class="text-gray-400 text-sm mb-3">Media, interviews, podcast invites, story ideas.</p>
+
+    <p class="text-primary font-mono text-sm">press@aarambhax.ai →</p>
+
+    </a>
+
+    <a class="bg-card border border-white/[.07] hover:border-accent/40 rounded-2xl p-7 transition-all group block" href="mailto:hiring@aarambhax.ai?subject=Hiring%20Enquiry">
+
+    <div class="text-3xl mb-3">🛠️</div>
+
+    <h2 class="text-xl font-bold text-gray-100 mb-2 group-hover:text-accent transition-colors">Build with us</h2>
+
+    <p class="text-gray-400 text-sm mb-3">Engineers, designers, content folks. Hindi-first builders.</p>
+
+    <p class="text-accent font-mono text-sm">hiring@aarambhax.ai →</p>
+
+    </a>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-dark py-20 px-4 md:px-8 hindi">
+
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
+
+    <a class="bg-card border border-white/[.07] hover:border-primary/40 rounded-2xl p-7 transition-all group block" href="mailto:hello@aarambhax.ai">
+
+    <div class="text-3xl mb-3">📬</div>
+
+    <h2 class="text-xl font-bold text-gray-100 mb-2 group-hover:text-primary transition-colors hindi">सामान्य</h2>
+
+    <p class="text-gray-400 text-sm mb-3 hindi">और कुछ भी — सुझाव, विचार, या बस जिज्ञासा।</p>
+
+    <p class="text-primary font-mono text-sm hindi">hello@aarambhax.ai →</p>
+
+    </a>
+
+    <a class="bg-card border border-white/[.07] hover:border-accent/40 rounded-2xl p-7 transition-all group block" href="mailto:partners@aarambhax.ai?subject=Partnership%20Enquiry">
+
+    <div class="text-3xl mb-3">🤝</div>
+
+    <h2 class="text-xl font-bold text-gray-100 mb-2 group-hover:text-accent transition-colors hindi">पार्टनर्स</h2>
+
+    <p class="text-gray-400 text-sm mb-3 hindi">स्कूल, NGO, सरकारी संस्थान, डिस्ट्रीब्यूटर, सह-निर्माण।</p>
+
+    <p class="text-accent font-mono text-sm hindi">partners@aarambhax.ai →</p>
+
+    </a>
+
+    <a class="bg-card border border-white/[.07] hover:border-primary/40 rounded-2xl p-7 transition-all group block" href="mailto:press@aarambhax.ai?subject=Press%20Enquiry">
+
+    <div class="text-3xl mb-3">📰</div>
+
+    <h2 class="text-xl font-bold text-gray-100 mb-2 group-hover:text-primary transition-colors hindi">प्रेस</h2>
+
+    <p class="text-gray-400 text-sm mb-3 hindi">मीडिया, इंटरव्यू, पॉडकास्ट के निमंत्रण, स्टोरी के विचार।</p>
+
+    <p class="text-primary font-mono text-sm hindi">press@aarambhax.ai →</p>
+
+    </a>
+
+    <a class="bg-card border border-white/[.07] hover:border-accent/40 rounded-2xl p-7 transition-all group block" href="mailto:hiring@aarambhax.ai?subject=Hiring%20Enquiry">
+
+    <div class="text-3xl mb-3">🛠️</div>
+
+    <h2 class="text-xl font-bold text-gray-100 mb-2 group-hover:text-accent transition-colors hindi">हमारे साथ जुड़ें</h2>
+
+    <p class="text-gray-400 text-sm mb-3 hindi">इंजीनियर, डिज़ाइनर, कंटेंट के विशेषज्ञ। हिंदी-फर्स्ट बिल्डर्स।</p>
+
+    <p class="text-accent font-mono text-sm hindi">hiring@aarambhax.ai →</p>
+
+    </a>
+
+    </div>
+
+    </section>'
+a060d421655c7791:
+  page: contact/index.html
+  en: '<section class="bg-cosmos py-20 px-4 md:px-8">
+
+    <div class="max-w-2xl mx-auto">
+
+    <div class="bg-card/60 border border-white/[.07] rounded-2xl p-8 md:p-10">
+
+    <h2 class="text-2xl font-bold text-gray-100 mb-3">Quick message</h2>
+
+    <p class="text-gray-400 text-sm mb-5">Tell us what you''re building / thinking / stuck on. We read everything.</p>
+
+    <form action="mailto:hello@aarambhax.ai" class="flex flex-col gap-3" enctype="text/plain" method="get">
+
+    <label class="sr-only" for="contact-subject">Subject</label>
+
+    <input aria-label="Subject" class="px-4 py-3 rounded-xl border border-white/[.12] bg-white/[.04] text-gray-100 placeholder:text-gray-400
+    focus:outline-none focus:border-primary/60" id="contact-subject" name="subject" placeholder="Subject (partnership, press,
+    feedback...)" required="" type="text"/>
+
+    <label class="sr-only" for="contact-body">Message</label>
+
+    <textarea aria-label="Message" class="px-4 py-3 rounded-xl border border-white/[.12] bg-white/[.04] text-gray-100 placeholder:text-gray-400
+    focus:outline-none focus:border-primary/60" id="contact-body" name="body" placeholder="Your message..." required="" rows="5"></textarea>
+
+    <button class="bg-primary hover:bg-primary-dark text-white font-bold px-5 py-3 rounded-xl transition-all self-start" type="submit">Send
+    Message →</button>
+
+    </form>
+
+    <p class="text-xs text-gray-600 mt-3">Opens your email client with the message prefilled.</p>
+
+    </div>
+
+    </div>
+
+    </section>'
+  hi: '<section class="bg-cosmos py-20 px-4 md:px-8 hindi">
+
+    <div class="max-w-2xl mx-auto">
+
+    <div class="bg-card/60 border border-white/[.07] rounded-2xl p-8 md:p-10">
+
+    <h2 class="text-2xl font-bold text-gray-100 mb-3 hindi">एक छोटा सा संदेश</h2>
+
+    <p class="text-gray-400 text-sm mb-5 hindi">हमें बताएं कि आप क्या बना रहे हैं / क्या सोच रहे हैं / कहाँ अटक गए हैं। हम
+    हर संदेश पढ़ते हैं।</p>
+
+    <form action="mailto:hello@aarambhax.ai" class="flex flex-col gap-3" enctype="text/plain" method="get">
+
+    <label class="sr-only" for="contact-subject hindi">विषय</label>
+
+    <input aria-label="Subject" class="px-4 py-3 rounded-xl border border-white/[.12] bg-white/[.04] text-gray-100 placeholder:text-gray-400
+    focus:outline-none focus:border-primary/60" id="contact-subject" name="subject" placeholder="विषय (पार्टनरशिप, प्रेस,
+    फीडबैक...)" required="" type="text"/>
+
+    <label class="sr-only" for="contact-body hindi">संदेश</label>
+
+    <textarea aria-label="Message" class="px-4 py-3 rounded-xl border border-white/[.12] bg-white/[.04] text-gray-100 placeholder:text-gray-400
+    focus:outline-none focus:border-primary/60" id="contact-body" name="body" placeholder="आपका संदेश..." required="" rows="5"></textarea>
+
+    <button class="bg-primary hover:bg-primary-dark text-white font-bold px-5 py-3 rounded-xl transition-all self-start hindi"
+    type="submit">संदेश भेजें →</button>
+
+    </form>
+
+    <p class="text-xs text-gray-600 mt-3 hindi">यह आपके ईमेल क्लाइंट को पहले से भरे हुए संदेश के साथ खोलेगा।</p>
+
+    </div>
+
+    </div>
+
+    </section>'

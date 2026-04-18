@@ -6,8 +6,14 @@ document.addEventListener('alpine:init', () => {
   Alpine.store('lang', {
     current: localStorage.getItem('aarambha_lang') || 'en',
     toggle() {
-      this.current = this.current === 'en' ? 'hi' : 'en';
-      localStorage.setItem('aarambha_lang', this.current);
+      const from = this.current;
+      const to   = this.current === 'en' ? 'hi' : 'en';
+      this.current = to;
+      localStorage.setItem('aarambha_lang', to);
+      // GA4 custom event — only insight for this bilingual site that matters
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'lang_switch', { from, to });
+      }
     },
     t(key) {
       return (translations[this.current] || translations['en'])[key] || key;

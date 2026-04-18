@@ -26,9 +26,13 @@
 <meta property="article:published_time" content="2026-03-28">
 <meta property="article:section" content="shrutam">
 
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="alternate" type="application/rss+xml" title="Aarambha Blog" href="/feed.xml">
+<!-- FAVICON_V2 -->
 <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/images/logos/aarambha-logo-192.png" type="image/png" sizes="192x192">
+<link rel="icon" href="/assets/images/logos/aarambha-logo-512.png" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="alternate" type="application/rss+xml" title="Aarambha Blog" href="/feed.xml">
+
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,23 +47,31 @@
 </script>
 
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<script src="/assets/js/translations.js?v=5466699000-6ff2605c"></script>
+<script src="/assets/js/translations.js?v=0343773000-6ff2605c"></script>
 
 <style>
   html { scroll-behavior: smooth; }
-  body { font-family: 'Sora', sans-serif; background: #060d1a; color: #e2e8f0; }
+  body { font-family: 'Sora', sans-serif; background: #0a1121; color: #e8eef7; }
   .hindi { font-family: 'Noto Sans Devanagari', sans-serif; }
   .grad { background: linear-gradient(135deg, #0ea5e9, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-  .prose { max-width: 44rem; margin: 0 auto; }
-  .prose h2 { font-size: 1.75rem; font-weight: 800; color: #f1f5f9; margin: 2.5rem 0 1rem; letter-spacing: -0.02em; }
-  .prose h3 { font-size: 1.25rem; font-weight: 700; color: #cbd5e1; margin: 2rem 0 0.75rem; }
-  .prose p  { color: #94a3b8; line-height: 1.8; margin-bottom: 1.1rem; }
-  .prose ul, .prose ol { color: #94a3b8; margin: 0 0 1.25rem 1.25rem; line-height: 1.75; }
+  .prose { max-width: 44rem; margin: 0 auto; font-size: 1.0625rem; }
+  .prose h2 { font-size: 1.5rem; font-weight: 800; color: #f8fafc; margin: 2.75rem 0 1rem; letter-spacing: -0.015em; line-height: 1.3; }
+  .prose h3 { font-size: 1.1875rem; font-weight: 700; color: #e2e8f0; margin: 2rem 0 0.75rem; line-height: 1.4; }
+  .prose p  { color: #d2dbe7; line-height: 1.75; margin-bottom: 1.15rem; }
+  .prose ul, .prose ol { color: #d2dbe7; margin: 0 0 1.25rem 1.25rem; line-height: 1.7; }
   .prose li { margin-bottom: 0.5rem; }
-  .prose a  { color: #0ea5e9; text-decoration: underline; text-decoration-color: rgba(14,165,233,.4); text-underline-offset: 3px; }
-  .prose a:hover { color: #f59e0b; text-decoration-color: rgba(245,158,11,.6); }
-  .prose blockquote { border-left: 4px solid #f59e0b; padding: 0.5rem 0 0.5rem 1.25rem; margin: 2rem 0; font-style: italic; color: #f1f5f9; font-size: 1.1rem; }
-  .prose strong { color: #e2e8f0; font-weight: 700; }
+  .prose a  { color: #38bdf8; text-decoration: underline; text-decoration-color: rgba(56,189,248,.45); text-underline-offset: 3px; }
+  .prose a:hover { color: #fbbf24; text-decoration-color: rgba(251,191,36,.7); }
+  .prose blockquote { border-left: 4px solid #f59e0b; padding: 0.75rem 0 0.75rem 1.4rem; margin: 2.25rem 0; font-style: italic; color: #f8fafc; font-size: 1.25rem; line-height: 1.6; }
+  .prose strong { color: #f1f5f9; font-weight: 700; }
+  /* Hindi-specific tuning: Devanagari needs more vertical breathing room and
+     a slightly larger base size for conjunct legibility. */
+  .prose.hindi { font-size: 1.125rem; }
+  .prose.hindi p,
+  .prose.hindi li { line-height: 2.0; color: #dbe3ee; }
+  .prose.hindi h2 { line-height: 1.4; }
+  .prose.hindi h3 { line-height: 1.5; }
+  .prose.hindi blockquote { line-height: 1.8; }
   ::selection { background: #f59e0b; color: #060d1a; }
 
   /* A11y: focus indicators, reduced motion, contrast, skip-link */
@@ -136,6 +148,17 @@
 }
 </script>
 <!-- BREADCRUMB_SCHEMA_END -->
+<style id="a11y-cloak">[x-cloak]{display:none!important}</style>
+<!-- GA4_BEGIN -->
+<!-- Google tag (gtag.js) — Aarambha GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YXJ32LD3H6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YXJ32LD3H6', { 'anonymize_ip': true });
+</script>
+<!-- GA4_END -->
 </head>
 <body>
 <a href="#main-content" class="sr-only-focusable fixed top-2 left-2 z-[100] bg-accent text-gray-900 font-bold px-4 py-2 rounded-lg opacity-0 pointer-events-none focus:opacity-100 focus:pointer-events-auto">Skip to main content</a>
@@ -145,7 +168,7 @@
 <nav x-data="{ open: false }" class="sticky top-0 z-50 bg-dark/90 backdrop-blur-xl border-b border-white/[.07]">
   <div class="max-w-6xl mx-auto px-4 md:px-8 h-[72px] flex items-center justify-between gap-4">
     <a href="/" class="flex items-center gap-2 flex-shrink-0">
-      <span class="hindi text-2xl font-black text-accent leading-none">आरम्भ</span>
+      <img src="/assets/images/logos/aarambha-logo-96.webp" alt="Aarambha logo" width="36" height="36" class="aarambha-nav-logo w-9 h-9 rounded-full ring-1 ring-accent/40 shadow-sm shadow-accent/20" loading="eager">
       <span class="text-xs font-bold text-gray-400 tracking-[.14em] uppercase hidden sm:block">Aarambha</span>
     </a>
     <div class="hidden md:flex items-center gap-0.5">
@@ -177,15 +200,15 @@
 
 
 
-<main id="main-content">
+<main id="main-content" x-data>
 <article class="px-4 md:px-8 py-12 md:py-20">
   <div class="max-w-4xl mx-auto mb-8">
     <p class="text-xs font-bold text-accent tracking-[.20em] uppercase mb-3">SHRUTAM</p>
-    <h1 x-show="$store.lang.current === 'en'" lang="en" class="text-3xl md:text-5xl font-black leading-tight text-gray-100 mb-4">Why audio-first for Class 6-10 students</h1>
-    <h1 x-show="$store.lang.current === 'hi'" lang="hi" class="hindi text-3xl md:text-5xl font-black leading-tight text-gray-100 mb-4">Class 6-10 के लिए audio-first क्यों</h1>
+    <h1 x-show="$store.lang.current === 'en'" lang="en" class="text-[28px] md:text-[40px] font-black leading-[1.2] text-gray-100 mb-4">Why audio-first for Class 6-10 students</h1>
+    <h1 x-cloak x-show="$store.lang.current === 'hi'" lang="hi" class="hindi text-[28px] md:text-[40px] font-black leading-[1.2] text-gray-100 mb-4">Class 6-10 के लिए audio-first क्यों</h1>
     <p class="text-sm text-gray-400 mb-8">
       <span x-show="$store.lang.current === 'en'">Published 2026-03-28 · Aarambha</span>
-      <span x-show="$store.lang.current === 'hi'" class="hindi">प्रकाशित 2026-03-28 · आरम्भ</span>
+      <span x-cloak x-show="$store.lang.current === 'hi'" class="hindi">प्रकाशित 2026-03-28 · आरम्भ</span>
     </p>
     <img src="/assets/images/blog/shrutam-audio-first-hero.webp" alt="Video feels modern but fails Bharat. Text fails the weak reader. Audio meets everyone where they are." class="w-full h-auto aspect-[1200/630] object-cover rounded-2xl border border-white/[.07]" loading="eager" width="1200" height="630">
   </div>
@@ -242,7 +265,7 @@
 </ul>
 <p>This phenomenon underscores the community-centric nature of learning in Bharat. Education is rarely an isolated activity; it's a family affair. By making learning accessible and engaging through audio, we've inadvertently created a tool that brings families closer through shared knowledge. At Aarambha, we are not just building a platform; we are nurturing a culture of continuous learning, one voice at a time.</p>
   </div>
-  <div class="prose hindi" x-show="$store.lang.current === 'hi'" lang="hi">
+  <div class="prose hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">
     <h2>श्रुतम के लिए ऑडियो-फर्स्ट: क्यों यह सिर्फ एक सुविधा नहीं, बल्कि एक क्रांति है</h2>
 
 <p>नमस्ते! मैं आज आपसे एक ऐसे विषय पर बात करने आया हूँ जो Aarambha के दिल में है – श्रुतम के भविष्य और हमारे बच्चों के सीखने के तरीके से जुड़ा है। जब हमने Aarambha की शुरुआत की, तो हमने एक बात साफ़ देखी: भारत में शिक्षा की पहुँच को बढ़ाना है, खासकर उन बच्चों के लिए जो Class 6-10 में हैं। लेकिन कैसे? वीडियो, टेक्स्ट, या कुछ और?</p>

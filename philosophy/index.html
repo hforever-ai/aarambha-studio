@@ -20,9 +20,13 @@
 <meta name="twitter:description" content="22/7 — Tez nahi, sahi. Pancha Bhoota — 5 elements, 5 products. Bharat First, not India First.">
 <meta name="twitter:image" content="https://aarambhax.ai/assets/images/og-default.webp">
 
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="alternate" type="application/rss+xml" title="Aarambha Blog" href="/feed.xml">
+<!-- FAVICON_V2 -->
 <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/images/logos/aarambha-logo-192.png" type="image/png" sizes="192x192">
+<link rel="icon" href="/assets/images/logos/aarambha-logo-512.png" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="alternate" type="application/rss+xml" title="Aarambha Blog" href="/feed.xml">
+
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +41,7 @@
 </script>
 
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<script src="/assets/js/translations.js?v=0343773000-6ff2605c"></script>
+<script src="/assets/js/translations.js?v=0232250000-e4d2de70"></script>
 
 <style>
   html { scroll-behavior: smooth; }
@@ -82,6 +86,17 @@
 }
 </script>
 <!-- BREADCRUMB_SCHEMA_END -->
+<style id="a11y-cloak">[x-cloak]{display:none!important}</style>
+<!-- GA4_BEGIN -->
+<!-- Google tag (gtag.js) — Aarambha GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YXJ32LD3H6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YXJ32LD3H6', { 'anonymize_ip': true });
+</script>
+<!-- GA4_END -->
 </head>
 <body>
 <a href="#main-content" class="sr-only-focusable fixed top-2 left-2 z-[100] bg-accent text-gray-900 font-bold px-4 py-2 rounded-lg opacity-0 pointer-events-none focus:opacity-100 focus:pointer-events-auto">Skip to main content</a>
@@ -90,7 +105,7 @@
 <nav x-data="{ open: false }" class="sticky top-0 z-50 bg-dark/90 backdrop-blur-xl border-b border-white/[.07]">
   <div class="max-w-6xl mx-auto px-4 md:px-8 h-[72px] flex items-center justify-between gap-4">
     <a href="/" class="flex items-center gap-2 flex-shrink-0">
-      <span class="hindi text-2xl font-black text-accent leading-none">आरम्भ</span>
+      <img src="/assets/images/logos/aarambha-logo-96.webp" alt="Aarambha logo" width="36" height="36" class="aarambha-nav-logo w-9 h-9 rounded-full ring-1 ring-accent/40 shadow-sm shadow-accent/20" loading="eager">
       <span class="text-xs font-bold text-gray-400 tracking-[.14em] uppercase hidden sm:block">Aarambha</span>
     </a>
     <div class="hidden md:flex items-center gap-0.5">
@@ -120,22 +135,32 @@
   </div>
 </nav>
 
-<main id="main-content">
+<main id="main-content" x-data>
 
 <!-- 1. HEADER -->
-<section class="bg-cosmos pt-28 pb-16 px-4 md:px-8">
+<section x-show="$store.lang.current === 'en'" class="bg-cosmos pt-28 pb-16 px-4 md:px-8">
   <div class="max-w-4xl mx-auto text-center">
     <p class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em] uppercase mb-6">Philosophy</p>
-    <h1 class="hindi text-5xl md:text-7xl font-black text-accent mb-3 leading-tight">तेज़ नहीं, सही।</h1>
+    <h1 class="hindi text-4xl md:text-5xl font-black text-accent mb-3 leading-tight">तेज़ नहीं, सही।</h1>
     <h1 class="text-3xl md:text-5xl font-black text-primary mb-6">Not Fast. Right.</h1>
     <p class="text-gray-400 text-lg max-w-2xl mx-auto">The thinking behind how we build AI for India.</p>
   </div>
 </section>
 
+<section x-cloak x-show="$store.lang.current === 'hi'" class="bg-cosmos pt-28 pb-16 px-4 md:px-8 hindi">
+<div class="max-w-4xl mx-auto text-center">
+<p class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em] uppercase mb-6 hindi">दर्शन</p>
+<h1 class="hindi text-4xl md:text-5xl font-black text-accent mb-3 leading-tight">तेज़ नहीं, सही।</h1>
+<h1 class="text-3xl md:text-5xl font-black text-primary mb-6 hindi">तेज़ नहीं, सही।</h1>
+<p class="text-gray-400 text-lg max-w-2xl mx-auto hindi">हम भारत के लिए AI कैसे बनाते हैं, उसके पीछे की सोच।</p>
+</div>
+</section>
+
+
 <!-- 2. 22/7 -->
-<section class="bg-dark py-24 px-4 md:px-8">
+<section x-show="$store.lang.current === 'en'" class="bg-dark py-24 px-4 md:px-8">
   <div class="max-w-4xl mx-auto">
-    <h2 class="text-3xl md:text-5xl font-black mb-10">22/7 — <span class="grad">The Woodcutter Principle</span></h2>
+    <h2 class="text-2xl md:text-3xl font-black mb-10">22/7 — <span class="grad">The Woodcutter Principle</span></h2>
 
     <blockquote class="border-l-4 border-accent bg-card/50 rounded-r-2xl italic text-gray-300 p-6 md:p-8 text-lg md:text-xl leading-relaxed mb-12">
       Do lakkadhaare the. Competition tha.<br>
@@ -176,12 +201,53 @@
   </div>
 </section>
 
+<section x-cloak x-show="$store.lang.current === 'hi'" class="bg-dark py-24 px-4 md:px-8 hindi">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-2xl md:text-3xl font-black mb-10 hindi">22/7 — <span class="grad">कुल्हाड़ी तेज करने का सिद्धांत</span></h2>
+<blockquote class="border-l-4 border-accent bg-card/50 rounded-r-2xl italic text-gray-300 p-6 md:p-8 text-lg md:text-xl leading-relaxed mb-12 hindi">
+      दो लकड़हारे थे। Competition था।<br/>
+      पहले ने कहा: 24 घंटे काम करूँगा। Nonstop।<br/>
+      दूसरे ने कहा: मैं 22 घंटे काम करूँगा। 2 घंटे कुल्हाड़ी तेज करूँगा।<br/>
+<br/>
+      दिन भर काम किया।<br/>
+<span class="text-accent font-bold not-italic hindi">22 घंटे वाले ने ज़्यादा लकड़ी काटी।</span><br/>
+<br/>
+      क्योंकि तेज़ कुल्हाड़ी — थोड़ी मेहनत में ज़्यादा करती है।
+    </blockquote>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-14">
+<article class="bg-card border border-white/[.07] rounded-2xl p-6 hover:border-accent/40 transition-all">
+<div class="text-3xl mb-3">⏸️</div>
+<div class="text-xs text-accent font-bold uppercase tracking-[.14em] mb-2 hindi">रुककर धार दें</div>
+<h3 class="text-lg font-bold text-gray-100 mb-2 hindi">रुकें। सोचें। फिर से बनाएँ।</h3>
+<p class="text-gray-400 text-sm leading-relaxed hindi">कोई भी फीचर तब तक लॉन्च नहीं होगा जब तक वह सही न हो। हम अधूरा काम देने से बेहतर देरी पसंद करते हैं।</p>
+</article>
+<article class="bg-card border border-white/[.07] rounded-2xl p-6 hover:border-accent/40 transition-all">
+<div class="text-3xl mb-3">🎯</div>
+<div class="text-xs text-accent font-bold uppercase tracking-[.14em] mb-2 hindi">पहले ऑप्टिमाइज़ करें</div>
+<h3 class="text-lg font-bold text-gray-100 mb-2 hindi">खराब चीजों को बड़ा न करें।</h3>
+<p class="text-gray-400 text-sm leading-relaxed hindi">मुख्य चीज़ को तब तक ठीक करें जब तक वह परफेक्ट न हो जाए, फिर उसे 10 गुना बढ़ाएँ। स्केल कमियों को बड़ा करता है।</p>
+</article>
+<article class="bg-card border border-white/[.07] rounded-2xl p-6 hover:border-accent/40 transition-all">
+<div class="text-3xl mb-3">🔥</div>
+<div class="text-xs text-accent font-bold uppercase tracking-[.14em] mb-2 hindi">सही बनाएँ</div>
+<h3 class="text-lg font-bold text-gray-100 mb-2 hindi">एक बार में, सही ढंग से लॉन्च करें।</h3>
+<p class="text-gray-400 text-sm leading-relaxed hindi">दस बार, खराब नहीं। क्वालिटी बढ़ती है — और तकनीकी कर्ज भी।</p>
+</article>
+</div>
+<div class="bg-card/60 border border-primary/20 rounded-2xl p-6 md:p-8">
+<p class="text-xs text-primary font-bold uppercase tracking-[.14em] mb-3 hindi">श्रुतम् पर लागू</p>
+<p class="text-gray-300 leading-relaxed hindi">श्रुतम् की एक-एक चीज़ सोच के बनी है। "Mother tongue first" — एक फीचर नहीं, एक डिसीजन था। Blind mode — 50 लाख स्टूडेंट्स के लिए, रेवेन्यू ज़ीरो। क्योंकि यही सही था।</p>
+</div>
+</div>
+</section>
+
+
 <!-- 3. PANCHA BHOOTA DEEP -->
-<section class="bg-cosmos py-24 px-4 md:px-8">
+<section x-show="$store.lang.current === 'en'" class="bg-cosmos py-24 px-4 md:px-8">
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-12">
       <p class="inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold text-gray-400 tracking-[.18em] uppercase mb-4">Pancha Bhoota</p>
-      <h2 class="text-3xl md:text-5xl font-black mb-4">The Five Elements</h2>
+      <h2 class="text-2xl md:text-3xl font-black mb-4">The Five Elements</h2>
       <p class="text-gray-400 text-lg max-w-2xl mx-auto">Ancient Indian wisdom. Modern AI products.</p>
     </div>
 
@@ -269,11 +335,101 @@
   </div>
 </section>
 
+<section x-cloak x-show="$store.lang.current === 'hi'" class="bg-cosmos py-24 px-4 md:px-8 hindi">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-12">
+<p class="inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold text-gray-400 tracking-[.18em] uppercase mb-4 hindi">पंचभूत</p>
+<h2 class="text-2xl md:text-3xl font-black mb-4 hindi">पंच तत्व</h2>
+<p class="text-gray-400 text-lg max-w-2xl mx-auto hindi">प्राचीन भारतीय ज्ञान। आधुनिक AI उत्पाद।</p>
+</div>
+<blockquote class="max-w-3xl mx-auto text-center italic text-gray-300 text-lg md:text-xl leading-relaxed mb-14 hindi">
+      "हिंदू धर्म में पंचभूत — 5 तत्व ब्रह्मांड का निर्माण करते हैं। पृथ्वी, वायु, तेजस्, जल, आकाश। आरम्भ के 5 उत्पाद इसी दर्शन पर आधारित हैं।"
+    </blockquote>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+<article class="bg-card border border-primary/30 rounded-2xl p-6 md:p-7">
+<div class="text-5xl mb-3">🌍</div>
+<div class="hindi text-accent text-lg font-bold mb-1">पृथ्वी</div>
+<div class="text-gray-100 text-xl font-black mb-1">Prithvi</div>
+<p class="text-gray-400 text-xs mb-4 hindi">ज्ञान हर चीज़ का आधार है।</p>
+<div class="space-y-2">
+<a class="block bg-white/[.03] border border-white/[.07] rounded-lg p-3 hover:border-primary/40 transition-all" href="/products/#shrutam">
+<div class="font-bold text-gray-100 text-sm"><span class="hindi mr-1">श्रुतम्</span>Shrutam</div>
+<div class="text-[10px] text-green-400 mt-0.5">🟢 May 20, 2026</div>
+</a>
+</div>
+</article>
+<article class="bg-card border border-primary/30 rounded-2xl p-6 md:p-7">
+<div class="text-5xl mb-3">🌬️</div>
+<div class="hindi text-accent text-lg font-bold mb-1">वायु</div>
+<div class="text-gray-100 text-xl font-black mb-1">Vayu</div>
+<p class="text-gray-400 text-xs mb-4 hindi">व्यापार वायु की तरह बहता है।</p>
+<div class="space-y-2">
+<a class="block bg-white/[.03] border border-white/[.07] rounded-lg p-3 hover:border-primary/40 transition-all" href="/products/#commerce">
+<div class="font-bold text-gray-100 text-sm">WhatsApp Commerce</div>
+<div class="text-[10px] text-green-400 mt-0.5">🟢 LIVE</div>
+</a>
+</div>
+</article>
+<article class="bg-card border border-dashed border-accent/30 rounded-2xl p-6 md:p-7">
+<div class="text-5xl mb-3">🔥</div>
+<div class="hindi text-accent text-lg font-bold mb-1">तेजस्</div>
+<div class="text-gray-100 text-xl font-black mb-1">Tejas</div>
+<p class="text-gray-400 text-xs mb-4 hindi">स्पष्टता प्रज्वलित हुई।</p>
+<div class="space-y-2">
+<a class="block bg-white/[.03] border border-white/[.07] rounded-lg p-3 hover:border-primary/40 transition-all" href="/products/#karta">
+<div class="font-bold text-gray-100 text-sm">Karta AI</div>
+<div class="text-[10px] text-primary mt-0.5">⚡ 2026 — GST + ITR</div>
+</a>
+</div>
+</article>
+<article class="bg-card border border-dashed border-accent/30 rounded-2xl p-6 md:p-7">
+<div class="text-5xl mb-3">💧</div>
+<div class="hindi text-accent text-lg font-bold mb-1">जल</div>
+<div class="text-gray-100 text-xl font-black mb-1">Jal</div>
+<p class="text-gray-400 text-xs mb-4 hindi">जीवन-दायक।</p>
+<div class="space-y-2">
+<a class="block bg-white/[.03] border border-white/[.07] rounded-lg p-3 hover:border-primary/40 transition-all" href="/products/#pashu">
+<div class="font-bold text-gray-100 text-sm">Pashu AI</div>
+<div class="text-[10px] text-primary mt-0.5">⚡ 2026 — Cattle doctor</div>
+</a>
+<a class="block bg-white/[.03] border border-white/[.07] rounded-lg p-3 hover:border-primary/40 transition-all" href="/products/#bima">
+<div class="font-bold text-gray-100 text-sm">Bima AI</div>
+<div class="text-[10px] text-primary mt-0.5">⚡ 2026 — Insurance claims</div>
+</a>
+</div>
+</article>
+<article class="bg-card border border-dashed border-accent/30 rounded-2xl p-6 md:p-7">
+<div class="text-5xl mb-3">✨</div>
+<div class="hindi text-accent text-lg font-bold mb-1">आकाश</div>
+<div class="text-gray-100 text-xl font-black mb-1">Akasha</div>
+<p class="text-gray-400 text-xs mb-4 hindi">जोड़ने वाला स्थान।</p>
+<div class="space-y-2">
+<a class="block bg-white/[.03] border border-white/[.07] rounded-lg p-3 hover:border-primary/40 transition-all" href="/products/#svayam">
+<div class="font-bold text-gray-100 text-sm">Svayam AI</div>
+<div class="text-[10px] text-primary mt-0.5">⚡ 2026 — Govt form filling</div>
+</a>
+<a class="block bg-white/[.03] border border-white/[.07] rounded-lg p-3 hover:border-primary/40 transition-all" href="/products/#adhikar">
+<div class="font-bold text-gray-100 text-sm">Adhikar AI</div>
+<div class="text-[10px] text-primary mt-0.5">⚡ 2026 — Pensions + welfare</div>
+</a>
+</div>
+</article>
+<article class="bg-card/30 border border-dashed border-accent/20 rounded-2xl p-6 md:p-7 flex flex-col items-center justify-center text-center">
+<div class="text-4xl mb-3">🧭</div>
+<div class="text-gray-300 font-bold mb-1 hindi">+ और भी आने वाले हैं</div>
+<p class="text-gray-400 text-xs hindi">पंचभूत में 7 से अधिक उत्पाद हैं। जैसे-जैसे भारत की वास्तविक समस्याएँ सामने आती हैं, नए उत्पाद यहाँ आते रहेंगे।</p>
+</article>
+</div>
+<p class="text-center hindi text-2xl md:text-3xl font-bold text-accent mt-14">आरम्भ — सब की आरम्भ।</p>
+</div>
+</section>
+
+
 <!-- 4. BHARAT FIRST -->
-<section class="bg-dark py-24 px-4 md:px-8">
+<section x-show="$store.lang.current === 'en'" class="bg-dark py-24 px-4 md:px-8">
   <div class="max-w-4xl mx-auto">
     <p class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.18em] uppercase mb-4">Positioning</p>
-    <h2 class="text-3xl md:text-5xl font-black mb-6">Bharat First — <span class="grad">Not India First.</span></h2>
+    <h2 class="text-2xl md:text-3xl font-black mb-6">Bharat First — <span class="grad">Not India First.</span></h2>
     <p class="text-gray-400 leading-relaxed text-lg mb-10">
       "India" that gets funded: metro cities, English speakers. "Bharat" that needs AI: villages, Hindi speakers, no tutor, tight budget. Aarambha builds for Bharat.
     </p>
@@ -293,6 +449,31 @@
     </ul>
   </div>
 </section>
+
+<section x-cloak x-show="$store.lang.current === 'hi'" class="bg-dark py-24 px-4 md:px-8 hindi">
+<div class="max-w-4xl mx-auto">
+<p class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.18em] uppercase mb-4 hindi">पोजिशनिंग</p>
+<h2 class="text-2xl md:text-3xl font-black mb-6 hindi">भारत फर्स्ट — <span class="grad">इंडिया फर्स्ट नहीं।</span></h2>
+<p class="text-gray-400 leading-relaxed text-lg mb-10 hindi">
+      "इंडिया" जिसे फंडिंग मिलती है: मेट्रो शहर, इंग्लिश बोलने वाले। "भारत" जिसे AI की ज़रूरत है: गाँव, हिंदी बोलने वाले, कोई ट्यूटर नहीं, सीमित बजट। Aarambha भारत के लिए बनाता है।
+    </p>
+<ul class="space-y-4">
+<li class="flex items-start gap-4 bg-card/50 border border-white/[.07] rounded-xl p-5">
+<span class="text-2xl flex-shrink-0">🏘️</span>
+<div><div class="text-gray-100 font-bold mb-1 hindi">600,000+ गाँव इंटरनेट से जुड़े हुए</div><p class="text-gray-400 text-sm leading-relaxed hindi">इंफ्रास्ट्रक्चर मौजूद है। नेटिव AI नहीं है। हम उस कमी को पूरा करते हैं।</p></div>
+</li>
+<li class="flex items-start gap-4 bg-card/50 border border-white/[.07] rounded-xl p-5">
+<span class="text-2xl flex-shrink-0">🗣️</span>
+<div><div class="text-gray-100 font-bold mb-1 hindi">5 भाषाएँ — नेटिव, अनुवादित नहीं</div><p class="text-gray-400 text-sm leading-relaxed hindi">SAAVI हिंदी में सोचता है। मॉडल को इंग्लिश पर प्रशिक्षित करके बाद में नहीं बदला गया। यही फर्क है।</p></div>
+</li>
+<li class="flex items-start gap-4 bg-card/50 border border-white/[.07] rounded-xl p-5">
+<span class="text-2xl flex-shrink-0">♿</span>
+<div><div class="text-gray-100 font-bold mb-1 hindi">ब्लाइंड मोड — इनबिल्ट, अलग से नहीं जोड़ा गया</div><p class="text-gray-400 text-sm leading-relaxed hindi">50 लाख दृष्टिबाधित छात्र। कोई और एडटेक उनकी सेवा नहीं करता। Shrutam करता है — मुफ्त, हमेशा के लिए।</p></div>
+</li>
+</ul>
+</div>
+</section>
+
 
 </main>
 

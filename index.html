@@ -21,9 +21,13 @@
 <meta name="twitter:description" content="India's AI Studio. Building AI for 1.4 billion Indians in their own languages. Not translated. From the ground up.">
 <meta name="twitter:image" content="https://aarambhax.ai/assets/images/og-default.webp">
 
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="alternate" type="application/rss+xml" title="Aarambha Blog" href="/feed.xml">
+<!-- FAVICON_V2 -->
 <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/images/logos/aarambha-logo-192.png" type="image/png" sizes="192x192">
+<link rel="icon" href="/assets/images/logos/aarambha-logo-512.png" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="alternate" type="application/rss+xml" title="Aarambha Blog" href="/feed.xml">
+
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +42,8 @@
 </script>
 
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<script src="/assets/js/translations.js?v=0343773000-6ff2605c"></script>
+<script src="/assets/js/translations.js?v=0232250000-e4d2de70"></script>
+<script src="/assets/js/hero-slides.js"></script>
 
 <style>
   html { scroll-behavior: smooth; }
@@ -108,6 +113,17 @@
 }
 </script>
 
+<style id="a11y-cloak">[x-cloak]{display:none!important}</style>
+<!-- GA4_BEGIN -->
+<!-- Google tag (gtag.js) — Aarambha GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YXJ32LD3H6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YXJ32LD3H6', { 'anonymize_ip': true });
+</script>
+<!-- GA4_END -->
 </head>
 <body>
 <a href="#main-content" class="sr-only-focusable fixed top-2 left-2 z-[100] bg-accent text-gray-900 font-bold px-4 py-2 rounded-lg opacity-0 pointer-events-none focus:opacity-100 focus:pointer-events-auto">Skip to main content</a>
@@ -116,7 +132,7 @@
 <nav x-data="{ open: false }" class="sticky top-0 z-50 bg-dark/90 backdrop-blur-xl border-b border-white/[.07]">
   <div class="max-w-6xl mx-auto px-4 md:px-8 h-[72px] flex items-center justify-between gap-4">
     <a href="/" class="flex items-center gap-2 flex-shrink-0">
-      <span class="hindi text-2xl font-black text-accent leading-none">आरम्भ</span>
+      <img src="/assets/images/logos/aarambha-logo-96.webp" alt="Aarambha logo" width="36" height="36" class="aarambha-nav-logo w-9 h-9 rounded-full ring-1 ring-accent/40 shadow-sm shadow-accent/20" loading="eager">
       <span class="text-xs font-bold text-gray-400 tracking-[.14em] uppercase hidden sm:block">Aarambha</span>
     </a>
     <div class="hidden md:flex items-center gap-0.5">
@@ -146,43 +162,112 @@
   </div>
 </nav>
 
-<main id="main-content">
+<main id="main-content" x-data>
 
-<!-- 1. HERO -->
-<section class="relative bg-cosmos min-h-screen flex items-center justify-center overflow-hidden px-4 md:px-8">
-  <div id="starfield" class="absolute inset-0 overflow-hidden pointer-events-none"></div>
-  <div class="absolute inset-0 pointer-events-none" style="background:
-    radial-gradient(ellipse at 20% 20%, rgba(14,165,233,0.18), transparent 50%),
-    radial-gradient(ellipse at 80% 80%, rgba(245,158,11,0.14), transparent 55%);"></div>
-  <div class="relative z-10 max-w-5xl mx-auto text-center py-24">
-    <p class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/5 text-xs font-semibold text-primary tracking-[.18em] uppercase mb-10"
-       x-text="$store.lang.t('hero_badge')"></p>
-    <h1 class="hindi text-[6rem] md:text-[10rem] font-black text-accent leading-none mb-4"
-        style="text-shadow: 0 0 80px rgba(245,158,11,0.35);">आरम्भ</h1>
-    <p class="text-xl md:text-2xl text-gray-400 tracking-wider font-medium mb-6"
-       x-text="$store.lang.t('hero_tagline')"></p>
-    <p class="text-gray-400 text-lg leading-relaxed max-w-2xl mx-auto mb-10"
-       x-text="$store.lang.t('hero_sub')"></p>
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-12">
-      <a href="/products/" class="inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-gray-900 font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-accent/20 transition-all"
-         x-text="$store.lang.t('hero_cta1')"></a>
-      <a href="/#waitlist" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-primary/20 transition-all"
-         x-text="$store.lang.t('hero_cta2')"></a>
+<!-- 1. HERO — full-width banner carousel (images contain their own text) -->
+<section class="relative bg-cosmos overflow-hidden"
+         x-data="heroCarousel()"
+         @mouseenter="stop()"
+         @mouseleave="start()"
+         @touchstart="stop()"
+         role="region"
+         aria-roledescription="carousel"
+         aria-label="Aarambha hero">
+
+  <!-- Banner image frame: 16:9 aspect on desktop, taller on mobile for legibility -->
+  <div class="relative w-full aspect-[4/3] sm:aspect-[16/10] md:aspect-[16/9] max-h-[90vh] bg-cosmos">
+    <template x-for="(slide, i) in slides" :key="i">
+      <img :src="slide.img"
+           :alt="slide.alt"
+           x-show="i === index"
+           x-transition:enter="transition-opacity duration-700 ease-out"
+           x-transition:enter-start="opacity-0"
+           x-transition:enter-end="opacity-100"
+           class="absolute inset-0 w-full h-full object-cover"
+           :loading="i === 0 ? 'eager' : 'lazy'"
+           width="1600" height="900">
+    </template>
+
+    <!-- Prev/Next arrows (desktop, subtle) -->
+    <button @click="prev()" aria-label="Previous slide"
+            class="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-10 w-11 h-11 items-center justify-center rounded-full bg-black/30 hover:bg-black/50 backdrop-blur text-white transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/70">
+      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <button @click="next()" aria-label="Next slide"
+            class="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-10 w-11 h-11 items-center justify-center rounded-full bg-black/30 hover:bg-black/50 backdrop-blur text-white transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/70">
+      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 6l6 6-6 6"/></svg>
+    </button>
+
+    <!-- Pagination dots, pinned over bottom of image -->
+    <div class="absolute left-0 right-0 bottom-4 md:bottom-6 z-10 flex items-center justify-center gap-2">
+      <template x-for="(slide, i) in slides" :key="i">
+        <button @click="goTo(i)"
+                :aria-label="'Show slide ' + (i+1)"
+                :aria-current="i === index ? 'true' : 'false'"
+                class="h-2 rounded-full transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/70"
+                :class="i === index ? 'w-10 bg-accent' : 'w-2 bg-white/40 hover:bg-white/70'"></button>
+      </template>
     </div>
-    <div class="inline-flex flex-wrap items-center justify-center gap-6 md:gap-10 bg-card/60 backdrop-blur-sm border border-white/[.07] rounded-2xl px-6 md:px-10 py-5">
-      <div class="text-center"><div class="text-2xl md:text-3xl font-black text-primary leading-none">1.2B+</div><div class="text-[10px] text-gray-400 tracking-[.14em] uppercase mt-1">Indians</div></div>
-      <div class="text-center"><div class="text-2xl md:text-3xl font-black text-accent leading-none">2</div><div class="text-[10px] text-gray-400 tracking-[.14em] uppercase mt-1">Products</div></div>
-      <div class="text-center"><div class="text-2xl md:text-3xl font-black text-primary leading-none">22+</div><div class="text-[10px] text-gray-400 tracking-[.14em] uppercase mt-1">Years AI</div></div>
-      <div class="text-center"><div class="text-2xl md:text-3xl font-black text-accent leading-none">5</div><div class="text-[10px] text-gray-400 tracking-[.14em] uppercase mt-1">Languages</div></div>
+  </div>
+
+  <!-- CTA row + stats (below banner, always visible) -->
+  <div class="relative z-10 px-4 md:px-8 py-10 bg-cosmos border-t border-white/[.05]">
+    <div class="max-w-5xl mx-auto text-center">
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8">
+        <a href="/products/"
+           class="inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-gray-900 font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-accent/20 transition-all"
+           x-text="$store.lang.t('hero_cta1')"
+           :class="{ hindi: isHi }"></a>
+        <a href="/#waitlist"
+           class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-primary/20 transition-all"
+           x-text="$store.lang.t('hero_cta2')"
+           :class="{ hindi: isHi }"></a>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-6 md:gap-10 bg-card/60 backdrop-blur-sm border border-white/[.07] rounded-2xl px-6 md:px-10 py-5 max-w-4xl mx-auto">
+        <div class="text-center"><div class="text-2xl md:text-3xl font-black text-primary leading-none">1.2B+</div><div class="text-[10px] text-gray-400 tracking-[.14em] uppercase mt-1" :class="{ hindi: isHi }" x-text="isHi ? 'भारतीय' : 'Indians'"></div></div>
+        <div class="text-center"><div class="text-2xl md:text-3xl font-black text-accent leading-none">2</div><div class="text-[10px] text-gray-400 tracking-[.14em] uppercase mt-1" :class="{ hindi: isHi }" x-text="isHi ? 'उत्पाद' : 'Products'"></div></div>
+        <div class="text-center"><div class="text-2xl md:text-3xl font-black text-primary leading-none">22+</div><div class="text-[10px] text-gray-400 tracking-[.14em] uppercase mt-1" :class="{ hindi: isHi }" x-text="isHi ? 'साल का AI अनुभव' : 'Years AI'"></div></div>
+        <div class="text-center"><div class="text-2xl md:text-3xl font-black text-accent leading-none">5</div><div class="text-[10px] text-gray-400 tracking-[.14em] uppercase mt-1" :class="{ hindi: isHi }" x-text="isHi ? 'भाषाएँ' : 'Languages'"></div></div>
+      </div>
     </div>
   </div>
 </section>
 
+<script>
+  function heroCarousel() {
+    return {
+      index: 0,
+      timer: null,
+      get slides() {
+        const lang = this.$store.lang.current;
+        return (window.HERO_SLIDES && window.HERO_SLIDES[lang]) || window.HERO_SLIDES.en || [];
+      },
+      get isHi() { return this.$store.lang.current === 'hi'; },
+      init() {
+        const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!reduced) this.start();
+      },
+      start() {
+        this.stop();
+        this.timer = setInterval(() => this.next(), 7000);
+      },
+      stop() {
+        if (this.timer) { clearInterval(this.timer); this.timer = null; }
+      },
+      next() { this.index = (this.index + 1) % this.slides.length; },
+      prev() { this.index = (this.index - 1 + this.slides.length) % this.slides.length; },
+      goTo(i) { this.index = i; this.start(); }
+    };
+  }
+</script>
+
+
 <!-- 2. MANIFESTO -->
-<section class="bg-dark py-24 px-4 md:px-8">
+<section x-show="$store.lang.current === 'en'" class="bg-dark py-20 px-4 md:px-8">
   <div class="max-w-4xl mx-auto text-center">
     <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.18em] uppercase mb-8">Our Mission</p>
-    <p class="text-3xl md:text-4xl font-bold leading-relaxed text-gray-100 mb-10"
+    <p class="text-2xl md:text-[28px] font-semibold leading-[1.5] text-gray-100 mb-10"
        x-text="$store.lang.t('manifesto')"></p>
     <div class="flex flex-wrap justify-center gap-2.5">
       <span class="bg-white/5 border border-white/[.10] text-gray-300 rounded-full px-4 py-1.5 text-sm">🇮🇳 India First</span>
@@ -193,28 +278,42 @@
   </div>
 </section>
 
+<section x-cloak x-show="$store.lang.current === 'hi'" class="bg-dark py-20 px-4 md:px-8 hindi">
+<div class="max-w-4xl mx-auto text-center">
+<p class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.18em] uppercase mb-8 hindi">हमारा मिशन</p>
+<p class="text-2xl md:text-[28px] font-semibold leading-[1.5] text-gray-100 mb-10 hindi" x-text="$store.lang.t('manifesto')"></p>
+<div class="flex flex-wrap justify-center gap-2.5">
+<span class="bg-white/5 border border-white/[.10] text-gray-300 rounded-full px-4 py-1.5 text-sm hindi">🇮🇳 India First</span>
+<span class="bg-white/5 border border-white/[.10] text-gray-300 rounded-full px-4 py-1.5 text-sm hindi">🗣️ भाषा First</span>
+<span class="bg-white/5 border border-white/[.10] text-gray-300 rounded-full px-4 py-1.5 text-sm hindi">🏘️ भारत First</span>
+<span class="bg-white/5 border border-white/[.10] text-gray-300 rounded-full px-4 py-1.5 text-sm hindi">♿ Accessible First</span>
+</div>
+</div>
+</section>
+
+
 <!-- 3. PROBLEM -->
-<section class="bg-cosmos py-24 px-4 md:px-8">
+<section x-show="$store.lang.current === 'en'" class="bg-cosmos py-20 px-4 md:px-8">
   <div class="max-w-6xl mx-auto">
     <p class="inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold text-gray-400 tracking-[.18em] uppercase mb-5">The Opportunity</p>
-    <h2 class="text-3xl md:text-5xl font-black mb-4">India Ka <span class="grad">AI Paradox</span></h2>
+    <h2 class="text-2xl md:text-3xl font-black mb-4">India Ka <span class="grad">AI Paradox</span></h2>
     <p class="text-gray-400 text-lg max-w-2xl mb-14">Three numbers explain the gap — and the opening we're building for.</p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
       <article class="bg-card border border-white/[.07] rounded-2xl p-8 relative overflow-hidden">
         <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-primary to-accent"></div>
-        <div class="text-5xl md:text-6xl font-black text-primary mb-2 leading-none">1.2B+</div>
+        <div class="text-4xl md:text-5xl font-black text-primary mb-2 leading-none">1.2B+</div>
         <div class="text-gray-300 font-semibold mb-3">Indians without native AI</div>
         <p class="text-sm text-gray-400 leading-relaxed">1.4 billion total. 200 million speak English. 1.2 billion left behind by every AI company building for the West.</p>
       </article>
       <article class="bg-card border border-white/[.07] rounded-2xl p-8 relative overflow-hidden">
         <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-primary to-accent"></div>
-        <div class="text-5xl md:text-6xl font-black text-accent mb-2 leading-none">68%</div>
+        <div class="text-4xl md:text-5xl font-black text-accent mb-2 leading-none">68%</div>
         <div class="text-gray-300 font-semibold mb-3">Students rote-learn. Zero understanding.</div>
         <p class="text-sm text-gray-400 leading-relaxed">250M+ school students. Most can't afford a private tutor. The system teaches memorisation, not thinking.</p>
       </article>
       <article class="bg-card border border-white/[.07] rounded-2xl p-8 relative overflow-hidden">
         <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-primary to-accent"></div>
-        <div class="text-5xl md:text-6xl font-black text-gray-200 mb-2 leading-none">63M</div>
+        <div class="text-4xl md:text-5xl font-black text-gray-200 mb-2 leading-none">63M</div>
         <div class="text-gray-300 font-semibold mb-3">MSMEs with zero AI commerce tools</div>
         <p class="text-sm text-gray-400 leading-relaxed">WhatsApp + Excel. That's the stack. Aarambha's next product fixes this.</p>
       </article>
@@ -223,68 +322,250 @@
   </div>
 </section>
 
+<section x-cloak x-show="$store.lang.current === 'hi'" class="bg-cosmos py-20 px-4 md:px-8 hindi">
+<div class="max-w-6xl mx-auto">
+<p class="inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold text-gray-400 tracking-[.18em] uppercase mb-5 hindi">अवसर</p>
+<h2 class="text-2xl md:text-3xl font-black mb-4 hindi">भारत का <span class="grad">AI Paradox</span></h2>
+<p class="text-gray-400 text-lg max-w-2xl mb-14 hindi">तीन आंकड़े इस अंतर और जिस अवसर पर हम काम कर रहे हैं, उसे समझाते हैं।</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<article class="bg-card border border-white/[.07] rounded-2xl p-8 relative overflow-hidden">
+<div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-primary to-accent"></div>
+<div class="text-4xl md:text-5xl font-black text-primary mb-2 leading-none hindi">1.2B+</div>
+<div class="text-gray-300 font-semibold mb-3 hindi">भारतीयों के लिए कोई native AI नहीं</div>
+<p class="text-sm text-gray-400 leading-relaxed hindi">कुल 1.4 अरब लोग हैं। 200 मिलियन इंग्लिश बोलते हैं। 1.2 अरब लोग पीछे छूट गए हैं क्योंकि हर AI कंपनी पश्चिम के लिए बना रही है।</p>
+</article>
+<article class="bg-card border border-white/[.07] rounded-2xl p-8 relative overflow-hidden">
+<div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-primary to-accent"></div>
+<div class="text-4xl md:text-5xl font-black text-accent mb-2 leading-none hindi">68%</div>
+<div class="text-gray-300 font-semibold mb-3 hindi">छात्र रटते हैं। समझ कुछ नहीं।</div>
+<p class="text-sm text-gray-400 leading-relaxed hindi">250 मिलियन से ज़्यादा स्कूली छात्र हैं। ज़्यादातर प्राइवेट ट्यूटर नहीं रख सकते। हमारा सिस्टम रटने पर ज़ोर देता है, सोचने पर नहीं।</p>
+</article>
+<article class="bg-card border border-white/[.07] rounded-2xl p-8 relative overflow-hidden">
+<div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-primary to-accent"></div>
+<div class="text-4xl md:text-5xl font-black text-gray-200 mb-2 leading-none hindi">63M</div>
+<div class="text-gray-300 font-semibold mb-3 hindi">MSMEs के पास AI commerce tools नहीं</div>
+<p class="text-sm text-gray-400 leading-relaxed hindi">WhatsApp + Excel. बस यही है उनका stack. Aarambha का अगला प्रोडक्ट इसे ठीक करेगा।</p>
+</article>
+</div>
+<p class="mt-12 text-center hindi text-xl md:text-2xl font-semibold text-accent">हम यहाँ हैं — यह gap मिटाने के लिए।</p>
+</div>
+</section>
+
+
 <!-- 4. PRODUCTS -->
-<section class="bg-dark py-24 px-4 md:px-8">
+<section x-show="$store.lang.current === 'en'" class="bg-dark py-20 px-4 md:px-8">
   <div class="max-w-6xl mx-auto">
     <div class="text-center max-w-2xl mx-auto mb-14">
       <p class="inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold text-gray-400 tracking-[.18em] uppercase mb-5">Pancha Bhoota · 7 Products</p>
-      <h2 class="text-3xl md:text-5xl font-black mb-4">We build <span class="grad">AI for Bharat</span>, not just apps.</h2>
+      <h2 class="text-2xl md:text-3xl font-black mb-4">We build <span class="grad">AI for Bharat</span>, not just apps.</h2>
       <p class="text-gray-400 text-lg leading-relaxed">Five elements. Two shipping. Five building. Every one solves a Bharat problem no one has built AI for yet.</p>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-      <a href="/products/#shrutam" class="bg-card border border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block">
-        <div class="flex items-center gap-2 mb-3"><span class="text-2xl">🌍</span><span class="hindi text-accent text-sm font-bold">पृथ्वी</span></div>
-        <h3 class="text-gray-100 font-black text-lg mb-1"><span class="hindi mr-1">श्रुतम्</span>Shrutam</h3>
-        <p class="text-gray-400 text-xs mb-3">Audio-first AI tutor for CG+CBSE Class 6–10</p>
-        <span class="inline-block text-[10px] bg-green-500/15 text-green-400 border border-green-500/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">🟢 May 20</span>
-      </a>
-      <a href="/products/#commerce" class="bg-card border border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block">
-        <div class="flex items-center gap-2 mb-3"><span class="text-2xl">🌬️</span><span class="hindi text-accent text-sm font-bold">वायु</span></div>
-        <h3 class="text-gray-100 font-black text-lg mb-1">WhatsApp Commerce</h3>
-        <p class="text-gray-400 text-xs mb-3">Kirana-to-enterprise B2B ordering AI</p>
-        <span class="inline-block text-[10px] bg-green-500/15 text-green-400 border border-green-500/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">🟢 LIVE</span>
-      </a>
-      <a href="/products/#karta" class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block">
-        <div class="flex items-center gap-2 mb-3"><span class="text-2xl">🔥</span><span class="hindi text-accent text-sm font-bold">तेजस्</span></div>
-        <h3 class="text-gray-100 font-black text-lg mb-1">Karta AI</h3>
-        <p class="text-gray-400 text-xs mb-3">GST + ITR voice-filing for MSMEs</p>
-        <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">⚡ 2026</span>
-      </a>
-      <a href="/products/#pashu" class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block">
-        <div class="flex items-center gap-2 mb-3"><span class="text-2xl">💧</span><span class="hindi text-accent text-sm font-bold">जल</span></div>
-        <h3 class="text-gray-100 font-black text-lg mb-1">Pashu AI</h3>
-        <p class="text-gray-400 text-xs mb-3">Cattle doctor in your pocket</p>
-        <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">⚡ 2026</span>
-      </a>
-      <a href="/products/#bima" class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block">
-        <div class="flex items-center gap-2 mb-3"><span class="text-2xl">💧</span><span class="hindi text-accent text-sm font-bold">जल</span></div>
-        <h3 class="text-gray-100 font-black text-lg mb-1">Bima AI</h3>
-        <p class="text-gray-400 text-xs mb-3">Insurance claim automation</p>
-        <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">⚡ 2026</span>
-      </a>
-      <a href="/products/#svayam" class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block">
-        <div class="flex items-center gap-2 mb-3"><span class="text-2xl">✨</span><span class="hindi text-accent text-sm font-bold">आकाश</span></div>
-        <h3 class="text-gray-100 font-black text-lg mb-1">Svayam AI</h3>
-        <p class="text-gray-400 text-xs mb-3">Voice-first sarkari form filling</p>
-        <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">⚡ 2026</span>
-      </a>
-      <a href="/products/#adhikar" class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block">
-        <div class="flex items-center gap-2 mb-3"><span class="text-2xl">✨</span><span class="hindi text-accent text-sm font-bold">आकाश</span></div>
-        <h3 class="text-gray-100 font-black text-lg mb-1">Adhikar AI</h3>
-        <p class="text-gray-400 text-xs mb-3">Pension + welfare entitlement tracker</p>
-        <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">⚡ 2026</span>
-      </a>
-      <a href="/products/" class="bg-card/30 border border-dashed border-accent/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all flex flex-col items-center justify-center text-center">
-        <div class="text-3xl mb-2">🧭</div>
-        <p class="text-gray-300 font-bold text-sm">Explore all 7</p>
-        <p class="text-gray-400 text-xs mt-1">Pancha Bhoota portfolio →</p>
-      </a>
+    <!-- PRODUCT_GRID_EN_BEGIN -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+<a href="/products/#shrutam" class="group bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 hover:-translate-y-0.5 transition-all block">
+  <div class="aspect-[4/3] overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+    <img src="/assets/images/products/shrutam.webp" alt="Shrutam product illustration" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" width="600" height="450">
+  </div>
+  <div class="p-5">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-xs font-bold text-accent tracking-[.14em] uppercase"><span class="mr-1">🌍</span><span class="hindi">पृथ्वी</span></span>
+      <span class="inline-block text-[10px] bg-green-500/15 text-green-400 border border-green-500/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">🟢 LIVE</span>
     </div>
+    <h3 class="text-gray-100 font-black text-lg mb-1.5"><span class="hindi mr-1.5 text-accent">श्रुतम्</span>Shrutam</h3>
+    <p class="text-gray-400 text-sm leading-snug">Audio-first AI tutor for CG+CBSE Class 6–10</p>
+  </div>
+</a>
+<a href="/products/#commerce" class="group bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 hover:-translate-y-0.5 transition-all block">
+  <div class="aspect-[4/3] overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+    <img src="/assets/images/products/commerce.webp" alt="WhatsApp Commerce product illustration" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" width="600" height="450">
+  </div>
+  <div class="p-5">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-xs font-bold text-accent tracking-[.14em] uppercase"><span class="mr-1">🌬️</span><span class="hindi">वायु</span></span>
+      <span class="inline-block text-[10px] bg-green-500/15 text-green-400 border border-green-500/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">🟢 LIVE</span>
+    </div>
+    <h3 class="text-gray-100 font-black text-lg mb-1.5"><span class="hindi mr-1.5 text-accent">WhatsApp कॉमर्स</span>WhatsApp Commerce</h3>
+    <p class="text-gray-400 text-sm leading-snug">Kirana-to-enterprise B2B ordering AI</p>
+  </div>
+</a>
+<a href="/products/#karta" class="group bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 hover:-translate-y-0.5 transition-all block">
+  <div class="aspect-[4/3] overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+    <img src="/assets/images/products/karta.webp" alt="Karta AI product illustration" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" width="600" height="450">
+  </div>
+  <div class="p-5">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-xs font-bold text-accent tracking-[.14em] uppercase"><span class="mr-1">🔥</span><span class="hindi">तेजस्</span></span>
+      <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">⚡ 2026</span>
+    </div>
+    <h3 class="text-gray-100 font-black text-lg mb-1.5"><span class="hindi mr-1.5 text-accent">कर्ता AI</span>Karta AI</h3>
+    <p class="text-gray-400 text-sm leading-snug">GST + ITR voice-filing for MSMEs</p>
+  </div>
+</a>
+<a href="/products/#pashu" class="group bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 hover:-translate-y-0.5 transition-all block">
+  <div class="aspect-[4/3] overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+    <img src="/assets/images/products/pashu.webp" alt="Pashu AI product illustration" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" width="600" height="450">
+  </div>
+  <div class="p-5">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-xs font-bold text-accent tracking-[.14em] uppercase"><span class="mr-1">💧</span><span class="hindi">जल</span></span>
+      <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">⚡ 2026</span>
+    </div>
+    <h3 class="text-gray-100 font-black text-lg mb-1.5"><span class="hindi mr-1.5 text-accent">पशु AI</span>Pashu AI</h3>
+    <p class="text-gray-400 text-sm leading-snug">Cattle doctor in your pocket</p>
+  </div>
+</a>
+<a href="/products/#bima" class="group bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 hover:-translate-y-0.5 transition-all block">
+  <div class="aspect-[4/3] overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+    <img src="/assets/images/products/bima.webp" alt="Bima AI product illustration" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" width="600" height="450">
+  </div>
+  <div class="p-5">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-xs font-bold text-accent tracking-[.14em] uppercase"><span class="mr-1">💧</span><span class="hindi">जल</span></span>
+      <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">⚡ 2026</span>
+    </div>
+    <h3 class="text-gray-100 font-black text-lg mb-1.5"><span class="hindi mr-1.5 text-accent">बीमा AI</span>Bima AI</h3>
+    <p class="text-gray-400 text-sm leading-snug">Insurance claim automation for PMFBY + PMJJBY</p>
+  </div>
+</a>
+<a href="/products/#svayam" class="group bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 hover:-translate-y-0.5 transition-all block">
+  <div class="aspect-[4/3] overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+    <img src="/assets/images/products/svayam.webp" alt="Svayam AI product illustration" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" width="600" height="450">
+  </div>
+  <div class="p-5">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-xs font-bold text-accent tracking-[.14em] uppercase"><span class="mr-1">✨</span><span class="hindi">आकाश</span></span>
+      <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">⚡ 2026</span>
+    </div>
+    <h3 class="text-gray-100 font-black text-lg mb-1.5"><span class="hindi mr-1.5 text-accent">स्वयं AI</span>Svayam AI</h3>
+    <p class="text-gray-400 text-sm leading-snug">Voice-first sarkari form filling</p>
+  </div>
+</a>
+<a href="/products/#adhikar" class="group bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 hover:-translate-y-0.5 transition-all block">
+  <div class="aspect-[4/3] overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+    <img src="/assets/images/products/adhikar.webp" alt="Adhikar AI product illustration" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" width="600" height="450">
+  </div>
+  <div class="p-5">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-xs font-bold text-accent tracking-[.14em] uppercase"><span class="mr-1">✨</span><span class="hindi">आकाश</span></span>
+      <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">⚡ 2026</span>
+    </div>
+    <h3 class="text-gray-100 font-black text-lg mb-1.5"><span class="hindi mr-1.5 text-accent">अधिकार AI</span>Adhikar AI</h3>
+    <p class="text-gray-400 text-sm leading-snug">Pension + welfare entitlement tracker</p>
+  </div>
+</a>
+</div>
+<!-- PRODUCT_GRID_EN_END -->
   </div>
 </section>
 
+<section x-cloak x-show="$store.lang.current === 'hi'" class="bg-dark py-20 px-4 md:px-8 hindi">
+<div class="max-w-6xl mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<p class="inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold text-gray-400 tracking-[.18em] uppercase mb-5 hindi">पंच भूता · 7 प्रोडक्ट्स</p>
+<h2 class="text-2xl md:text-3xl font-black mb-4 hindi">हम सिर्फ ऐप्स नहीं, <span class="grad">भारत के लिए AI</span> बनाते हैं।</h2>
+<p class="text-gray-400 text-lg leading-relaxed hindi">पांच तत्व। दो शिपिंग के लिए तैयार। पांच निर्माणाधीन। हर एक भारत की ऐसी समस्या का समाधान करता है, जिसके लिए अभी तक किसी ने AI नहीं बनाया है।</p>
+</div>
+<!-- PRODUCT_GRID_HI_BEGIN -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+<a href="/products/#shrutam" class="group bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 hover:-translate-y-0.5 transition-all block">
+  <div class="aspect-[4/3] overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+    <img src="/assets/images/products/shrutam.webp" alt="श्रुतम् उत्पाद चित्रण" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" width="600" height="450">
+  </div>
+  <div class="p-5">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-xs font-bold text-accent tracking-[.14em] uppercase hindi"><span class="mr-1">🌍</span>पृथ्वी</span>
+      <span class="inline-block text-[10px] bg-green-500/15 text-green-400 border border-green-500/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold hindi">🟢 20 मई</span>
+    </div>
+    <h3 class="text-gray-100 font-black text-lg mb-1.5"><span class="hindi mr-1.5 text-accent">श्रुतम्</span><span class="hindi">Shrutam</span></h3>
+    <p class="text-gray-400 text-sm leading-snug hindi">कक्षा 6-10 CG+CBSE के लिए ऑडियो-फर्स्ट AI ट्यूटर</p>
+  </div>
+</a>
+<a href="/products/#commerce" class="group bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 hover:-translate-y-0.5 transition-all block">
+  <div class="aspect-[4/3] overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+    <img src="/assets/images/products/commerce.webp" alt="WhatsApp कॉमर्स उत्पाद चित्रण" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" width="600" height="450">
+  </div>
+  <div class="p-5">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-xs font-bold text-accent tracking-[.14em] uppercase hindi"><span class="mr-1">🌬️</span>वायु</span>
+      <span class="inline-block text-[10px] bg-green-500/15 text-green-400 border border-green-500/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold hindi">🟢 लाइव</span>
+    </div>
+    <h3 class="text-gray-100 font-black text-lg mb-1.5"><span class="hindi mr-1.5 text-accent">WhatsApp कॉमर्स</span><span class="hindi">WhatsApp Commerce</span></h3>
+    <p class="text-gray-400 text-sm leading-snug hindi">किराना से एंटरप्राइज तक B2B ऑर्डरिंग AI</p>
+  </div>
+</a>
+<a href="/products/#karta" class="group bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 hover:-translate-y-0.5 transition-all block">
+  <div class="aspect-[4/3] overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+    <img src="/assets/images/products/karta.webp" alt="कर्ता AI उत्पाद चित्रण" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" width="600" height="450">
+  </div>
+  <div class="p-5">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-xs font-bold text-accent tracking-[.14em] uppercase hindi"><span class="mr-1">🔥</span>तेजस्</span>
+      <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold hindi">⚡ 2026</span>
+    </div>
+    <h3 class="text-gray-100 font-black text-lg mb-1.5"><span class="hindi mr-1.5 text-accent">कर्ता AI</span><span class="hindi">Karta AI</span></h3>
+    <p class="text-gray-400 text-sm leading-snug hindi">MSMEs के लिए GST + ITR वॉइस-फाइलिंग</p>
+  </div>
+</a>
+<a href="/products/#pashu" class="group bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 hover:-translate-y-0.5 transition-all block">
+  <div class="aspect-[4/3] overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+    <img src="/assets/images/products/pashu.webp" alt="पशु AI उत्पाद चित्रण" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" width="600" height="450">
+  </div>
+  <div class="p-5">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-xs font-bold text-accent tracking-[.14em] uppercase hindi"><span class="mr-1">💧</span>जल</span>
+      <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold hindi">⚡ 2026</span>
+    </div>
+    <h3 class="text-gray-100 font-black text-lg mb-1.5"><span class="hindi mr-1.5 text-accent">पशु AI</span><span class="hindi">Pashu AI</span></h3>
+    <p class="text-gray-400 text-sm leading-snug hindi">आपकी जेब में पशु डॉक्टर</p>
+  </div>
+</a>
+<a href="/products/#bima" class="group bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 hover:-translate-y-0.5 transition-all block">
+  <div class="aspect-[4/3] overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+    <img src="/assets/images/products/bima.webp" alt="बीमा AI उत्पाद चित्रण" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" width="600" height="450">
+  </div>
+  <div class="p-5">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-xs font-bold text-accent tracking-[.14em] uppercase hindi"><span class="mr-1">💧</span>जल</span>
+      <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold hindi">⚡ 2026</span>
+    </div>
+    <h3 class="text-gray-100 font-black text-lg mb-1.5"><span class="hindi mr-1.5 text-accent">बीमा AI</span><span class="hindi">Bima AI</span></h3>
+    <p class="text-gray-400 text-sm leading-snug hindi">PMFBY + PMJJBY के लिए बीमा क्लेम ऑटोमेशन</p>
+  </div>
+</a>
+<a href="/products/#svayam" class="group bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 hover:-translate-y-0.5 transition-all block">
+  <div class="aspect-[4/3] overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+    <img src="/assets/images/products/svayam.webp" alt="स्वयं AI उत्पाद चित्रण" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" width="600" height="450">
+  </div>
+  <div class="p-5">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-xs font-bold text-accent tracking-[.14em] uppercase hindi"><span class="mr-1">✨</span>आकाश</span>
+      <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold hindi">⚡ 2026</span>
+    </div>
+    <h3 class="text-gray-100 font-black text-lg mb-1.5"><span class="hindi mr-1.5 text-accent">स्वयं AI</span><span class="hindi">Svayam AI</span></h3>
+    <p class="text-gray-400 text-sm leading-snug hindi">वॉइस-फर्स्ट सरकारी फॉर्म भरना</p>
+  </div>
+</a>
+<a href="/products/#adhikar" class="group bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 hover:-translate-y-0.5 transition-all block">
+  <div class="aspect-[4/3] overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+    <img src="/assets/images/products/adhikar.webp" alt="अधिकार AI उत्पाद चित्रण" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" width="600" height="450">
+  </div>
+  <div class="p-5">
+    <div class="flex items-center justify-between mb-2">
+      <span class="text-xs font-bold text-accent tracking-[.14em] uppercase hindi"><span class="mr-1">✨</span>आकाश</span>
+      <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold hindi">⚡ 2026</span>
+    </div>
+    <h3 class="text-gray-100 font-black text-lg mb-1.5"><span class="hindi mr-1.5 text-accent">अधिकार AI</span><span class="hindi">Adhikar AI</span></h3>
+    <p class="text-gray-400 text-sm leading-snug hindi">पेंशन + कल्याण पात्रता ट्रैकर</p>
+  </div>
+</a>
+</div>
+<!-- PRODUCT_GRID_HI_END -->
+</div>
+</section>
+
+
 <!-- 5. FOUNDER'S NOTE -->
-<section class="bg-cosmos py-24 px-4 md:px-8">
+<section x-show="$store.lang.current === 'en'" class="bg-cosmos py-20 px-4 md:px-8">
   <div class="max-w-3xl mx-auto">
     <div class="bg-card/60 border border-accent/20 rounded-2xl p-8 md:p-12 text-center relative">
       <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-cosmos border border-accent/30 text-accent px-4 py-1 rounded-full text-xs font-bold tracking-[.20em] uppercase"
@@ -303,12 +584,29 @@
   </div>
 </section>
 
+<section x-cloak x-show="$store.lang.current === 'hi'" class="bg-cosmos py-20 px-4 md:px-8 hindi">
+<div class="max-w-3xl mx-auto">
+<div class="bg-card/60 border border-accent/20 rounded-2xl p-8 md:p-12 text-center relative">
+<span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-cosmos border border-accent/30 text-accent px-4 py-1 rounded-full text-xs font-bold tracking-[.20em] uppercase" x-text="$store.lang.t('founder_badge')"></span>
+<p class="hindi italic text-2xl md:text-3xl text-accent leading-relaxed mt-4 mb-6">
+        हम एक गाँव से निकले थे।<br/>
+        दो दशक बाद — यह सवाल आया:<br/>
+        यह सब गाँव तक क्यों नहीं पहुँचा?<br/>
+        वही सवाल है Aarambha।
+      </p>
+<p class="text-gray-400 text-base md:text-lg leading-relaxed mb-8 hindi" x-text="$store.lang.t('founder_quote')"></p>
+<a class="inline-flex items-center gap-2 border border-accent/40 text-accent hover:bg-accent/10 font-semibold px-6 py-3 rounded-xl transition-all hindi" href="/about/" x-text="$store.lang.t('founder_cta')"></a>
+</div>
+</div>
+</section>
+
+
 <!-- 6. PHILOSOPHY TEASER -->
-<section class="bg-dark py-24 px-4 md:px-8">
+<section x-show="$store.lang.current === 'en'" class="bg-dark py-20 px-4 md:px-8">
   <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
     <div>
       <p class="inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold text-gray-400 tracking-[.18em] uppercase mb-4">Philosophy</p>
-      <h2 class="text-3xl md:text-4xl font-black mb-4 hindi">22/7 — <span class="text-accent">तेज़ नहीं, सही।</span></h2>
+      <h2 class="text-2xl md:text-3xl font-black mb-4 hindi">22/7 — <span class="text-accent">तेज़ नहीं, सही।</span></h2>
       <p class="text-gray-400 leading-relaxed mb-6">Two woodcutters. One works 24 hours nonstop. The other works 22 — and spends 2 hours sharpening the axe. The second one cuts more wood. That's how we build.</p>
       <div class="flex flex-wrap gap-2 mb-6">
         <span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3.5 py-1.5 text-sm">⏸️ Pause</span>
@@ -326,12 +624,35 @@
   </div>
 </section>
 
+<section x-cloak x-show="$store.lang.current === 'hi'" class="bg-dark py-20 px-4 md:px-8 hindi">
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+<div>
+<p class="inline-block px-3 py-1 rounded-full border border-white/[.12] bg-white/[.04] text-xs font-bold text-gray-400 tracking-[.18em] uppercase mb-4 hindi">हमारी सोच</p>
+<h2 class="text-2xl md:text-3xl font-black mb-4 hindi">22/7 — <span class="text-accent">तेज़ नहीं, सही।</span></h2>
+<p class="text-gray-400 leading-relaxed mb-6 hindi">दो लकड़हारे। एक बिना रुके 24 घंटे काम करता है। दूसरा 22 घंटे काम करता है और 2 घंटे कुल्हाड़ी की धार तेज़ करता है। दूसरा लकड़हारा ज़्यादा लकड़ी काटता है। हम भी इसी तरह काम करते हैं।</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3.5 py-1.5 text-sm hindi">⏸️ रुकें</span>
+<span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3.5 py-1.5 text-sm hindi">🎯 बेहतर करें</span>
+<span class="bg-white/5 border border-white/10 text-gray-300 rounded-full px-3.5 py-1.5 text-sm hindi">🔥 सही बनाएँ</span>
+</div>
+<a class="inline-flex items-center gap-2 border border-white/20 hover:border-accent/50 text-gray-300 hover:text-accent font-semibold px-6 py-3 rounded-xl transition-all hindi" href="/philosophy/">हमारी सोच जानें →</a>
+</div>
+<div class="bg-card border border-white/[.07] rounded-2xl p-10 text-center">
+<div class="text-6xl mb-4">🪓</div>
+<div class="text-xs text-gray-400 uppercase tracking-[.14em] mb-2 hindi">हमारा सिद्धांत</div>
+<div class="text-4xl font-black grad mb-2">22 + 2</div>
+<div class="text-sm text-gray-400 hindi">22 घंटे काम। 2 घंटे धार तेज़ करना।<br/>रोज़ ज़्यादा लकड़ी।</div>
+</div>
+</div>
+</section>
+
+
 <!-- 6b. PARTNER -->
-<section class="bg-cosmos py-20 px-4 md:px-8">
+<section x-show="$store.lang.current === 'en'" class="bg-cosmos py-20 px-4 md:px-8">
   <div class="max-w-5xl mx-auto">
     <div class="text-center max-w-2xl mx-auto mb-12">
       <p class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em] uppercase mb-4">Partner With Us</p>
-      <h2 class="text-3xl md:text-4xl font-black mb-3">School chahiye partnership? <span class="grad">Baat karte hain.</span></h2>
+      <h2 class="text-2xl md:text-3xl font-black mb-3">School chahiye partnership? <span class="grad">Baat karte hain.</span></h2>
       <p class="text-gray-400 text-base leading-relaxed">Schools, NGOs, govt agencies, distributors — if you serve Bharat, we want to build with you.</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -357,8 +678,39 @@
   </div>
 </section>
 
+<section x-cloak x-show="$store.lang.current === 'hi'" class="bg-cosmos py-20 px-4 md:px-8 hindi">
+<div class="max-w-5xl mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<p class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em] uppercase mb-4 hindi">हमारे साथ जुड़ें</p>
+<h2 class="text-2xl md:text-3xl font-black mb-3 hindi">पार्टनरशिप चाहिए? <span class="grad">बात करते हैं।</span></h2>
+<p class="text-gray-400 text-base leading-relaxed hindi">स्कूल, NGO, सरकारी एजेंसियां, डिस्ट्रीब्यूटर — अगर आप भारत की सेवा कर रहे हैं, तो हम आपके साथ मिलकर बनाना चाहते हैं।</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<div class="bg-card border border-white/[.07] rounded-2xl p-6">
+<div class="text-3xl mb-3">🏫</div>
+<h3 class="text-gray-100 font-bold mb-2 hindi">स्कूल</h3>
+<p class="text-gray-400 text-sm leading-relaxed mb-4 hindi">आपके छात्रों के लिए Shrutam — बल्क प्राइसिंग, टीचर डैशबोर्ड, कमजोर नेटवर्क के लिए ऑफलाइन मोड।</p>
+<a class="text-accent font-bold text-sm hover:underline" href="mailto:partners@aarambhax.ai?subject=School%20Partnership">partners@aarambhax.ai →</a>
+</div>
+<div class="bg-card border border-white/[.07] rounded-2xl p-6">
+<div class="text-3xl mb-3">🤝</div>
+<h3 class="text-gray-100 font-bold mb-2 hindi">NGOs और फाउंडेशन</h3>
+<p class="text-gray-400 text-sm leading-relaxed mb-4 hindi">Aarambha के प्रोडक्ट्स को बड़े पैमाने पर लागू करें। ग्रामीण स्कूल, महिला SHG, किसान सहकारी समितियां।</p>
+<a class="text-accent font-bold text-sm hover:underline" href="mailto:partners@aarambhax.ai?subject=NGO%20Partnership">partners@aarambhax.ai →</a>
+</div>
+<div class="bg-card border border-white/[.07] rounded-2xl p-6">
+<div class="text-3xl mb-3">🏛️</div>
+<h3 class="text-gray-100 font-bold mb-2 hindi">सरकार और पब्लिक</h3>
+<p class="text-gray-400 text-sm leading-relaxed mb-4 hindi">CSR, जनहित पायलट, MGNREGA / Ayushman / PMFBY के साथ इंटीग्रेशन।</p>
+<a class="text-accent font-bold text-sm hover:underline" href="mailto:partners@aarambhax.ai?subject=Govt%20Partnership">partners@aarambhax.ai →</a>
+</div>
+</div>
+</div>
+</section>
+
+
 <!-- 6c. PRESS STRIP -->
-<section class="bg-dark py-16 px-4 md:px-8 border-t border-white/[.05] border-b border-white/[.05]">
+<section x-show="$store.lang.current === 'en'" class="bg-dark py-16 px-4 md:px-8 border-t border-white/[.05] border-b border-white/[.05]">
   <div class="max-w-6xl mx-auto text-center">
     <p class="text-xs font-bold text-gray-400 tracking-[.20em] uppercase mb-6">As seen in (coming soon)</p>
     <div class="flex flex-wrap justify-center items-center gap-x-10 gap-y-4 opacity-50">
@@ -373,14 +725,30 @@
   </div>
 </section>
 
+<section x-cloak x-show="$store.lang.current === 'hi'" class="bg-dark py-16 px-4 md:px-8 border-t border-white/[.05] border-b border-white/[.05] hindi">
+<div class="max-w-6xl mx-auto text-center">
+<p class="text-xs font-bold text-gray-400 tracking-[.20em] uppercase mb-6 hindi">जैसा कि दिखाया गया है (जल्द आ रहा है)</p>
+<div class="flex flex-wrap justify-center items-center gap-x-10 gap-y-4 opacity-50">
+<span class="text-gray-400 font-bold text-sm hindi">Your Story</span>
+<span class="text-gray-400 font-bold text-sm hindi">Inc42</span>
+<span class="text-gray-400 font-bold text-sm hindi">Entrackr</span>
+<span class="text-gray-400 font-bold text-sm hindi">The Ken</span>
+<span class="text-gray-400 font-bold text-sm hindi">Economic Times</span>
+<span class="text-gray-400 font-bold text-sm hindi">FactorDaily</span>
+</div>
+<p class="text-xs text-gray-600 mt-4 hindi">जैसे ही हमें प्रेस कवरेज मिलेगा, हम उसे यहाँ अपडेट कर देंगे। <a class="text-primary hover:underline" href="mailto:press@aarambhax.ai">मीडिया से हैं? press@aarambhax.ai</a></p>
+</div>
+</section>
+
+
 <!-- 7. FINAL CTA + WAITLIST -->
-<section id="waitlist" class="bg-cosmos py-24 px-4 md:px-8 relative overflow-hidden">
+<section x-show="$store.lang.current === 'en'" id="waitlist" class="bg-cosmos py-24 px-4 md:px-8 relative overflow-hidden">
   <div class="absolute inset-0 pointer-events-none" style="background:
     radial-gradient(ellipse at 50% 40%, rgba(14,165,233,0.18), transparent 55%),
     radial-gradient(ellipse at 50% 80%, rgba(245,158,11,0.10), transparent 50%);"></div>
   <div class="relative z-10 max-w-3xl mx-auto text-center">
-    <h2 class="text-3xl md:text-5xl font-black leading-tight mb-2">India ki AI ki aarambh mein</h2>
-    <h2 class="text-3xl md:text-5xl font-black leading-tight grad mb-6">shamil ho jaao.</h2>
+    <h2 class="text-2xl md:text-3xl font-black leading-tight mb-2">India ki AI ki aarambh mein</h2>
+    <h2 class="text-2xl md:text-3xl font-black leading-tight grad mb-6">shamil ho jaao.</h2>
     <p class="hindi text-gray-400 text-lg md:text-xl mb-10">भारत के लिए AI — साथ बनाएँगे।</p>
     <div class="flex flex-col sm:flex-row justify-center gap-3 mb-10">
       <a href="#waitlist-form" class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold px-6 py-3.5 rounded-xl transition-all">🎓 Join Shrutam Waitlist</a>
@@ -397,6 +765,30 @@
     <p class="text-xs text-gray-600 mt-3">Submitting opens your email client. No spam. Promise.</p>
   </div>
 </section>
+
+<section x-cloak x-show="$store.lang.current === 'hi'" class="bg-cosmos py-24 px-4 md:px-8 relative overflow-hidden hindi" id="waitlist">
+<div class="absolute inset-0 pointer-events-none" style="background:
+    radial-gradient(ellipse at 50% 40%, rgba(14,165,233,0.18), transparent 55%),
+    radial-gradient(ellipse at 50% 80%, rgba(245,158,11,0.10), transparent 50%);"></div>
+<div class="relative z-10 max-w-3xl mx-auto text-center">
+<h2 class="text-2xl md:text-3xl font-black leading-tight mb-2 hindi">भारत में AI के नए युग की शुरुआत में</h2>
+<h2 class="text-2xl md:text-3xl font-black leading-tight grad mb-6 hindi">हमारा साथ दें।</h2>
+<p class="hindi text-gray-400 text-lg md:text-xl mb-10 hindi">भारत के लिए AI — साथ बनाएँगे।</p>
+<div class="flex flex-col sm:flex-row justify-center gap-3 mb-10">
+<a class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold px-6 py-3.5 rounded-xl transition-all hindi" href="#waitlist-form">🎓 Shrutam वेटलिस्ट में शामिल हों</a>
+<a class="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark text-gray-900 font-bold px-6 py-3.5 rounded-xl transition-all hindi" href="mailto:hello@aarambhax.ai?subject=Partnership">🤝 हमारे साथ पार्टनर बनें</a>
+<a class="inline-flex items-center justify-center gap-2 border border-white/20 hover:border-primary/50 text-gray-300 hover:text-primary font-semibold px-6 py-3.5 rounded-xl transition-all hindi" href="mailto:hello@aarambhax.ai">📬 hello@aarambhax.ai</a>
+</div>
+<form action="mailto:hello@aarambhax.ai" class="max-w-md mx-auto flex flex-col sm:flex-row gap-2" enctype="text/plain" id="waitlist-form" method="get">
+<input name="subject" type="hidden" value="Shrutam Waitlist — Aarambhax"/>
+<label class="sr-only hindi" for="waitlist-email">ईमेल</label>
+<input class="flex-1 min-w-0 px-4 py-3 rounded-xl border border-white/[.12] bg-white/[.04] text-gray-100 placeholder:text-gray-400 focus:outline-none focus:border-primary/60 focus:bg-white/[.06] transition-all" id="waitlist-email" name="body" placeholder="your@email.com" required="" type="email"/>
+<button class="bg-primary hover:bg-primary-dark text-white font-bold px-5 py-3 rounded-xl transition-all hindi" type="submit">अपडेट रहें</button>
+</form>
+<p class="text-xs text-gray-600 mt-3 hindi">सबमिट करने पर आपका ईमेल क्लाइंट खुल जाएगा। कोई स्पैम नहीं। हमारा वादा है।</p>
+</div>
+</section>
+
 
 </main>
 

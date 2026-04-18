@@ -20,9 +20,13 @@
 <meta name="twitter:description" content="Seekhte Rahenge. Launching with Shrutam.">
 <meta name="twitter:image" content="https://aarambhax.ai/assets/images/og-default.webp">
 
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="alternate" type="application/rss+xml" title="Aarambha Blog" href="/feed.xml">
+<!-- FAVICON_V2 -->
 <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/images/logos/aarambha-logo-192.png" type="image/png" sizes="192x192">
+<link rel="icon" href="/assets/images/logos/aarambha-logo-512.png" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="alternate" type="application/rss+xml" title="Aarambha Blog" href="/feed.xml">
+
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +41,7 @@
 </script>
 
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<script src="/assets/js/translations.js?v=0343773000-6ff2605c"></script>
+<script src="/assets/js/translations.js?v=0232250000-e4d2de70"></script>
 
 <style>
   html { scroll-behavior: smooth; }
@@ -82,6 +86,17 @@
 }
 </script>
 <!-- BREADCRUMB_SCHEMA_END -->
+<style id="a11y-cloak">[x-cloak]{display:none!important}</style>
+<!-- GA4_BEGIN -->
+<!-- Google tag (gtag.js) — Aarambha GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YXJ32LD3H6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YXJ32LD3H6', { 'anonymize_ip': true });
+</script>
+<!-- GA4_END -->
 </head>
 <body>
 <a href="#main-content" class="sr-only-focusable fixed top-2 left-2 z-[100] bg-accent text-gray-900 font-bold px-4 py-2 rounded-lg opacity-0 pointer-events-none focus:opacity-100 focus:pointer-events-auto">Skip to main content</a>
@@ -90,7 +105,7 @@
 <nav x-data="{ open: false }" class="sticky top-0 z-50 bg-dark/90 backdrop-blur-xl border-b border-white/[.07]">
   <div class="max-w-6xl mx-auto px-4 md:px-8 h-[72px] flex items-center justify-between gap-4">
     <a href="/" class="flex items-center gap-2 flex-shrink-0">
-      <span class="hindi text-2xl font-black text-accent leading-none">आरम्भ</span>
+      <img src="/assets/images/logos/aarambha-logo-96.webp" alt="Aarambha logo" width="36" height="36" class="aarambha-nav-logo w-9 h-9 rounded-full ring-1 ring-accent/40 shadow-sm shadow-accent/20" loading="eager">
       <span class="text-xs font-bold text-gray-400 tracking-[.14em] uppercase hidden sm:block">Aarambha</span>
     </a>
     <div class="hidden md:flex items-center gap-0.5">
@@ -153,9 +168,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">WELFARE</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Widow pension, old-age pension — why 30% don&#x27;t receive what they&#x27;re owed</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">विधवा पेंशन, वृद्धावस्था पेंशन — 30% को उनका हक़ क्यों नहीं मिलता</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">विधवा पेंशन, वृद्धावस्था पेंशन — 30% को उनका हक़ क्यों नहीं मिलता</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">₹50,000 crore of welfare doesn&#x27;t reach beneficiaries each year. Adhikar AI is how we change that.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">हर साल ₹50,000 करोड़ का कल्याण लाभार्थियों तक नहीं पहुँचता। Adhikar AI यही बदलता है।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">हर साल ₹50,000 करोड़ का कल्याण लाभार्थियों तक नहीं पहुँचता। Adhikar AI यही बदलता है।</p>
           <p class="text-xs text-gray-600 mt-3">2026-06-07</p>
         </div>
       </a>
@@ -166,9 +181,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">GOVT SERVICES</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Aadhaar update, passport, caste cert — one voice interface</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">आधार update, passport, जाति प्रमाण — एक voice interface</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">आधार update, passport, जाति प्रमाण — एक voice interface</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">Every adult Indian deals with these 5 forms at least once a year. Svayam AI makes each one a 2-minute voice conversation.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">हर वयस्क भारतीय को साल में इन 5 forms में से कम-से-कम एक भरना पड़ता है। Svayam AI हर को 2 मिनट की voice बातचीत बना देता है।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">हर वयस्क भारतीय को साल में इन 5 forms में से कम-से-कम एक भरना पड़ता है। Svayam AI हर को 2 मिनट की voice बातचीत बना देता है।</p>
           <p class="text-xs text-gray-600 mt-3">2026-06-01</p>
         </div>
       </a>
@@ -179,9 +194,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">GOVT SERVICES</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Sarkari form, voice se bhar do — Svayam AI explained</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">सरकारी form, voice से भर दो — Svayam AI</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">सरकारी form, voice से भर दो — Svayam AI</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">India has ~1500 government forms. Every one asks the same 15 fields. Svayam fills them all, by voice.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">भारत में ~1500 सरकारी forms हैं। हर एक वही 15 fields माँगता है। Svayam voice से सब भरता है।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">भारत में ~1500 सरकारी forms हैं। हर एक वही 15 fields माँगता है। Svayam voice से सब भरता है।</p>
           <p class="text-xs text-gray-600 mt-3">2026-05-26</p>
         </div>
       </a>
@@ -192,9 +207,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">INSURANCE</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">PMFBY claims — why 90% of farmers don&#x27;t file them</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">PMFBY claims — 90% किसान क्यों नहीं भरते</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">PMFBY claims — 90% किसान क्यों नहीं भरते</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">Farmers pay PMFBY premiums faithfully. When the crop fails, they don&#x27;t claim — because the form is impossible. Bima AI fixes this.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">किसान ईमानदारी से PMFBY premium भरते हैं। फ़सल नष्ट हो जाए तो claim नहीं करते — क्योंकि form असंभव है। Bima AI यही ठीक करता है।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">किसान ईमानदारी से PMFBY premium भरते हैं। फ़सल नष्ट हो जाए तो claim नहीं करते — क्योंकि form असंभव है। Bima AI यही ठीक करता है।</p>
           <p class="text-xs text-gray-600 mt-3">2026-05-20</p>
         </div>
       </a>
@@ -205,9 +220,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">INSURANCE</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">40% of insurance claims rejected — AI fixes the paperwork</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">40% बीमा claims रिजेक्ट होते हैं — AI paperwork ठीक करता है</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">40% बीमा claims रिजेक्ट होते हैं — AI paperwork ठीक करता है</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">You bought insurance. The claim got rejected. Paperwork, not fraud. Bima AI drafts claims that insurers accept.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">आपने बीमा लिया। Claim रिजेक्ट हो गया। Paperwork की वजह से, धोखाधड़ी नहीं। Bima AI ऐसे claims बनाती है जो insurer मानते हैं।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">आपने बीमा लिया। Claim रिजेक्ट हो गया। Paperwork की वजह से, धोखाधड़ी नहीं। Bima AI ऐसे claims बनाती है जो insurer मानते हैं।</p>
           <p class="text-xs text-gray-600 mt-3">2026-05-14</p>
         </div>
       </a>
@@ -218,9 +233,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">LIVESTOCK</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Livestock AI for rural dairy — beyond a photo app</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">ग्रामीण डेयरी के लिए Livestock AI — photo app से आगे</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">ग्रामीण डेयरी के लिए Livestock AI — photo app से आगे</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">Pashu AI isn&#x27;t a diagnosis app. It&#x27;s a dairy operations layer for 70 million Indian families.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">Pashu AI निदान app नहीं है। यह 7 करोड़ भारतीय परिवारों के लिए dairy operations की परत है।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">Pashu AI निदान app नहीं है। यह 7 करोड़ भारतीय परिवारों के लिए dairy operations की परत है।</p>
           <p class="text-xs text-gray-600 mt-3">2026-05-08</p>
         </div>
       </a>
@@ -231,9 +246,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">LIVESTOCK</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Pashu ka doctor, aapke phone mein — how Pashu AI works</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">पशु का डॉक्टर, आपके फ़ोन में — Pashu AI कैसे काम करता है</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">पशु का डॉक्टर, आपके फ़ोन में — Pashu AI कैसे काम करता है</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">70 million dairy farmers. The nearest vet is 20km away. One sick cow = ₹80,000 loss. Pashu AI is the difference.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">7 करोड़ दुग्ध किसान। सबसे पास का वेट 20km दूर। एक बीमार गाय = ₹80,000 का नुक़सान। Pashu AI यही अंतर है।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">7 करोड़ दुग्ध किसान। सबसे पास का वेट 20km दूर। एक बीमार गाय = ₹80,000 का नुक़सान। Pashu AI यही अंतर है।</p>
           <p class="text-xs text-gray-600 mt-3">2026-05-02</p>
         </div>
       </a>
@@ -244,9 +259,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">COMPLIANCE</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">ITR filing in 3 minutes — voice, Hinglish, no CA</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">3 मिनट में ITR filing — voice, Hinglish, बिना CA</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">3 मिनट में ITR filing — voice, Hinglish, बिना CA</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">8 crore salaried Indians file ITR every July. ClearTax charges. CAs charge more. Karta AI files by voice, for free.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">हर जुलाई 8 करोड़ salaried भारतीय ITR भरते हैं। ClearTax पैसे लेता है। CA और भी। Karta AI voice से मुफ़्त में करता है।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">हर जुलाई 8 करोड़ salaried भारतीय ITR भरते हैं। ClearTax पैसे लेता है। CA और भी। Karta AI voice से मुफ़्त में करता है।</p>
           <p class="text-xs text-gray-600 mt-3">2026-04-26</p>
         </div>
       </a>
@@ -257,9 +272,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">COMPLIANCE</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">GSTR-1, GSTR-3B, and Karta AI — compliance at voice speed</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">GSTR-1, GSTR-3B, और Karta AI — voice की गति पर compliance</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">GSTR-1, GSTR-3B, और Karta AI — voice की गति पर compliance</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">Every month, 63 million MSMEs file GST returns. Most pay a CA ₹2000-5000. Karta AI does it for free in 3 minutes.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">हर महीने 6.3 करोड़ MSMEs GST returns भरते हैं। ज़्यादातर CA को ₹2000-5000 देते हैं। Karta AI 3 मिनट में मुफ़्त करता है।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">हर महीने 6.3 करोड़ MSMEs GST returns भरते हैं। ज़्यादातर CA को ₹2000-5000 देते हैं। Karta AI 3 मिनट में मुफ़्त करता है।</p>
           <p class="text-xs text-gray-600 mt-3">2026-04-20</p>
         </div>
       </a>
@@ -270,9 +285,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">COMMERCE</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Kirana to distributor — the 4-layer NLP stack explained</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">Kirana से distributor तक — 4-layer NLP stack</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">Kirana से distributor तक — 4-layer NLP stack</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">How AI handles &#x27;Suresh-ji, 10 paani soda aur 5 chai patti bhej do&#x27; — from message to fulfilment.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">&#x27;सुरेश जी, 10 पानी soda और 5 चाय-पत्ती भेज दो&#x27; — message से डिलीवरी तक AI कैसे सँभालती है।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">&#x27;सुरेश जी, 10 पानी soda और 5 चाय-पत्ती भेज दो&#x27; — message से डिलीवरी तक AI कैसे सँभालती है।</p>
           <p class="text-xs text-gray-600 mt-3">2026-04-14</p>
         </div>
       </a>
@@ -283,9 +298,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">COMMERCE</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">63M MSMEs run on WhatsApp + Excel — here&#x27;s the AI layer</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">6.3 करोड़ MSMEs WhatsApp + Excel पर चलते हैं — AI layer अब यहाँ है</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">6.3 करोड़ MSMEs WhatsApp + Excel पर चलते हैं — AI layer अब यहाँ है</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">India&#x27;s 63 million MSMEs don&#x27;t need enterprise SaaS. They need AI that speaks their channel and their language.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">भारत के 6.3 करोड़ MSMEs को enterprise SaaS नहीं चाहिए। उन्हें उनके channel और भाषा की AI चाहिए।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">भारत के 6.3 करोड़ MSMEs को enterprise SaaS नहीं चाहिए। उन्हें उनके channel और भाषा की AI चाहिए।</p>
           <p class="text-xs text-gray-600 mt-3">2026-04-08</p>
         </div>
       </a>
@@ -296,9 +311,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">EDUCATION</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">India&#x27;s first blind-mode edtech — FREE forever</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">भारत का पहला blind-mode edtech — हमेशा के लिए FREE</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">भारत का पहला blind-mode edtech — हमेशा के लिए FREE</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">50 lakh visually-impaired students in India. Zero edtech serves them. Shrutam does — and it&#x27;s free.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">भारत में 50 लाख दृष्टिबाधित विद्यार्थी। कोई edtech उनकी सेवा नहीं करता। Shrutam करता है — और मुफ़्त में।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">भारत में 50 लाख दृष्टिबाधित विद्यार्थी। कोई edtech उनकी सेवा नहीं करता। Shrutam करता है — और मुफ़्त में।</p>
           <p class="text-xs text-gray-600 mt-3">2026-04-02</p>
         </div>
       </a>
@@ -309,9 +324,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">EDUCATION</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Why audio-first for Class 6-10 students</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">Class 6-10 के लिए audio-first क्यों</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">Class 6-10 के लिए audio-first क्यों</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">Video feels modern but fails Bharat. Text fails the weak reader. Audio meets everyone where they are.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">Video आधुनिक लगता है, पर भारत के लिए नहीं चलता। Text कमज़ोर पाठक को पीछे छोड़ देता है। Audio हर बच्चे से मिलता है।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">Video आधुनिक लगता है, पर भारत के लिए नहीं चलता। Text कमज़ोर पाठक को पीछे छोड़ देता है। Audio हर बच्चे से मिलता है।</p>
           <p class="text-xs text-gray-600 mt-3">2026-03-28</p>
         </div>
       </a>
@@ -322,9 +337,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">EDUCATION</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Why Hindi-medium kids are falling behind — and what fixes it</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">हिंदी-medium बच्चे पीछे क्यों रह जाते हैं — और क्या ठीक करेगा</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">हिंदी-medium बच्चे पीछे क्यों रह जाते हैं — और क्या ठीक करेगा</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">67% of India&#x27;s students study in Hindi medium. They&#x27;re not behind because of intelligence. They&#x27;re behind because every tool assumes English.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">भारत के 67% विद्यार्थी हिंदी माध्यम में पढ़ते हैं। वे बुद्धि की कमी से पीछे नहीं हैं। वे पीछे हैं क्योंकि हर tool English मानकर चलता है।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">भारत के 67% विद्यार्थी हिंदी माध्यम में पढ़ते हैं। वे बुद्धि की कमी से पीछे नहीं हैं। वे पीछे हैं क्योंकि हर tool English मानकर चलता है।</p>
           <p class="text-xs text-gray-600 mt-3">2026-03-22</p>
         </div>
       </a>
@@ -335,9 +350,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">MARKET</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">We don&#x27;t translate, we rebuild — why native Hindi AI wins</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">हम अनुवाद नहीं करते, नए सिरे से बनाते हैं</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">हम अनुवाद नहीं करते, नए सिरे से बनाते हैं</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">Translated AI sounds wrong. It thinks in English and pretends. Native Hindi AI thinks in Hindi. The difference is everything.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">अनूदित AI ग़लत लगती है। वह English में सोचती है, नाटक करती है। हिंदी में सोचने वाली AI अलग है।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">अनूदित AI ग़लत लगती है। वह English में सोचती है, नाटक करती है। हिंदी में सोचने वाली AI अलग है।</p>
           <p class="text-xs text-gray-600 mt-3">2026-03-18</p>
         </div>
       </a>
@@ -348,9 +363,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">MARKET</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">India&#x27;s 1.2 billion AI gap — the math</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">भारत का 1.2 अरब AI का अंतर — आँकड़े</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">भारत का 1.2 अरब AI का अंतर — आँकड़े</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">1.4 billion Indians. 200 million speak English. Every AI product serves that 200M. Here&#x27;s the math on the 1.2B left behind.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">1.4 अरब भारतीय। 20 करोड़ English बोलते हैं। हर AI product उन्हीं के लिए बनता है। बाक़ी 1.2 अरब का गणित।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">1.4 अरब भारतीय। 20 करोड़ English बोलते हैं। हर AI product उन्हीं के लिए बनता है। बाक़ी 1.2 अरब का गणित।</p>
           <p class="text-xs text-gray-600 mt-3">2026-03-12</p>
         </div>
       </a>
@@ -361,9 +376,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">PHILOSOPHY</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">22/7 — tez nahi, sahi. Why we don&#x27;t ship fast.</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">22/7 — तेज़ नहीं, सही। हम जल्दी ship क्यों नहीं करते।</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">22/7 — तेज़ नहीं, सही। हम जल्दी ship क्यों नहीं करते।</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">Two woodcutters. One cuts for 24 hours. One cuts for 22 and sharpens for 2. The slow one wins.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">दो लकड़हारे। एक 24 घंटे काटता है। दूसरा 22 काटता है, 2 कुल्हाड़ी तेज़ करता है। धीमा जीतता है।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">दो लकड़हारे। एक 24 घंटे काटता है। दूसरा 22 काटता है, 2 कुल्हाड़ी तेज़ करता है। धीमा जीतता है।</p>
           <p class="text-xs text-gray-600 mt-3">2026-03-06</p>
         </div>
       </a>
@@ -374,9 +389,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">PHILOSOPHY</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Pancha Bhoota — ancient elements, modern AI</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">पंच भूत — प्राचीन तत्व, आधुनिक AI</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">पंच भूत — प्राचीन तत्व, आधुनिक AI</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">Five elements. Seven products. A framework borrowed from our grandparents.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">पाँच तत्व। सात products। हमारे दादा-दादियों से उधार लिया गया दर्शन।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">पाँच तत्व। सात products। हमारे दादा-दादियों से उधार लिया गया दर्शन।</p>
           <p class="text-xs text-gray-600 mt-3">2026-02-28</p>
         </div>
       </a>
@@ -387,9 +402,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">PHILOSOPHY</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Bharat vs India — why we build for the villages</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">भारत बनाम India — हम गाँवों के लिए क्यों बनाते हैं</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">भारत बनाम India — हम गाँवों के लिए क्यों बनाते हैं</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">India gets funded. Bharat gets ignored. Here&#x27;s why that&#x27;s about to flip.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">India को funding मिलती है। भारत को नज़रअंदाज़ किया जाता है। यही पलटने वाला है।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">India को funding मिलती है। भारत को नज़रअंदाज़ किया जाता है। यही पलटने वाला है।</p>
           <p class="text-xs text-gray-600 mt-3">2026-02-20</p>
         </div>
       </a>
@@ -400,9 +415,9 @@
         <div class="p-5">
           <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">PHILOSOPHY</p>
           <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">India mein AI ki aarambh — why now, why us</h3>
-          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">भारत में AI का आरम्भ — अभी क्यों, हम क्यों</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">भारत में AI का आरम्भ — अभी क्यों, हम क्यों</h3>
           <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">The question we kept asking: why hasn&#x27;t world-class AI reached India&#x27;s villages? Aarambha is our answer.</p>
-          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">जो सवाल हम बार-बार पूछते रहे: world-class AI गाँव तक क्यों नहीं पहुँचा? आरम्भ उसका उत्तर है।</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-cloak x-show="$store.lang.current === 'hi'" lang="hi">जो सवाल हम बार-बार पूछते रहे: world-class AI गाँव तक क्यों नहीं पहुँचा? आरम्भ उसका उत्तर है।</p>
           <p class="text-xs text-gray-600 mt-3">2026-02-12</p>
         </div>
       </a>
