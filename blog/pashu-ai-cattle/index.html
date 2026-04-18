@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pashu ka doctor, aapke phone mein — how Pashu AI works | Aarambha</title>
+<meta name="description" content="70 million dairy farmers. The nearest vet is 20km away. One sick cow = ₹80,000 loss. Pashu AI is the difference.">
+<link rel="canonical" href="https://aarambhax.ai/blog/pashu-ai-cattle/">
+<link rel="alternate" hreflang="en-IN" href="https://aarambhax.ai/blog/pashu-ai-cattle/">
+<link rel="alternate" hreflang="hi-IN" href="https://aarambhax.ai/blog/pashu-ai-cattle/">
+<link rel="alternate" hreflang="x-default" href="https://aarambhax.ai/blog/pashu-ai-cattle/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://aarambhax.ai/blog/pashu-ai-cattle/">
+<meta property="og:title" content="Pashu ka doctor, aapke phone mein — how Pashu AI works">
+<meta property="og:description" content="70 million dairy farmers. The nearest vet is 20km away. One sick cow = ₹80,000 loss. Pashu AI is the difference.">
+<meta property="og:image" content="https://aarambhax.ai/assets/images/blog/pashu-ai-cattle-hero.webp">
+<meta property="og:site_name" content="Aarambha">
+<meta property="article:published_time" content="2026-05-02">
+<meta property="article:section" content="pashu">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: {
+    colors: { primary: '#0ea5e9', 'primary-dark': '#0284c7', accent: '#f59e0b', 'accent-dark': '#d97706', cosmos: '#020710', dark: '#060d1a', card: '#0d1525' },
+    fontFamily: { sora: ['Sora', 'sans-serif'], hindi: ['Noto Sans Devanagari', 'sans-serif'] }
+  } } }
+</script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script src="/assets/js/translations.js"></script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Sora', sans-serif; background: #060d1a; color: #e2e8f0; }
+  .hindi { font-family: 'Noto Sans Devanagari', sans-serif; }
+  .grad { background: linear-gradient(135deg, #0ea5e9, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .prose { max-width: 44rem; margin: 0 auto; }
+  .prose h2 { font-size: 1.75rem; font-weight: 800; color: #f1f5f9; margin: 2.5rem 0 1rem; letter-spacing: -0.02em; }
+  .prose h3 { font-size: 1.25rem; font-weight: 700; color: #cbd5e1; margin: 2rem 0 0.75rem; }
+  .prose p  { color: #94a3b8; line-height: 1.8; margin-bottom: 1.1rem; }
+  .prose ul, .prose ol { color: #94a3b8; margin: 0 0 1.25rem 1.25rem; line-height: 1.75; }
+  .prose li { margin-bottom: 0.5rem; }
+  .prose a  { color: #0ea5e9; text-decoration: underline; text-decoration-color: rgba(14,165,233,.4); text-underline-offset: 3px; }
+  .prose a:hover { color: #f59e0b; text-decoration-color: rgba(245,158,11,.6); }
+  .prose blockquote { border-left: 4px solid #f59e0b; padding: 0.5rem 0 0.5rem 1.25rem; margin: 2rem 0; font-style: italic; color: #f1f5f9; font-size: 1.1rem; }
+  .prose strong { color: #e2e8f0; font-weight: 700; }
+  ::selection { background: #f59e0b; color: #060d1a; }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Pashu ka doctor, aapke phone mein — how Pashu AI works",
+  "description": "70 million dairy farmers. The nearest vet is 20km away. One sick cow = ₹80,000 loss. Pashu AI is the difference.",
+  "inLanguage": "en-IN",
+  "datePublished": "2026-05-02",
+  "image": "https://aarambhax.ai/assets/images/blog/pashu-ai-cattle-hero.webp",
+  "author": { "@type": "Organization", "name": "Aarambha", "url": "https://aarambhax.ai/" },
+  "publisher": { "@type": "Organization", "name": "Aarambha", "url": "https://aarambhax.ai/" },
+  "mainEntityOfPage": "https://aarambhax.ai/blog/pashu-ai-cattle/",
+  "articleSection": "pashu"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "पशु का डॉक्टर, आपके फ़ोन में — Pashu AI कैसे काम करता है",
+  "description": "7 करोड़ दुग्ध किसान। सबसे पास का वेट 20km दूर। एक बीमार गाय = ₹80,000 का नुक़सान। Pashu AI यही अंतर है।",
+  "inLanguage": "hi-IN",
+  "datePublished": "2026-05-02",
+  "image": "https://aarambhax.ai/assets/images/blog/pashu-ai-cattle-hero.webp",
+  "author": { "@type": "Organization", "name": "Aarambha", "url": "https://aarambhax.ai/" },
+  "publisher": { "@type": "Organization", "name": "Aarambha", "url": "https://aarambhax.ai/" },
+  "mainEntityOfPage": "https://aarambhax.ai/blog/pashu-ai-cattle/",
+  "articleSection": "pashu"
+}
+</script>
+</head>
+<body>
+
+<!-- NAV: same markup as every other page — copy verbatim from /index.html -->
+<!-- NAV — shared, identical per page -->
+<nav x-data="{ open: false }" class="sticky top-0 z-50 bg-dark/90 backdrop-blur-xl border-b border-white/[.07]">
+  <div class="max-w-6xl mx-auto px-4 md:px-8 h-[72px] flex items-center justify-between gap-4">
+    <a href="/" class="flex items-center gap-2 flex-shrink-0">
+      <span class="hindi text-2xl font-black text-accent leading-none">आरम्भ</span>
+      <span class="text-xs font-bold text-gray-500 tracking-[.14em] uppercase hidden sm:block">Aarambha</span>
+    </a>
+    <div class="hidden md:flex items-center gap-0.5">
+      <a href="/products/" x-text="$store.lang.t('nav_products')" class="text-sm font-medium text-gray-400 px-3.5 py-2 rounded-xl hover:text-primary hover:bg-primary/10 transition-all"></a>
+      <a href="/about/" x-text="$store.lang.t('nav_about')" class="text-sm font-medium text-gray-400 px-3.5 py-2 rounded-xl hover:text-primary hover:bg-primary/10 transition-all"></a>
+      <a href="/philosophy/" x-text="$store.lang.t('nav_philosophy')" class="text-sm font-medium text-gray-400 px-3.5 py-2 rounded-xl hover:text-primary hover:bg-primary/10 transition-all"></a>
+      <a href="/blog/" x-text="$store.lang.t('nav_blog')" class="text-sm font-medium text-gray-400 px-3.5 py-2 rounded-xl hover:text-primary hover:bg-primary/10 transition-all"></a>
+    </div>
+    <div class="flex items-center gap-2 flex-shrink-0">
+      <button @click="$store.lang.toggle()" x-text="$store.lang.t('lang_toggle')" class="hindi hidden sm:block text-xs font-bold text-gray-400 border border-white/[.12] px-2.5 py-1.5 rounded-lg hover:border-primary/50 hover:text-primary transition-all"></button>
+      <a href="/#waitlist" x-text="$store.lang.t('nav_cta')" class="hidden md:inline-flex text-sm font-bold bg-primary text-white px-4 py-2 rounded-xl hover:bg-primary-dark transition-all shadow-lg shadow-primary/20"></a>
+      <button @click="open = !open" class="md:hidden p-1.5 text-gray-400" aria-label="Menu">
+        <svg x-show="!open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg x-show="open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </div>
+  <div x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" class="md:hidden border-t border-white/[.07] bg-dark px-4 py-4 flex flex-col gap-1">
+    <a href="/products/" x-text="$store.lang.t('nav_products')" class="text-gray-300 px-3 py-2.5 rounded-xl hover:bg-white/5 transition-colors"></a>
+    <a href="/about/" x-text="$store.lang.t('nav_about')" class="text-gray-300 px-3 py-2.5 rounded-xl hover:bg-white/5 transition-colors"></a>
+    <a href="/philosophy/" x-text="$store.lang.t('nav_philosophy')" class="text-gray-300 px-3 py-2.5 rounded-xl hover:bg-white/5 transition-colors"></a>
+    <a href="/blog/" x-text="$store.lang.t('nav_blog')" class="text-gray-300 px-3 py-2.5 rounded-xl hover:bg-white/5 transition-colors"></a>
+    <div class="border-t border-white/[.07] mt-2 pt-3 flex flex-col gap-2">
+      <button @click="$store.lang.toggle()" x-text="$store.lang.t('lang_toggle')" class="hindi text-sm font-bold text-gray-400 border border-white/[.12] px-3 py-2 rounded-xl text-left hover:border-primary/50 transition-all"></button>
+      <a href="/#waitlist" x-text="$store.lang.t('nav_cta')" class="bg-primary text-white font-bold text-center px-4 py-3 rounded-xl hover:bg-primary-dark transition-all"></a>
+    </div>
+  </div>
+</nav>
+
+
+
+<main>
+<article class="px-4 md:px-8 py-12 md:py-20">
+  <div class="max-w-4xl mx-auto mb-8">
+    <p class="text-xs font-bold text-accent tracking-[.20em] uppercase mb-3">PASHU</p>
+    <h1 x-show="$store.lang.current === 'en'" lang="en" class="text-3xl md:text-5xl font-black leading-tight text-gray-100 mb-4">Pashu ka doctor, aapke phone mein — how Pashu AI works</h1>
+    <h1 x-show="$store.lang.current === 'hi'" lang="hi" class="hindi text-3xl md:text-5xl font-black leading-tight text-gray-100 mb-4">पशु का डॉक्टर, आपके फ़ोन में — Pashu AI कैसे काम करता है</h1>
+    <p class="text-sm text-gray-500 mb-8">
+      <span x-show="$store.lang.current === 'en'">Published 2026-05-02 · Aarambha</span>
+      <span x-show="$store.lang.current === 'hi'" class="hindi">प्रकाशित 2026-05-02 · आरम्भ</span>
+    </p>
+    <img src="/assets/images/blog/pashu-ai-cattle-hero.webp" alt="" class="w-full h-auto aspect-[1200/630] object-cover rounded-2xl border border-white/[.07]" loading="eager" width="1200" height="630">
+  </div>
+
+  <div class="prose" x-show="$store.lang.current === 'en'" lang="en">
+    <h2>Pashu ka Doctor, Aapke Phone Mein: How Aarambha's Pashu AI Works</h2>
+
+<p>Bharat ki aatma, hamare gaon mein basti hai, aur gaon ki shaan hamare pashu dhan se hai. Jab ek pashu beemar hota hai, toh sirf uski sehat par hi asar nahi padta, balki poore parivar ki rozi-roti par sankat aa jaata hai. Ek swasth pashu, khushaal ghar ka prateek hai. Lekin jab beemari dastak deti hai, toh samay par sahi ilaaj milna mushkil ho sakta hai. Yahan Aarambha ka Pashu AI aapki madad ke liye aata hai – aapke phone mein, aapki bhasha mein, aapka apna pashu doctor.</p>
+
+<p>Hum samajhte hain ki har kisan ke liye, har pashu anmol hai. Unki sehat ka khayal rakhna, unke utpadan ko banaye rakhna, aur unke jeevan ko behtar banana, yahi hamara lakshya hai. Isi soch ke saath, humne Pashu AI banaya hai – ek digital saathi jo aapke pashuon ki dekhbhaal ko aasaan aur sulabh banata hai.</p>
+
+<h3>The Real Cost of a Sick Animal: Numbers That Speak</h3>
+
+<p>Ek beemar pashu sirf takleef mein nahi hota, woh aapke khet ki aamdani par bhi bhaari padta hai. Humne dekha hai ki ek single case of Foot-and-Mouth Disease (FMD) can lead to a 20-30% drop in milk production for several weeks. Mastitis, another common ailment, can cause a 10-15% reduction in milk yield and even lead to permanent udder damage, rendering the animal less productive in the long run. Bloat, if not treated promptly, can be fatal, resulting in the complete loss of a valuable asset.</p>
+
+<p>A study conducted across various regions of India highlighted that livestock diseases collectively cause an estimated annual loss of over INR 50,000 crores to the Indian economy. This isn't just a statistic; it represents countless families facing financial hardship, children struggling to attend school, and dreams being put on hold. The economic burden extends beyond direct losses too, encompassing treatment costs, reduced fertility rates, and the premature culling of animals. For many small and marginal farmers, the loss of even one animal can be catastrophic, pushing them further into debt. Aarambha is committed to reducing these losses, empowering farmers with timely and accurate information to protect their invaluable pashu dhan.</p>
+
+<h2>Photo Diagnosis: Your Phone, Your Pashu's Health Scanner</h2>
+
+<p>Imagine this: aapke pashu ko koi dikkat hai, aur aapko samajh nahi aa raha ki kya karein. Ab aapko kisi doctor ka intezaar nahi karna padega. Pashu AI aapke phone ke camera ko hi ek powerful diagnostic tool bana deta hai. Humne advanced computer vision aur machine learning algorithms ka upyog kiya hai jo aapke pashu ki tasveer se beemariyon ko pehchan sakte hain.</p>
+
+<h3>How It Works: Snap, Send, and Understand</h3>
+
+<p>Simply take a clear photo of the affected area of your animal. Whether it's a lesion on the mouth, a swollen udder, a distended abdomen, or an unusual gait, our AI can analyze the visual cues. Here are some of the key conditions our photo diagnosis currently covers:</p>
+<ul>
+    <li><strong>Foot-and-Mouth Disease (FMD):</strong> FMD ke chhale (blisters) aur ghaav (lesions) ko pehchanna, khaaskar munh aur khuron par. Early detection is crucial to prevent its rapid spread.</li>
+    <li><strong>Mastitis:</strong> Gaay ya bhains ke than (udder) mein sujan, laalipan, ya rang mein badlav. Our AI can detect subtle signs of inflammation that might be missed by the untrained eye.</li>
+    <li><strong>Bloat (Pet Phoolna):</strong> Pashu ke pet ka asamanya roop se phoolna. This condition requires immediate attention, and our AI can help assess the severity based on visual cues.</li>
+    <li><strong>Lameness (Langrahat):</strong> Pashu ke chalne ke tareeke mein badlav, kisi pair par bojh na dalna. By analyzing the animal's posture and movement from a photo or short video clip, our AI can indicate potential issues.</li>
+</ul>
+<p>Once you upload the photo, our AI processes it within seconds and provides an initial assessment. This isn't a replacement for a veterinarian, but it's a powerful first step that can guide you on whether immediate action is needed, and what kind of problem you might be dealing with. It helps bridge the gap where veterinary services are scarce or inaccessible.</p>
+
+<h2>Voice Consultation in Hindi: Baat Karo, Ilaaj Pao</h2>
+
+<p>Hum jaante hain ki Bharat ke gaon mein har koi likhna ya padhna nahi jaanta, aur angrezi toh door ki baat hai. Isliye, Pashu AI ko humne aapki apni bhasha – Hindi – mein baat karne ke liye banaya hai. Ab aapko type karne ki zaroorat nahi, bas bolna hai, aur hamara AI aapki baat ko samjhega.</p>
+
+<h3>What to Say, What AI Hears</h3>
+
+<p>Our voice consultation feature uses advanced Natural Language Processing (NLP) specifically trained on Indian dialects and animal husbandry terminology. You can describe your animal's symptoms just as you would to a local doctor. For example, you can say things like:</p>
+<ul>
+    <li>"Meri gaay doodh kam de rahi hai aur uske than mein dard hai." (My cow is giving less milk and her udder is painful.)</li>
+    <li>"Bhaains ke munh mein chhale ho gaye hain aur woh kuch kha nahi rahi hai." (The buffalo has blisters in her mouth and isn't eating anything.)</li>
+    <li>"Hamari bakri ko dast lage hain aur woh kamzor ho rahi hai." (Our goat has diarrhea and is getting weak.)</li>
+    <li>"Pashu ka pet bahut phool gaya hai aur woh bechain hai." (The animal's stomach is very bloated and it's restless.)</li>
+</ul>
+<p>The AI listens, understands the symptoms, asks clarifying questions if needed (all in Hindi!), and then provides a preliminary diagnosis and recommended course of action. This interactive dialogue makes the process intuitive and accessible for everyone, regardless of their literacy level or technological familiarity.</p>
+<blockquote>
+<p>“Humara lakshya hai ki har kisan ko uske pashu ki sehat ki jaankari uski apni bhasha mein mile, bina kisi rukawat ke. Pashu AI isi sapne ko sach kar raha hai.”</p>
+</blockquote>
+
+<h2>Medicine Recommendation + Generic Alternatives</h2>
+
+<p>Ek baar jab Pashu AI beemari ko pehchan leta hai, toh agla kadam hai sahi ilaaj. Hamara system sirf beemari nahi batata, balki uske liye upyukt dawaon ki jaankari bhi deta hai. Aur sabse khaas baat – hum aapko generic alternatives ke baare mein bhi batate hain.</p>
+
+<h3>Empowering You with Choices</h3>
+
+<p>Branded medicines can often be expensive, creating an additional financial burden for farmers. Aarambha believes in empowering our users with choices. Our AI database includes a comprehensive list of veterinary medicines, along with their active ingredients and commonly available generic equivalents. This means you can:</p>
+<ul>
+    <li><strong>Get Specific Recommendations:</strong> The AI will suggest appropriate medicines based on the diagnosed condition and the animal's species and age.</li>
+    <li><strong>Understand Generic Options:</strong> It will then inform you about generic alternatives that are equally effective but often more affordable. This helps you make informed decisions without compromising on your animal's health.</li>
+    <li><strong>Dosage and Administration:</strong> Basic guidance on dosage and how to administer the medicine is also provided, ensuring safe and effective treatment.</li>
+</ul>
+<p>This feature is designed to make veterinary care more affordable and sustainable for every farmer. It's about providing practical, actionable advice that fits into the realities of rural India.</p>
+
+<h2>Integration with Rashtriya Gokul Mission</h2>
+
+<p>Aarambha ka Pashu AI sirf ek standalone tool nahi hai; hum Bharat sarkar ke mahatvapurna abhiyaanon ke saath milkar kaam karne mein vishwas rakhte hain. Rashtriya Gokul Mission, jo desh mein indigenous bovine breeds ke sanrakshan aur vikas par kendrit hai, hamare liye ek prerana hai.</p>
+
+<p>Hum apne data aur insights ko is mission ke saath integrate karne ki disha mein kaam kar rahe hain. Iska matlab hai:</p>
+<ul>
+    <li><strong>Data Contribution:</strong> The anonymous and aggregated data collected through Pashu AI on disease prevalence and treatment effectiveness can provide valuable insights to policymakers involved in the Rashtriya Gokul Mission. This helps in understanding regional disease patterns and formulating targeted intervention strategies.</li>
+    <li><strong>Disease Surveillance:</strong> By identifying disease hotspots and emerging health trends in real-time, Pashu AI can act as an early warning system, supporting the mission's efforts in disease control and prevention.</li>
+    <li><strong>Breed-Specific Care:</strong> As the mission focuses on specific indigenous breeds, our AI is being trained to incorporate breed-specific health considerations and treatment protocols, further enhancing the accuracy and relevance of our recommendations.</li>
+    <li><strong>Extension Services:</strong> Pashu AI can serve as a digital extension arm, disseminating best practices in animal husbandry and health management promoted by the Rashtriya Gokul Mission directly to farmers' phones.</li>
+</ul>
+<p>Our commitment is to work hand-in-hand with national initiatives to strengthen India's livestock sector, ensuring the health and prosperity of our pashu dhan. This collaboration underscores our <a href="/philosophy/">philosophy</a> of building technology that serves the nation, one farmer, one animal at a time.</p>
+
+<p>Aarambha ka Pashu AI, sirf ek app nahi, balki ek naye Bharat ki disha mein ek kadam hai – jahan har kisan sashakt ho, aur har pashu swasth. <a href="/products/#pashu">Hamare Pashu AI product ke baare mein aur jaankari ke liye yahan click karein.</a></p>
+  </div>
+  <div class="prose hindi" x-show="$store.lang.current === 'hi'" lang="hi">
+    <h2>बीमार पशु की क़ीमत: सिर्फ़ इलाज नहीं, पूरे परिवार का नुक़सान</h2>
+
+नमस्ते! मैं Aarambha से हूँ, और हम सब यहाँ एक ही सोच के साथ काम करते हैं – कि हमारे पशुधन स्वस्थ रहें, और हमारे पशुपालक खुशहाल। आपने कभी सोचा है कि एक बीमार पशु की असली क़ीमत क्या होती है? अक्सर हम सिर्फ़ डॉक्टर की फ़ीस या दवा का ख़र्च देखते हैं। लेकिन बात इससे कहीं ज़्यादा गहरी है।
+
+एक बीमार पशु का मतलब है – दूध उत्पादन में भारी गिरावट। मान लीजिए, आपकी गाय रोज़ 10 लीटर दूध देती है, और बीमारी के कारण वह सिर्फ़ 5 लीटर पर आ गई। एक हफ़्ते में ही आपने 35 लीटर दूध खो दिया! अगर दूध का भाव 40 रुपये लीटर है, तो सीधे-सीधे 1400 रुपये का नुक़सान। और ये तो बस शुरुआत है।
+
+फिर आता है प्रजनन पर असर। अगर गाय या भैंस समय पर गाभिन नहीं होती, तो अगले ब्यांत में देरी होती है। इसका सीधा मतलब है, महीनों तक दूध का नुक़सान और बच्चे की बिक्री से होने वाली आय का भी नुक़सान। कभी-कभी तो बीमारी इतनी गंभीर हो जाती है कि पशु को बेचना पड़ता है, या उससे भी बुरा, वो मर जाता है। और ये सिर्फ़ आर्थिक नुक़सान नहीं है। ये एक भावनात्मक झटका भी है। पशुपालक अपने पशुओं से बहुत लगाव रखते हैं।
+
+हम Aarambha में ये सब समझते हैं। इसलिए हमने ऐसी तकनीक बनाई है जो इन मुश्किलों को कम कर सके, और आपको समय रहते सही मदद दे सके। हमारा Pashu AI सिर्फ़ एक ऐप नहीं है, ये आपके फ़ोन में बैठा आपका अपना पशु डॉक्टर है।
+
+<h2>फ़ोटो से निदान: जब आपकी आँखें AI की शक्ति से मिलें</h2>
+
+आप सोच रहे होंगे, 'फ़ोन से भला पशु का इलाज कैसे होगा?' यहीं पर हमारा Pashu AI अपनी जादू दिखाता है। हमने AI को हज़ारों, लाखों पशुओं की तस्वीरें और उनके रोगों के डेटा से ट्रेन किया है। इसका मतलब है कि ये FMD (खुरपका-मुँहपका), Mastitis (थनैल), Bloat (पेट फूलना), और Lameness (लंगड़ापन) जैसी आम बीमारियों के लक्षणों को तस्वीरों से पहचान सकता है।
+
+कैसे? मान लीजिए आपके पशु के खुर में कोई घाव है और आपको FMD का शक है। आप बस अपने स्मार्टफ़ोन से उसकी साफ़ तस्वीर लेते हैं और हमारे ऐप में अपलोड कर देते हैं। हमारा AI तुरंत उस तस्वीर का विश्लेषण करेगा। यह देखेगा कि क्या घाव FMD के विशिष्ट पैटर्न से मेल खाते हैं, क्या मुँह में छाले हैं, या अन्य संबंधित लक्षण हैं।
+
+ठीक इसी तरह, Mastitis के लिए थन की सूजन, रंग में बदलाव या दूध में कोई असामान्यता, Bloat के लिए पेट का असामान्य रूप से फूलना, और Lameness के लिए पशु के चलने के तरीके या पैर में किसी चोट की तस्वीर को AI स्कैन करता है। यह सब कुछ ही सेकंड में होता है।
+
+<blockquote>"हमारा लक्ष्य है कि हर पशुपालक को, चाहे वह कहीं भी रहता हो, समय पर और सटीक सलाह मिले। Pashu AI सिर्फ़ एक टूल नहीं, यह एक साथी है।"</blockquote>
+
+हमारा AI सिर्फ़ तस्वीरों को ही नहीं पहचानता, बल्कि यह उनकी तुलना हमारे विशाल डेटाबेस से करता है, जिसमें अनुभवी पशु चिकित्सकों द्वारा सत्यापित जानकारी शामिल है। यह तकनीक आपको एक प्रारंभिक निदान देती है, जिससे आप तुरंत अगले कदम उठा सकते हैं। इससे पहले कि बीमारी गंभीर रूप ले, आप सही इलाज की दिशा में आगे बढ़ सकते हैं। यह सब आपके समय और पैसे दोनों की बचत करता है।
+
+<h2>हिंदी में Voice Consultation: आपकी बात, AI की समझ</h2>
+
+सिर्फ़ तस्वीरें ही नहीं, हम जानते हैं कि कभी-कभी लक्षणों को बोलकर समझाना ज़्यादा आसान होता है। खासकर भारतीय पशुपालकों के लिए, जहाँ मौखिक संचार की अपनी एक ख़ास जगह है। इसलिए हमने Pashu AI में हिंदी वॉइस कंसल्टेशन की सुविधा दी है।
+
+आप बस अपने फ़ोन में माइक्रोफ़ोन ऑन करके अपने पशु की समस्या हिंदी में बता सकते हैं। उदाहरण के लिए, आप कह सकते हैं, "मेरी गाय को कल से बुखार है, खाना नहीं खा रही है, और दूध भी कम हो गया है।" या "भैंस के पैर में सूजन है और वह लंगड़ा कर चल रही है।"
+
+हमारा AI आपकी बात को ध्यान से सुनता है। यह सिर्फ़ शब्दों को नहीं, बल्कि आपके द्वारा बताई गई समस्या के संदर्भ को भी समझता है। यह उन मुख्य शब्दों (keywords) को पहचानता है जो किसी बीमारी के लक्षण हो सकते हैं – जैसे 'बुखार', 'दूध कम होना', 'सूजन', 'लंगड़ाना', 'खाना न खाना', 'दस्त', आदि। यह इन लक्षणों को एक साथ जोड़कर एक संभावित निदान तक पहुँचने की कोशिश करता है।
+
+यह सुविधा उन लोगों के लिए वरदान है जो शायद टाइप करने में सहज न हों या जिनके लिए अपनी बात को बोलकर समझाना ज़्यादा प्राकृतिक हो। AI आपकी आवाज़ को प्रोसेस करता है, उसे टेक्स्ट में बदलता है, और फिर उस टेक्स्ट का विश्लेषण करके आपको संभावित निदान और अगले कदमों के बारे में बताता है। यह एक पशु चिकित्सक से बात करने जैसा ही अनुभव है, लेकिन आपके फ़ोन पर, कभी भी, कहीं भी। हमारा AI लगातार सीख रहा है और बेहतर हो रहा है, ताकि आपकी हर बात को और भी सटीकता से समझ सके।
+
+<h2>दवा की सलाह और Generic विकल्प: सही इलाज, सही दाम</h2>
+
+एक बार जब Pashu AI संभावित निदान बता देता है, तो अगला सवाल आता है – अब क्या करें? यहीं पर हमारी दवा सलाह की सुविधा काम आती है। AI आपको उस बीमारी के लिए उपयुक्त दवाओं के बारे में जानकारी देता है।
+
+लेकिन हम सिर्फ़ दवा का नाम बताकर ही नहीं रुकते। हम समझते हैं कि भारत में दवाओं की क़ीमत एक बड़ा मुद्दा हो सकती है। इसलिए, Pashu AI आपको Generic विकल्पों के बारे में भी बताता है। Generic दवाएँ वही काम करती हैं जो ब्रांडेड दवाएँ करती हैं, लेकिन उनकी क़ीमत अक्सर बहुत कम होती है क्योंकि उन्हें बनाने वाली कंपनी ने उन पर रिसर्च और डेवलपमेंट का भारी ख़र्च नहीं किया होता। यह ठीक वैसे ही है जैसे आप किसी इंसान के डॉक्टर से Generic दवा के बारे में पूछते हैं।
+
+हमारा AI आपको दवा का नाम, उसकी डोज़ (कितनी मात्रा में देनी है), और कितने दिन तक देनी है, इसकी पूरी जानकारी देता है। साथ ही, अगर उस दवा का कोई Generic विकल्प उपलब्ध है, तो उसकी भी जानकारी देता है, जिससे आप अपने बजट के हिसाब से फ़ैसला ले सकें। हम यह भी बताते हैं कि ये दवाएँ आपको कहाँ मिल सकती हैं, और अगर ज़रूरत हो तो नज़दीकी पशु चिकित्सक से कब संपर्क करना चाहिए।
+
+हमारा उद्देश्य है कि आपको न सिर्फ़ सही इलाज मिले, बल्कि वह इलाज आपके लिए आर्थिक रूप से भी संभव हो। यह सब जानकारी स्पष्ट और सरल हिंदी में उपलब्ध होती है, ताकि आप उसे आसानी से समझ सकें और अपने पशु को सही तरीके से दवा दे सकें। अधिक जानकारी के लिए, आप हमारे <a href="/products/#pashu">Pashu AI product page</a> पर जा सकते हैं।
+
+<h2>राष्ट्रीय गोकुल मिशन से जुड़ाव: एक राष्ट्रीय प्रयास का हिस्सा</h2>
+
+हम Aarambha में सिर्फ़ एक कंपनी नहीं हैं; हम एक बड़े राष्ट्रीय प्रयास का हिस्सा हैं। हमारा काम भारत सरकार के राष्ट्रीय गोकुल मिशन के उद्देश्यों के साथ पूरी तरह से जुड़ा हुआ है। राष्ट्रीय गोकुल मिशन का मुख्य लक्ष्य है भारत में स्वदेशी गोवंश का संरक्षण और विकास, दूध उत्पादन में वृद्धि, और पशुपालकों की आय को बढ़ाना।
+
+हमारा Pashu AI सीधे तौर पर इन लक्ष्यों को प्राप्त करने में मदद करता है:
+<ul>
+    <li><b>रोगों की रोकथाम और त्वरित निदान:</b> समय पर बीमारियों का पता लगने से पशुधन का स्वास्थ्य बेहतर होता है, जिससे दूध उत्पादन में गिरावट रुकती है और प्रजनन क्षमता बनी रहती है। यह सीधे तौर पर मिशन के दूध उत्पादन बढ़ाने के लक्ष्य को साधता है।</li>
+    <li><b>पशुपालकों का सशक्तिकरण:</b> तकनीक को ग्रामीण भारत तक पहुँचाकर, हम पशुपालकों को अपने पशुओं की देखभाल के लिए सशक्त बनाते हैं। उन्हें सही जानकारी और सलाह मिलती है, जिससे वे बेहतर निर्णय ले पाते हैं और उनकी निर्भरता कम होती है।</li>
+    <li><b>आर्थिक स्थिरता:</b> बीमारियों के कारण होने वाले आर्थिक नुक़सान को कम करके, हम पशुपालकों की आय को स्थिर रखने और बढ़ाने में मदद करते हैं। यह मिशन के पशुपालकों की आय बढ़ाने के लक्ष्य के अनुरूप है।</li>
+    <li><b>डेटा संग्रह और विश्लेषण:</b> Pashu AI के माध्यम से हम पशुधन के स्वास्थ्य और बीमारियों से संबंधित महत्वपूर्ण डेटा एकत्र करते हैं। इस डेटा का उपयोग भविष्य में बेहतर नीतियों और योजनाओं को बनाने में किया जा सकता है, जो राष्ट्रीय स्तर पर पशुधन विकास के लिए महत्वपूर्ण है।</li>
+</ul>
+
+हमारा मानना है कि जब तकनीक सही हाथों में होती है, तो वह पूरे समाज में सकारात्मक बदलाव ला सकती है। Aarambha का Pashu AI इसी सोच का परिणाम है। हम गर्व महसूस करते हैं कि हम राष्ट्रीय गोकुल मिशन जैसे महत्वपूर्ण कार्यक्रम में अपना योगदान दे रहे हैं और भारत के पशुपालकों के जीवन में एक सकारात्मक बदलाव ला रहे हैं। आप हमारे <a href="/philosophy/">दर्शन</a> के बारे में और जान सकते हैं कि हम कैसे इस लक्ष्य को प्राप्त करने के लिए प्रतिबद्ध हैं।
+  </div>
+
+  <div class="max-w-4xl mx-auto mt-14 pt-8 border-t border-white/[.07]">
+    <a href="/blog/" class="text-sm text-primary hover:text-accent transition-colors">← Back to blog</a>
+  </div>
+</article>
+</main>
+
+<!-- FOOTER: same markup as every other page — copy verbatim from /index.html -->
+<!-- FOOTER — shared, identical per page -->
+<footer class="bg-cosmos border-t border-white/[.07] pt-16 pb-8">
+  <div class="max-w-6xl mx-auto px-4 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-10 border-b border-white/[.07] mb-8">
+      <div>
+        <div class="text-lg font-bold text-gray-100 mb-2">
+          <span class="hindi text-accent">आरम्भ</span>
+          <span class="text-gray-500 ml-1 text-sm">Aarambha</span>
+        </div>
+        <p x-text="$store.lang.t('footer_tagline')" class="text-sm text-gray-500 leading-relaxed mb-1"></p>
+        <p x-text="$store.lang.t('footer_india')" class="text-xs text-gray-600"></p>
+      </div>
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-[.14em] text-gray-500 mb-4">Products</h4>
+        <a href="/products/" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">All Products</a>
+        <a href="/products/#shrutam" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">Shrutam</a>
+        <a href="/products/#commerce" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">WhatsApp Commerce</a>
+      </div>
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-[.14em] text-gray-500 mb-4">Company</h4>
+        <a href="/about/" x-text="$store.lang.t('nav_about')" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors"></a>
+        <a href="/philosophy/" x-text="$store.lang.t('nav_philosophy')" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors"></a>
+        <a href="/blog/" x-text="$store.lang.t('nav_blog')" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors"></a>
+      </div>
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-[.14em] text-gray-500 mb-4">Connect</h4>
+        <a href="mailto:hello@aarambhax.ai" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">hello@aarambhax.ai</a>
+        <a href="/#waitlist" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">Join Waitlist</a>
+        <span class="block text-sm text-gray-500 mb-2.5">shrutam.ai <span class="text-gray-700">(soon)</span></span>
+      </div>
+    </div>
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+      <span x-text="$store.lang.t('footer_copy')" class="text-xs text-gray-600"></span>
+      <span class="text-xs text-gray-600">aarambhax.ai · shrutam.ai</span>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

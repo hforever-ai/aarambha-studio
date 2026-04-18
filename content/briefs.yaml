@@ -4,9 +4,26 @@
 common:
   author: "Aarambha"
   brand_voice: |
-    Confident founder-tone. Warm. Data-backed. Never corporate.
-    Hinglish-friendly English. NO personal names, NO employer names,
-    NO city names. Always "we" / "Aarambha".
+    Confident collective voice. Warm. Data-backed. Never corporate.
+    Hinglish-friendly English.
+
+    HARD RULES — all mandatory:
+    1. NEVER use first-person singular. NO "I", "me", "my", "मैं", "मेरा", "मुझे", "मुझसे".
+       Replace ALL with "we" / "our" / "us" / "हम" / "हमारा" / "हमें".
+    2. NEVER invent autobiographical stories (no "I remember", "my mother", "when I was a
+       child in a village", "मेरी माँ", "मेरा गाँव"). The founder story stays on /about/
+       and uses anonymous third-person structure there too.
+    3. NO personal names, NO employer names (Fortune 500 is fine as a category, no
+       specific company), NO city/village names (India, Bharat, gaon are fine; specific
+       place names are not).
+    4. Always "we" / "Aarambha". If a sentence seems to require "I", rewrite it as a
+       collective observation or a data-point.
+    5. Examples of correct replacement:
+       - WRONG: "I remember when my mother called me" → RIGHT: "A message from home, from a
+         parent, from a student — that's how this starts for many of us."
+       - WRONG: "मैं ये बना रहा हूँ" → RIGHT: "हम यह बना रहे हैं"
+       - WRONG: "I've spent 22 years in AI" → RIGHT: "After two decades in enterprise AI"
+         or "The team has spent decades building AI".
   target_length: [1200, 1500]   # words per language
   image_style: |
     Editorial dark illustration. Cosmos-navy #060d1a background.
