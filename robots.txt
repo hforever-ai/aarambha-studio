@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://aarambhax.ai/sitemap.xml
+
+# Atom feed for the blog (syndication / readers / AI crawlers)
+# Feed URL: https://aarambhax.ai/feed.xml

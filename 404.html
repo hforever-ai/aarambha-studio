@@ -6,6 +6,7 @@
 <title>Page Not Found — Aarambha</title>
 <meta name="description" content="Yeh page abhi nahi bana. Par aarambha zaroor ho chuki hai.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Aarambha Blog" href="/feed.xml">
 <link rel="icon" href="/favicon.ico" sizes="any">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,16 +25,49 @@
   body { font-family: 'Sora', sans-serif; background: #020710; color: #e2e8f0; }
   .hindi { font-family: 'Noto Sans Devanagari', sans-serif; }
   .grad { background: linear-gradient(135deg, #0ea5e9, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+  /* A11y: focus indicators, reduced motion, contrast, skip-link */
+  :focus-visible { outline: 2px solid #f59e0b; outline-offset: 2px; border-radius: 4px; }
+  button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid #f59e0b; outline-offset: 2px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  .sr-only-focusable:focus, .sr-only-focusable:focus-within { position: fixed; width: auto; height: auto; padding: .75rem 1rem; margin: .5rem; overflow: visible; clip: auto; white-space: normal; z-index: 100; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
+  }
+  /* Ensure minimum tap-target size on mobile */
+  @media (max-width: 640px) {
+    nav a, nav button, footer a { min-height: 44px; display: inline-flex; align-items: center; }
+  }
 </style>
+<!-- TWITTER_CARDS -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@aarambha_ai">
+<meta name="twitter:creator" content="@aarambha_ai">
+<meta name="twitter:title" content="Page Not Found — Aarambha">
+<meta name="twitter:description" content="India's AI Studio — building AI for Bharat.">
+<meta name="twitter:image" content="https://aarambhax.ai/assets/images/og-default.webp">
 </head>
 <body class="min-h-screen flex items-center justify-center px-4 md:px-8">
+<a href="#main-content" class="sr-only-focusable fixed top-2 left-2 z-[100] bg-accent text-gray-900 font-bold px-4 py-2 rounded-lg opacity-0 pointer-events-none focus:opacity-100 focus:pointer-events-auto">Skip to main content</a>
 
 <div class="max-w-xl mx-auto text-center">
   <div class="hindi text-[8rem] md:text-[10rem] font-black text-accent leading-none mb-4" style="text-shadow: 0 0 60px rgba(245,158,11,0.3);">404</div>
   <p class="hindi text-xl md:text-2xl text-gray-300 leading-relaxed mb-2">यह page अभी नहीं बना।</p>
-  <p class="text-lg text-gray-500 mb-8 italic">Par aarambha zaroor ho chuki hai.</p>
+  <p class="text-lg text-gray-400 mb-8 italic">Par aarambha zaroor ho chuki hai.</p>
   <a href="/" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold px-6 py-3 rounded-xl transition-all">← Wapas jaao homepage</a>
 </div>
 
+<script>
+// A11y: auto-mark nav links matching the current path with aria-current="page".
+document.addEventListener('DOMContentLoaded', () => {
+  const path = location.pathname.replace(/\/$/, '') || '/';
+  document.querySelectorAll('nav a[href], footer a[href]').forEach(a => {
+    try {
+      const href = new URL(a.href).pathname.replace(/\/$/, '') || '/';
+      if (href === path) a.setAttribute('aria-current', 'page');
+    } catch (e) {}
+  });
+});
+</script>
 </body>
 </html>

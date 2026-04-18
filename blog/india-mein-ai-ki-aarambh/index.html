@@ -16,10 +16,18 @@
 <meta property="og:description" content="The question we kept asking: why hasn&#x27;t world-class AI reached India&#x27;s villages? Aarambha is our answer.">
 <meta property="og:image" content="https://aarambhax.ai/assets/images/blog/india-mein-ai-ki-aarambh-hero.webp">
 <meta property="og:site_name" content="Aarambha">
+<!-- TWITTER_CARDS -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@aarambha_ai">
+<meta name="twitter:creator" content="@aarambha_ai">
+<meta name="twitter:title" content="India mein AI ki aarambh — why now, why us | Aarambha">
+<meta name="twitter:description" content="The question we kept asking: why hasn&#x27;t world-class AI reached India&#x27;s villages? Aarambha is our answer.">
+<meta name="twitter:image" content="https://aarambhax.ai/assets/images/blog/india-mein-ai-ki-aarambh-hero.webp">
 <meta property="article:published_time" content="2026-02-12">
 <meta property="article:section" content="brand">
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Aarambha Blog" href="/feed.xml">
 <link rel="icon" href="/favicon.ico" sizes="any">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +43,7 @@
 </script>
 
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<script src="/assets/js/translations.js"></script>
+<script src="/assets/js/translations.js?v=5466699000-6ff2605c"></script>
 
 <style>
   html { scroll-behavior: smooth; }
@@ -53,6 +61,19 @@
   .prose blockquote { border-left: 4px solid #f59e0b; padding: 0.5rem 0 0.5rem 1.25rem; margin: 2rem 0; font-style: italic; color: #f1f5f9; font-size: 1.1rem; }
   .prose strong { color: #e2e8f0; font-weight: 700; }
   ::selection { background: #f59e0b; color: #060d1a; }
+
+  /* A11y: focus indicators, reduced motion, contrast, skip-link */
+  :focus-visible { outline: 2px solid #f59e0b; outline-offset: 2px; border-radius: 4px; }
+  button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid #f59e0b; outline-offset: 2px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  .sr-only-focusable:focus, .sr-only-focusable:focus-within { position: fixed; width: auto; height: auto; padding: .75rem 1rem; margin: .5rem; overflow: visible; clip: auto; white-space: normal; z-index: 100; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
+  }
+  /* Ensure minimum tap-target size on mobile */
+  @media (max-width: 640px) {
+    nav a, nav button, footer a { min-height: 44px; display: inline-flex; align-items: center; }
+  }
 </style>
 
 <script type="application/ld+json">
@@ -86,8 +107,38 @@
   "articleSection": "brand"
 }
 </script>
+
+<!-- BREADCRUMB_SCHEMA_BEGIN -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://aarambhax.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://aarambhax.ai/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "India mein AI ki aarambh — why now, why us",
+      "item": "https://aarambhax.ai/blog/india-mein-ai-ki-aarambh/"
+    }
+  ]
+}
+</script>
+<!-- BREADCRUMB_SCHEMA_END -->
 </head>
 <body>
+<a href="#main-content" class="sr-only-focusable fixed top-2 left-2 z-[100] bg-accent text-gray-900 font-bold px-4 py-2 rounded-lg opacity-0 pointer-events-none focus:opacity-100 focus:pointer-events-auto">Skip to main content</a>
 
 <!-- NAV: same markup as every other page — copy verbatim from /index.html -->
 <!-- NAV — shared, identical per page -->
@@ -95,7 +146,7 @@
   <div class="max-w-6xl mx-auto px-4 md:px-8 h-[72px] flex items-center justify-between gap-4">
     <a href="/" class="flex items-center gap-2 flex-shrink-0">
       <span class="hindi text-2xl font-black text-accent leading-none">आरम्भ</span>
-      <span class="text-xs font-bold text-gray-500 tracking-[.14em] uppercase hidden sm:block">Aarambha</span>
+      <span class="text-xs font-bold text-gray-400 tracking-[.14em] uppercase hidden sm:block">Aarambha</span>
     </a>
     <div class="hidden md:flex items-center gap-0.5">
       <a href="/products/" x-text="$store.lang.t('nav_products')" class="text-sm font-medium text-gray-400 px-3.5 py-2 rounded-xl hover:text-primary hover:bg-primary/10 transition-all"></a>
@@ -126,17 +177,17 @@
 
 
 
-<main>
+<main id="main-content">
 <article class="px-4 md:px-8 py-12 md:py-20">
   <div class="max-w-4xl mx-auto mb-8">
     <p class="text-xs font-bold text-accent tracking-[.20em] uppercase mb-3">BRAND</p>
     <h1 x-show="$store.lang.current === 'en'" lang="en" class="text-3xl md:text-5xl font-black leading-tight text-gray-100 mb-4">India mein AI ki aarambh — why now, why us</h1>
     <h1 x-show="$store.lang.current === 'hi'" lang="hi" class="hindi text-3xl md:text-5xl font-black leading-tight text-gray-100 mb-4">भारत में AI का आरम्भ — अभी क्यों, हम क्यों</h1>
-    <p class="text-sm text-gray-500 mb-8">
+    <p class="text-sm text-gray-400 mb-8">
       <span x-show="$store.lang.current === 'en'">Published 2026-02-12 · Aarambha</span>
       <span x-show="$store.lang.current === 'hi'" class="hindi">प्रकाशित 2026-02-12 · आरम्भ</span>
     </p>
-    <img src="/assets/images/blog/india-mein-ai-ki-aarambh-hero.webp" alt="" class="w-full h-auto aspect-[1200/630] object-cover rounded-2xl border border-white/[.07]" loading="eager" width="1200" height="630">
+    <img src="/assets/images/blog/india-mein-ai-ki-aarambh-hero.webp" alt="The question we kept asking: why hasn't world-class AI reached India's villages? Aarambha is our answer." class="w-full h-auto aspect-[1200/630] object-cover rounded-2xl border border-white/[.07]" loading="eager" width="1200" height="630">
   </div>
 
   <div class="prose" x-show="$store.lang.current === 'en'" lang="en">
@@ -279,28 +330,28 @@
       <div>
         <div class="text-lg font-bold text-gray-100 mb-2">
           <span class="hindi text-accent">आरम्भ</span>
-          <span class="text-gray-500 ml-1 text-sm">Aarambha</span>
+          <span class="text-gray-400 ml-1 text-sm">Aarambha</span>
         </div>
-        <p x-text="$store.lang.t('footer_tagline')" class="text-sm text-gray-500 leading-relaxed mb-1"></p>
+        <p x-text="$store.lang.t('footer_tagline')" class="text-sm text-gray-400 leading-relaxed mb-1"></p>
         <p x-text="$store.lang.t('footer_india')" class="text-xs text-gray-600"></p>
       </div>
       <div>
-        <h4 class="text-xs font-bold uppercase tracking-[.14em] text-gray-500 mb-4">Products</h4>
-        <a href="/products/" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">All Products</a>
-        <a href="/products/#shrutam" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">Shrutam</a>
-        <a href="/products/#commerce" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">WhatsApp Commerce</a>
+        <h4 class="text-xs font-bold uppercase tracking-[.14em] text-gray-400 mb-4">Products</h4>
+        <a href="/products/" class="block text-sm text-gray-400 hover:text-primary mb-2.5 transition-colors">All Products</a>
+        <a href="/products/#shrutam" class="block text-sm text-gray-400 hover:text-primary mb-2.5 transition-colors">Shrutam</a>
+        <a href="/products/#commerce" class="block text-sm text-gray-400 hover:text-primary mb-2.5 transition-colors">WhatsApp Commerce</a>
       </div>
       <div>
-        <h4 class="text-xs font-bold uppercase tracking-[.14em] text-gray-500 mb-4">Company</h4>
-        <a href="/about/" x-text="$store.lang.t('nav_about')" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors"></a>
-        <a href="/philosophy/" x-text="$store.lang.t('nav_philosophy')" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors"></a>
-        <a href="/blog/" x-text="$store.lang.t('nav_blog')" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors"></a>
+        <h4 class="text-xs font-bold uppercase tracking-[.14em] text-gray-400 mb-4">Company</h4>
+        <a href="/about/" x-text="$store.lang.t('nav_about')" class="block text-sm text-gray-400 hover:text-primary mb-2.5 transition-colors"></a>
+        <a href="/philosophy/" x-text="$store.lang.t('nav_philosophy')" class="block text-sm text-gray-400 hover:text-primary mb-2.5 transition-colors"></a>
+        <a href="/blog/" x-text="$store.lang.t('nav_blog')" class="block text-sm text-gray-400 hover:text-primary mb-2.5 transition-colors"></a>
       </div>
       <div>
-        <h4 class="text-xs font-bold uppercase tracking-[.14em] text-gray-500 mb-4">Connect</h4>
-        <a href="mailto:hello@aarambhax.ai" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">hello@aarambhax.ai</a>
-        <a href="/#waitlist" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">Join Waitlist</a>
-        <span class="block text-sm text-gray-500 mb-2.5">shrutam.ai <span class="text-gray-700">(soon)</span></span>
+        <h4 class="text-xs font-bold uppercase tracking-[.14em] text-gray-400 mb-4">Connect</h4>
+        <a href="mailto:hello@aarambhax.ai" class="block text-sm text-gray-400 hover:text-primary mb-2.5 transition-colors">hello@aarambhax.ai</a>
+        <a href="/#waitlist" class="block text-sm text-gray-400 hover:text-primary mb-2.5 transition-colors">Join Waitlist</a>
+        <span class="block text-sm text-gray-400 mb-2.5">shrutam.ai <span class="text-gray-700">(soon)</span></span>
       </div>
     </div>
     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
@@ -312,5 +363,17 @@
 
 
 
+<script>
+// A11y: auto-mark nav links matching the current path with aria-current="page".
+document.addEventListener('DOMContentLoaded', () => {
+  const path = location.pathname.replace(/\/$/, '') || '/';
+  document.querySelectorAll('nav a[href], footer a[href]').forEach(a => {
+    try {
+      const href = new URL(a.href).pathname.replace(/\/$/, '') || '/';
+      if (href === path) a.setAttribute('aria-current', 'page');
+    } catch (e) {}
+  });
+});
+</script>
 </body>
 </html>

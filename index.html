@@ -13,8 +13,16 @@
 <meta property="og:title" content="Aarambha — Where Intelligence Begins">
 <meta property="og:description" content="India's AI Studio. Building AI for 1.4 billion Indians in their own languages. Not translated. From the ground up.">
 <meta property="og:site_name" content="Aarambha">
+<!-- TWITTER_CARDS -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@aarambha_ai">
+<meta name="twitter:creator" content="@aarambha_ai">
+<meta name="twitter:title" content="Aarambha — Where Intelligence Begins | India's AI Studio | aarambhax.ai">
+<meta name="twitter:description" content="India's AI Studio. Building AI for 1.4 billion Indians in their own languages. Not translated. From the ground up.">
+<meta name="twitter:image" content="https://aarambhax.ai/assets/images/og-default.webp">
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Aarambha Blog" href="/feed.xml">
 <link rel="icon" href="/favicon.ico" sizes="any">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +38,7 @@
 </script>
 
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<script src="/assets/js/translations.js?v=5466699000-6ff2605c"></script>
+<script src="/assets/js/translations.js?v=0343773000-6ff2605c"></script>
 
 <style>
   html { scroll-behavior: smooth; }
@@ -40,16 +48,76 @@
   .star { position: absolute; background: white; border-radius: 50%; animation: twinkle var(--d, 3s) ease-in-out infinite; pointer-events: none; }
   .grad { background: linear-gradient(135deg, #0ea5e9, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
   ::selection { background: #f59e0b; color: #060d1a; }
+
+  /* A11y: focus indicators, reduced motion, contrast, skip-link */
+  :focus-visible { outline: 2px solid #f59e0b; outline-offset: 2px; border-radius: 4px; }
+  button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid #f59e0b; outline-offset: 2px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  .sr-only-focusable:focus, .sr-only-focusable:focus-within { position: fixed; width: auto; height: auto; padding: .75rem 1rem; margin: .5rem; overflow: visible; clip: auto; white-space: normal; z-index: 100; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
+  }
+  /* Ensure minimum tap-target size on mobile */
+  @media (max-width: 640px) {
+    nav a, nav button, footer a { min-height: 44px; display: inline-flex; align-items: center; }
+  }
 </style>
+
+<!-- Structured data: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://aarambhax.ai/#organization",
+  "name": "Aarambha",
+  "alternateName": ["आरम्भ", "Aarambha Studio", "Aarambhax"],
+  "url": "https://aarambhax.ai/",
+  "logo": "https://aarambhax.ai/assets/images/og-default.webp",
+  "description": "India's AI Studio. Building AI for 1.4 billion Indians in their own languages — Shrutam (education), WhatsApp Commerce, and five more products in development.",
+  "foundingDate": "2026",
+  "knowsAbout": ["Artificial Intelligence", "Education Technology", "Hindi NLP", "WhatsApp Commerce", "Rural India", "Pancha Bhoota", "Bharat-first AI"],
+  "areaServed": {
+    "@type": "Country",
+    "name": "India"
+  },
+  "availableLanguage": ["en-IN", "hi-IN", "mr-IN", "te-IN"],
+  "contactPoint": [
+    {"@type": "ContactPoint", "email": "hello@aarambhax.ai", "contactType": "customer support"},
+    {"@type": "ContactPoint", "email": "partners@aarambhax.ai", "contactType": "partnerships"},
+    {"@type": "ContactPoint", "email": "press@aarambhax.ai", "contactType": "public relations"},
+    {"@type": "ContactPoint", "email": "hiring@aarambhax.ai", "contactType": "HR"}
+  ],
+  "sameAs": [
+    "https://aarambhax.ai/",
+    "https://shrutam.ai/"
+  ]
+}
+</script>
+
+<!-- Structured data: WebSite with SearchAction -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://aarambhax.ai/#website",
+  "url": "https://aarambhax.ai/",
+  "name": "Aarambha",
+  "description": "India's AI Studio — 7 AI products for Bharat, in Bharat's languages.",
+  "publisher": { "@id": "https://aarambhax.ai/#organization" },
+  "inLanguage": ["en-IN", "hi-IN"]
+}
+</script>
+
 </head>
 <body>
+<a href="#main-content" class="sr-only-focusable fixed top-2 left-2 z-[100] bg-accent text-gray-900 font-bold px-4 py-2 rounded-lg opacity-0 pointer-events-none focus:opacity-100 focus:pointer-events-auto">Skip to main content</a>
 
 <!-- NAV — shared, identical per page -->
 <nav x-data="{ open: false }" class="sticky top-0 z-50 bg-dark/90 backdrop-blur-xl border-b border-white/[.07]">
   <div class="max-w-6xl mx-auto px-4 md:px-8 h-[72px] flex items-center justify-between gap-4">
     <a href="/" class="flex items-center gap-2 flex-shrink-0">
       <span class="hindi text-2xl font-black text-accent leading-none">आरम्भ</span>
-      <span class="text-xs font-bold text-gray-500 tracking-[.14em] uppercase hidden sm:block">Aarambha</span>
+      <span class="text-xs font-bold text-gray-400 tracking-[.14em] uppercase hidden sm:block">Aarambha</span>
     </a>
     <div class="hidden md:flex items-center gap-0.5">
       <a href="/products/" x-text="$store.lang.t('nav_products')" class="text-sm font-medium text-gray-400 px-3.5 py-2 rounded-xl hover:text-primary hover:bg-primary/10 transition-all"></a>
@@ -78,7 +146,7 @@
   </div>
 </nav>
 
-<main>
+<main id="main-content">
 
 <!-- 1. HERO -->
 <section class="relative bg-cosmos min-h-screen flex items-center justify-center overflow-hidden px-4 md:px-8">
@@ -102,10 +170,10 @@
          x-text="$store.lang.t('hero_cta2')"></a>
     </div>
     <div class="inline-flex flex-wrap items-center justify-center gap-6 md:gap-10 bg-card/60 backdrop-blur-sm border border-white/[.07] rounded-2xl px-6 md:px-10 py-5">
-      <div class="text-center"><div class="text-2xl md:text-3xl font-black text-primary leading-none">1.2B+</div><div class="text-[10px] text-gray-500 tracking-[.14em] uppercase mt-1">Indians</div></div>
-      <div class="text-center"><div class="text-2xl md:text-3xl font-black text-accent leading-none">2</div><div class="text-[10px] text-gray-500 tracking-[.14em] uppercase mt-1">Products</div></div>
-      <div class="text-center"><div class="text-2xl md:text-3xl font-black text-primary leading-none">22+</div><div class="text-[10px] text-gray-500 tracking-[.14em] uppercase mt-1">Years AI</div></div>
-      <div class="text-center"><div class="text-2xl md:text-3xl font-black text-accent leading-none">5</div><div class="text-[10px] text-gray-500 tracking-[.14em] uppercase mt-1">Languages</div></div>
+      <div class="text-center"><div class="text-2xl md:text-3xl font-black text-primary leading-none">1.2B+</div><div class="text-[10px] text-gray-400 tracking-[.14em] uppercase mt-1">Indians</div></div>
+      <div class="text-center"><div class="text-2xl md:text-3xl font-black text-accent leading-none">2</div><div class="text-[10px] text-gray-400 tracking-[.14em] uppercase mt-1">Products</div></div>
+      <div class="text-center"><div class="text-2xl md:text-3xl font-black text-primary leading-none">22+</div><div class="text-[10px] text-gray-400 tracking-[.14em] uppercase mt-1">Years AI</div></div>
+      <div class="text-center"><div class="text-2xl md:text-3xl font-black text-accent leading-none">5</div><div class="text-[10px] text-gray-400 tracking-[.14em] uppercase mt-1">Languages</div></div>
     </div>
   </div>
 </section>
@@ -136,19 +204,19 @@
         <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-primary to-accent"></div>
         <div class="text-5xl md:text-6xl font-black text-primary mb-2 leading-none">1.2B+</div>
         <div class="text-gray-300 font-semibold mb-3">Indians without native AI</div>
-        <p class="text-sm text-gray-500 leading-relaxed">1.4 billion total. 200 million speak English. 1.2 billion left behind by every AI company building for the West.</p>
+        <p class="text-sm text-gray-400 leading-relaxed">1.4 billion total. 200 million speak English. 1.2 billion left behind by every AI company building for the West.</p>
       </article>
       <article class="bg-card border border-white/[.07] rounded-2xl p-8 relative overflow-hidden">
         <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-primary to-accent"></div>
         <div class="text-5xl md:text-6xl font-black text-accent mb-2 leading-none">68%</div>
         <div class="text-gray-300 font-semibold mb-3">Students rote-learn. Zero understanding.</div>
-        <p class="text-sm text-gray-500 leading-relaxed">250M+ school students. Most can't afford a private tutor. The system teaches memorisation, not thinking.</p>
+        <p class="text-sm text-gray-400 leading-relaxed">250M+ school students. Most can't afford a private tutor. The system teaches memorisation, not thinking.</p>
       </article>
       <article class="bg-card border border-white/[.07] rounded-2xl p-8 relative overflow-hidden">
         <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-primary to-accent"></div>
         <div class="text-5xl md:text-6xl font-black text-gray-200 mb-2 leading-none">63M</div>
         <div class="text-gray-300 font-semibold mb-3">MSMEs with zero AI commerce tools</div>
-        <p class="text-sm text-gray-500 leading-relaxed">WhatsApp + Excel. That's the stack. Aarambha's next product fixes this.</p>
+        <p class="text-sm text-gray-400 leading-relaxed">WhatsApp + Excel. That's the stack. Aarambha's next product fixes this.</p>
       </article>
     </div>
     <p class="mt-12 text-center hindi text-xl md:text-2xl font-semibold text-accent">हम यहाँ हैं — यह gap मिटाने के लिए।</p>
@@ -167,49 +235,49 @@
       <a href="/products/#shrutam" class="bg-card border border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block">
         <div class="flex items-center gap-2 mb-3"><span class="text-2xl">🌍</span><span class="hindi text-accent text-sm font-bold">पृथ्वी</span></div>
         <h3 class="text-gray-100 font-black text-lg mb-1"><span class="hindi mr-1">श्रुतम्</span>Shrutam</h3>
-        <p class="text-gray-500 text-xs mb-3">Audio-first AI tutor for CG+CBSE Class 6–10</p>
+        <p class="text-gray-400 text-xs mb-3">Audio-first AI tutor for CG+CBSE Class 6–10</p>
         <span class="inline-block text-[10px] bg-green-500/15 text-green-400 border border-green-500/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">🟢 May 20</span>
       </a>
       <a href="/products/#commerce" class="bg-card border border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block">
         <div class="flex items-center gap-2 mb-3"><span class="text-2xl">🌬️</span><span class="hindi text-accent text-sm font-bold">वायु</span></div>
         <h3 class="text-gray-100 font-black text-lg mb-1">WhatsApp Commerce</h3>
-        <p class="text-gray-500 text-xs mb-3">Kirana-to-enterprise B2B ordering AI</p>
+        <p class="text-gray-400 text-xs mb-3">Kirana-to-enterprise B2B ordering AI</p>
         <span class="inline-block text-[10px] bg-green-500/15 text-green-400 border border-green-500/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">🟢 LIVE</span>
       </a>
       <a href="/products/#karta" class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block">
         <div class="flex items-center gap-2 mb-3"><span class="text-2xl">🔥</span><span class="hindi text-accent text-sm font-bold">तेजस्</span></div>
         <h3 class="text-gray-100 font-black text-lg mb-1">Karta AI</h3>
-        <p class="text-gray-500 text-xs mb-3">GST + ITR voice-filing for MSMEs</p>
+        <p class="text-gray-400 text-xs mb-3">GST + ITR voice-filing for MSMEs</p>
         <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">⚡ 2026</span>
       </a>
       <a href="/products/#pashu" class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block">
         <div class="flex items-center gap-2 mb-3"><span class="text-2xl">💧</span><span class="hindi text-accent text-sm font-bold">जल</span></div>
         <h3 class="text-gray-100 font-black text-lg mb-1">Pashu AI</h3>
-        <p class="text-gray-500 text-xs mb-3">Cattle doctor in your pocket</p>
+        <p class="text-gray-400 text-xs mb-3">Cattle doctor in your pocket</p>
         <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">⚡ 2026</span>
       </a>
       <a href="/products/#bima" class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block">
         <div class="flex items-center gap-2 mb-3"><span class="text-2xl">💧</span><span class="hindi text-accent text-sm font-bold">जल</span></div>
         <h3 class="text-gray-100 font-black text-lg mb-1">Bima AI</h3>
-        <p class="text-gray-500 text-xs mb-3">Insurance claim automation</p>
+        <p class="text-gray-400 text-xs mb-3">Insurance claim automation</p>
         <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">⚡ 2026</span>
       </a>
       <a href="/products/#svayam" class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block">
         <div class="flex items-center gap-2 mb-3"><span class="text-2xl">✨</span><span class="hindi text-accent text-sm font-bold">आकाश</span></div>
         <h3 class="text-gray-100 font-black text-lg mb-1">Svayam AI</h3>
-        <p class="text-gray-500 text-xs mb-3">Voice-first sarkari form filling</p>
+        <p class="text-gray-400 text-xs mb-3">Voice-first sarkari form filling</p>
         <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">⚡ 2026</span>
       </a>
       <a href="/products/#adhikar" class="bg-card border border-dashed border-primary/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all block">
         <div class="flex items-center gap-2 mb-3"><span class="text-2xl">✨</span><span class="hindi text-accent text-sm font-bold">आकाश</span></div>
         <h3 class="text-gray-100 font-black text-lg mb-1">Adhikar AI</h3>
-        <p class="text-gray-500 text-xs mb-3">Pension + welfare entitlement tracker</p>
+        <p class="text-gray-400 text-xs mb-3">Pension + welfare entitlement tracker</p>
         <span class="inline-block text-[10px] bg-primary/15 text-primary border border-primary/30 rounded-full px-2 py-0.5 uppercase tracking-[.12em] font-bold">⚡ 2026</span>
       </a>
       <a href="/products/" class="bg-card/30 border border-dashed border-accent/30 rounded-2xl p-5 hover:-translate-y-0.5 transition-all flex flex-col items-center justify-center text-center">
         <div class="text-3xl mb-2">🧭</div>
         <p class="text-gray-300 font-bold text-sm">Explore all 7</p>
-        <p class="text-gray-500 text-xs mt-1">Pancha Bhoota portfolio →</p>
+        <p class="text-gray-400 text-xs mt-1">Pancha Bhoota portfolio →</p>
       </a>
     </div>
   </div>
@@ -251,7 +319,7 @@
     </div>
     <div class="bg-card border border-white/[.07] rounded-2xl p-10 text-center">
       <div class="text-6xl mb-4">🪓</div>
-      <div class="text-xs text-gray-500 uppercase tracking-[.14em] mb-2">The Principle</div>
+      <div class="text-xs text-gray-400 uppercase tracking-[.14em] mb-2">The Principle</div>
       <div class="text-4xl font-black grad mb-2">22 + 2</div>
       <div class="text-sm text-gray-400">22 hours of work. 2 hours of sharpening.<br>More wood. Every day.</div>
     </div>
@@ -292,14 +360,14 @@
 <!-- 6c. PRESS STRIP -->
 <section class="bg-dark py-16 px-4 md:px-8 border-t border-white/[.05] border-b border-white/[.05]">
   <div class="max-w-6xl mx-auto text-center">
-    <p class="text-xs font-bold text-gray-500 tracking-[.20em] uppercase mb-6">As seen in (coming soon)</p>
+    <p class="text-xs font-bold text-gray-400 tracking-[.20em] uppercase mb-6">As seen in (coming soon)</p>
     <div class="flex flex-wrap justify-center items-center gap-x-10 gap-y-4 opacity-50">
-      <span class="text-gray-500 font-bold text-sm">Your Story</span>
-      <span class="text-gray-500 font-bold text-sm">Inc42</span>
-      <span class="text-gray-500 font-bold text-sm">Entrackr</span>
-      <span class="text-gray-500 font-bold text-sm">The Ken</span>
-      <span class="text-gray-500 font-bold text-sm">Economic Times</span>
-      <span class="text-gray-500 font-bold text-sm">FactorDaily</span>
+      <span class="text-gray-400 font-bold text-sm">Your Story</span>
+      <span class="text-gray-400 font-bold text-sm">Inc42</span>
+      <span class="text-gray-400 font-bold text-sm">Entrackr</span>
+      <span class="text-gray-400 font-bold text-sm">The Ken</span>
+      <span class="text-gray-400 font-bold text-sm">Economic Times</span>
+      <span class="text-gray-400 font-bold text-sm">FactorDaily</span>
     </div>
     <p class="text-xs text-gray-600 mt-4">We'll replace with real press links as they come in. <a href="mailto:press@aarambhax.ai" class="text-primary hover:underline">Media? press@aarambhax.ai</a></p>
   </div>
@@ -323,7 +391,7 @@
       <input type="hidden" name="subject" value="Shrutam Waitlist — Aarambhax">
       <label for="waitlist-email" class="sr-only">Email</label>
       <input id="waitlist-email" type="email" name="body" required placeholder="your@email.com"
-             class="flex-1 min-w-0 px-4 py-3 rounded-xl border border-white/[.12] bg-white/[.04] text-gray-100 placeholder:text-gray-500 focus:outline-none focus:border-primary/60 focus:bg-white/[.06] transition-all">
+             class="flex-1 min-w-0 px-4 py-3 rounded-xl border border-white/[.12] bg-white/[.04] text-gray-100 placeholder:text-gray-400 focus:outline-none focus:border-primary/60 focus:bg-white/[.06] transition-all">
       <button type="submit" class="bg-primary hover:bg-primary-dark text-white font-bold px-5 py-3 rounded-xl transition-all">Stay Updated</button>
     </form>
     <p class="text-xs text-gray-600 mt-3">Submitting opens your email client. No spam. Promise.</p>
@@ -339,28 +407,28 @@
       <div>
         <div class="text-lg font-bold text-gray-100 mb-2">
           <span class="hindi text-accent">आरम्भ</span>
-          <span class="text-gray-500 ml-1 text-sm">Aarambha</span>
+          <span class="text-gray-400 ml-1 text-sm">Aarambha</span>
         </div>
-        <p x-text="$store.lang.t('footer_tagline')" class="text-sm text-gray-500 leading-relaxed mb-1"></p>
+        <p x-text="$store.lang.t('footer_tagline')" class="text-sm text-gray-400 leading-relaxed mb-1"></p>
         <p x-text="$store.lang.t('footer_india')" class="text-xs text-gray-600"></p>
       </div>
       <div>
-        <h4 class="text-xs font-bold uppercase tracking-[.14em] text-gray-500 mb-4">Products</h4>
-        <a href="/products/" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">All Products</a>
-        <a href="/products/#shrutam" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">Shrutam</a>
-        <a href="/products/#commerce" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">WhatsApp Commerce</a>
+        <h4 class="text-xs font-bold uppercase tracking-[.14em] text-gray-400 mb-4">Products</h4>
+        <a href="/products/" class="block text-sm text-gray-400 hover:text-primary mb-2.5 transition-colors">All Products</a>
+        <a href="/products/#shrutam" class="block text-sm text-gray-400 hover:text-primary mb-2.5 transition-colors">Shrutam</a>
+        <a href="/products/#commerce" class="block text-sm text-gray-400 hover:text-primary mb-2.5 transition-colors">WhatsApp Commerce</a>
       </div>
       <div>
-        <h4 class="text-xs font-bold uppercase tracking-[.14em] text-gray-500 mb-4">Company</h4>
-        <a href="/about/" x-text="$store.lang.t('nav_about')" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors"></a>
-        <a href="/philosophy/" x-text="$store.lang.t('nav_philosophy')" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors"></a>
-        <a href="/blog/" x-text="$store.lang.t('nav_blog')" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors"></a>
+        <h4 class="text-xs font-bold uppercase tracking-[.14em] text-gray-400 mb-4">Company</h4>
+        <a href="/about/" x-text="$store.lang.t('nav_about')" class="block text-sm text-gray-400 hover:text-primary mb-2.5 transition-colors"></a>
+        <a href="/philosophy/" x-text="$store.lang.t('nav_philosophy')" class="block text-sm text-gray-400 hover:text-primary mb-2.5 transition-colors"></a>
+        <a href="/blog/" x-text="$store.lang.t('nav_blog')" class="block text-sm text-gray-400 hover:text-primary mb-2.5 transition-colors"></a>
       </div>
       <div>
-        <h4 class="text-xs font-bold uppercase tracking-[.14em] text-gray-500 mb-4">Connect</h4>
-        <a href="mailto:hello@aarambhax.ai" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">hello@aarambhax.ai</a>
-        <a href="/#waitlist" class="block text-sm text-gray-500 hover:text-primary mb-2.5 transition-colors">Join Waitlist</a>
-        <span class="block text-sm text-gray-500 mb-2.5">shrutam.ai <span class="text-gray-700">(soon)</span></span>
+        <h4 class="text-xs font-bold uppercase tracking-[.14em] text-gray-400 mb-4">Connect</h4>
+        <a href="mailto:hello@aarambhax.ai" class="block text-sm text-gray-400 hover:text-primary mb-2.5 transition-colors">hello@aarambhax.ai</a>
+        <a href="/#waitlist" class="block text-sm text-gray-400 hover:text-primary mb-2.5 transition-colors">Join Waitlist</a>
+        <span class="block text-sm text-gray-400 mb-2.5">shrutam.ai <span class="text-gray-700">(soon)</span></span>
       </div>
     </div>
     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
@@ -388,5 +456,17 @@
   })();
 </script>
 
+<script>
+// A11y: auto-mark nav links matching the current path with aria-current="page".
+document.addEventListener('DOMContentLoaded', () => {
+  const path = location.pathname.replace(/\/$/, '') || '/';
+  document.querySelectorAll('nav a[href], footer a[href]').forEach(a => {
+    try {
+      const href = new URL(a.href).pathname.replace(/\/$/, '') || '/';
+      if (href === path) a.setAttribute('aria-current', 'page');
+    } catch (e) {}
+  });
+});
+</script>
 </body>
 </html>
