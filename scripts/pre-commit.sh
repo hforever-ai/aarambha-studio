@@ -16,5 +16,6 @@ python3 "$ROOT/scripts/add_breadcrumbs.py" 2>/dev/null || true
 python3 "$ROOT/scripts/a11y_seo_patch.py"  2>/dev/null || true
 python3 "$ROOT/scripts/generate_feed.py"   2>/dev/null || true
 
-# Stage any HTML / feed changes the scripts made so they land in this commit.
-git add "$ROOT"/*.html "$ROOT"/*/*.html "$ROOT"/feed.xml 2>/dev/null || true
+# Stage any tracked-file changes the scripts made (including deep blog paths)
+# so they land in this commit rather than creating post-commit drift.
+cd "$ROOT" && git add -u
