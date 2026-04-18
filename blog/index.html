@@ -29,7 +29,7 @@
 </script>
 
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<script src="/assets/js/translations.js?v=9802459000-6ff2605c"></script>
+<script src="/assets/js/translations.js?v=5466699000-6ff2605c"></script>
 
 <style>
   html { scroll-behavior: smooth; }
@@ -75,26 +75,293 @@
   </div>
 </nav>
 
-<main>
+<main x-data="{ cat: 'all' }">
 
-<section class="bg-cosmos min-h-[80vh] flex items-center justify-center px-4 md:px-8 py-24">
-  <div class="max-w-2xl mx-auto text-center">
-    <p class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em] uppercase mb-6">Blog</p>
-    <h1 class="text-4xl md:text-6xl font-black mb-4"><span class="grad">Seekhte Rahenge.</span></h1>
-    <p class="hindi text-xl md:text-2xl text-gray-400 mb-10">सीखते रहेंगे — The Aarambha Blog</p>
+<section class="bg-cosmos pt-28 pb-12 px-4 md:px-8">
+  <div class="max-w-6xl mx-auto text-center">
+    <p class="inline-block px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-bold text-accent tracking-[.20em] uppercase mb-4">Blog</p>
+    <h1 class="text-4xl md:text-6xl font-black mb-3"><span class="grad">Seekhte Rahenge.</span></h1>
+    <p class="hindi text-lg md:text-xl text-gray-400 mb-0">सीखते रहेंगे — The Aarambha Blog</p>
+  </div>
+</section>
 
-    <div class="bg-card/60 border border-white/[.07] rounded-2xl p-8 md:p-10 text-left">
-      <p class="text-gray-300 text-lg leading-relaxed mb-6">
-        Coming soon — first posts drop with <strong class="text-primary">Shrutam launch (May 20, 2026)</strong>. Expect guides on building AI for Bharat, Hindi-medium learning, the long road from gaon to production.
-      </p>
-      <p class="text-gray-500 text-sm mb-6">Want to know when? Drop your email — zero spam, only Aarambha updates.</p>
-      <form action="mailto:hello@aarambhax.ai" method="get" enctype="text/plain" class="flex flex-col sm:flex-row gap-2">
-        <input type="hidden" name="subject" value="Aarambha Blog — Notify Me">
-        <input type="email" name="body" required placeholder="your@email.com"
-               class="flex-1 min-w-0 px-4 py-3 rounded-xl border border-white/[.12] bg-white/[.04] text-gray-100 placeholder:text-gray-500 focus:outline-none focus:border-primary/60">
-        <button type="submit" class="bg-primary hover:bg-primary-dark text-white font-bold px-5 py-3 rounded-xl transition-all whitespace-nowrap">Notify Me</button>
-      </form>
-    </div>
+<section class="bg-dark border-b border-white/[.06] sticky top-[72px] z-40 py-3 px-4 md:px-8 backdrop-blur-xl">
+  <div class="max-w-6xl mx-auto flex flex-wrap gap-2 justify-center">
+    <button @click="cat='all'"       :class="cat==='all'       ? 'bg-accent text-gray-900' : 'border border-white/[.10] text-gray-400 hover:text-gray-200'" class="px-3.5 py-1.5 rounded-full text-sm font-bold transition-all">All</button>
+    <button @click="cat='brand'"     :class="cat==='brand'     ? 'bg-accent text-gray-900' : 'border border-white/[.10] text-gray-400 hover:text-gray-200'" class="px-3.5 py-1.5 rounded-full text-sm font-bold transition-all">Philosophy</button>
+    <button @click="cat='market'"    :class="cat==='market'    ? 'bg-accent text-gray-900' : 'border border-white/[.10] text-gray-400 hover:text-gray-200'" class="px-3.5 py-1.5 rounded-full text-sm font-bold transition-all">Market</button>
+    <button @click="cat='shrutam'"   :class="cat==='shrutam'   ? 'bg-accent text-gray-900' : 'border border-white/[.10] text-gray-400 hover:text-gray-200'" class="px-3.5 py-1.5 rounded-full text-sm font-bold transition-all">Education</button>
+    <button @click="cat='commerce'"  :class="cat==='commerce'  ? 'bg-accent text-gray-900' : 'border border-white/[.10] text-gray-400 hover:text-gray-200'" class="px-3.5 py-1.5 rounded-full text-sm font-bold transition-all">Commerce</button>
+    <button @click="cat='karta'"     :class="cat==='karta'     ? 'bg-accent text-gray-900' : 'border border-white/[.10] text-gray-400 hover:text-gray-200'" class="px-3.5 py-1.5 rounded-full text-sm font-bold transition-all">Compliance</button>
+    <button @click="cat='pashu'"     :class="cat==='pashu'     ? 'bg-accent text-gray-900' : 'border border-white/[.10] text-gray-400 hover:text-gray-200'" class="px-3.5 py-1.5 rounded-full text-sm font-bold transition-all">Livestock</button>
+    <button @click="cat='bima'"      :class="cat==='bima'      ? 'bg-accent text-gray-900' : 'border border-white/[.10] text-gray-400 hover:text-gray-200'" class="px-3.5 py-1.5 rounded-full text-sm font-bold transition-all">Insurance</button>
+    <button @click="cat='svayam'"    :class="cat==='svayam'    ? 'bg-accent text-gray-900' : 'border border-white/[.10] text-gray-400 hover:text-gray-200'" class="px-3.5 py-1.5 rounded-full text-sm font-bold transition-all">Govt Services</button>
+    <button @click="cat='adhikar'"   :class="cat==='adhikar'   ? 'bg-accent text-gray-900' : 'border border-white/[.10] text-gray-400 hover:text-gray-200'" class="px-3.5 py-1.5 rounded-full text-sm font-bold transition-all">Welfare</button>
+  </div>
+</section>
+
+<section class="bg-dark py-12 md:py-20 px-4 md:px-8">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="blog-grid">
+    <article x-show="cat==='all' || cat==='adhikar'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/adhikar-ai-pension/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/adhikar-ai-pension-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">WELFARE</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Widow pension, old-age pension — why 30% don&#x27;t receive what they&#x27;re owed</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">विधवा पेंशन, वृद्धावस्था पेंशन — 30% को उनका हक़ क्यों नहीं मिलता</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">₹50,000 crore of welfare doesn&#x27;t reach beneficiaries each year. Adhikar AI is how we change that.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">हर साल ₹50,000 करोड़ का कल्याण लाभार्थियों तक नहीं पहुँचता। Adhikar AI यही बदलता है।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-06-07</p>
+        </div>
+      </a>
+    </article>
+    <article x-show="cat==='all' || cat==='svayam'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/svayam-ai-aadhaar/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/svayam-ai-aadhaar-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">GOVT SERVICES</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Aadhaar update, passport, caste cert — one voice interface</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">आधार update, passport, जाति प्रमाण — एक voice interface</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">Every adult Indian deals with these 5 forms at least once a year. Svayam AI makes each one a 2-minute voice conversation.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">हर वयस्क भारतीय को साल में इन 5 forms में से कम-से-कम एक भरना पड़ता है। Svayam AI हर को 2 मिनट की voice बातचीत बना देता है।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-06-01</p>
+        </div>
+      </a>
+    </article>
+    <article x-show="cat==='all' || cat==='svayam'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/svayam-ai-forms/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/svayam-ai-forms-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">GOVT SERVICES</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Sarkari form, voice se bhar do — Svayam AI explained</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">सरकारी form, voice से भर दो — Svayam AI</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">India has ~1500 government forms. Every one asks the same 15 fields. Svayam fills them all, by voice.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">भारत में ~1500 सरकारी forms हैं। हर एक वही 15 fields माँगता है। Svayam voice से सब भरता है।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-05-26</p>
+        </div>
+      </a>
+    </article>
+    <article x-show="cat==='all' || cat==='bima'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/bima-ai-crop-pmfby/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/bima-ai-crop-pmfby-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">INSURANCE</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">PMFBY claims — why 90% of farmers don&#x27;t file them</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">PMFBY claims — 90% किसान क्यों नहीं भरते</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">Farmers pay PMFBY premiums faithfully. When the crop fails, they don&#x27;t claim — because the form is impossible. Bima AI fixes this.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">किसान ईमानदारी से PMFBY premium भरते हैं। फ़सल नष्ट हो जाए तो claim नहीं करते — क्योंकि form असंभव है। Bima AI यही ठीक करता है।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-05-20</p>
+        </div>
+      </a>
+    </article>
+    <article x-show="cat==='all' || cat==='bima'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/bima-ai-insurance/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/bima-ai-insurance-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">INSURANCE</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">40% of insurance claims rejected — AI fixes the paperwork</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">40% बीमा claims रिजेक्ट होते हैं — AI paperwork ठीक करता है</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">You bought insurance. The claim got rejected. Paperwork, not fraud. Bima AI drafts claims that insurers accept.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">आपने बीमा लिया। Claim रिजेक्ट हो गया। Paperwork की वजह से, धोखाधड़ी नहीं। Bima AI ऐसे claims बनाती है जो insurer मानते हैं।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-05-14</p>
+        </div>
+      </a>
+    </article>
+    <article x-show="cat==='all' || cat==='pashu'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/pashu-ai-livestock-ai/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/pashu-ai-livestock-ai-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">LIVESTOCK</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Livestock AI for rural dairy — beyond a photo app</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">ग्रामीण डेयरी के लिए Livestock AI — photo app से आगे</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">Pashu AI isn&#x27;t a diagnosis app. It&#x27;s a dairy operations layer for 70 million Indian families.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">Pashu AI निदान app नहीं है। यह 7 करोड़ भारतीय परिवारों के लिए dairy operations की परत है।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-05-08</p>
+        </div>
+      </a>
+    </article>
+    <article x-show="cat==='all' || cat==='pashu'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/pashu-ai-cattle/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/pashu-ai-cattle-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">LIVESTOCK</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Pashu ka doctor, aapke phone mein — how Pashu AI works</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">पशु का डॉक्टर, आपके फ़ोन में — Pashu AI कैसे काम करता है</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">70 million dairy farmers. The nearest vet is 20km away. One sick cow = ₹80,000 loss. Pashu AI is the difference.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">7 करोड़ दुग्ध किसान। सबसे पास का वेट 20km दूर। एक बीमार गाय = ₹80,000 का नुक़सान। Pashu AI यही अंतर है।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-05-02</p>
+        </div>
+      </a>
+    </article>
+    <article x-show="cat==='all' || cat==='karta'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/karta-ai-itr/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/karta-ai-itr-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">COMPLIANCE</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">ITR filing in 3 minutes — voice, Hinglish, no CA</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">3 मिनट में ITR filing — voice, Hinglish, बिना CA</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">8 crore salaried Indians file ITR every July. ClearTax charges. CAs charge more. Karta AI files by voice, for free.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">हर जुलाई 8 करोड़ salaried भारतीय ITR भरते हैं। ClearTax पैसे लेता है। CA और भी। Karta AI voice से मुफ़्त में करता है।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-04-26</p>
+        </div>
+      </a>
+    </article>
+    <article x-show="cat==='all' || cat==='karta'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/karta-ai-gst/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/karta-ai-gst-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">COMPLIANCE</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">GSTR-1, GSTR-3B, and Karta AI — compliance at voice speed</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">GSTR-1, GSTR-3B, और Karta AI — voice की गति पर compliance</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">Every month, 63 million MSMEs file GST returns. Most pay a CA ₹2000-5000. Karta AI does it for free in 3 minutes.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">हर महीने 6.3 करोड़ MSMEs GST returns भरते हैं। ज़्यादातर CA को ₹2000-5000 देते हैं। Karta AI 3 मिनट में मुफ़्त करता है।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-04-20</p>
+        </div>
+      </a>
+    </article>
+    <article x-show="cat==='all' || cat==='commerce'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/kirana-to-distributor/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/kirana-to-distributor-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">COMMERCE</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Kirana to distributor — the 4-layer NLP stack explained</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">Kirana से distributor तक — 4-layer NLP stack</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">How AI handles &#x27;Suresh-ji, 10 paani soda aur 5 chai patti bhej do&#x27; — from message to fulfilment.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">&#x27;सुरेश जी, 10 पानी soda और 5 चाय-पत्ती भेज दो&#x27; — message से डिलीवरी तक AI कैसे सँभालती है।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-04-14</p>
+        </div>
+      </a>
+    </article>
+    <article x-show="cat==='all' || cat==='commerce'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/whatsapp-commerce-msme/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/whatsapp-commerce-msme-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">COMMERCE</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">63M MSMEs run on WhatsApp + Excel — here&#x27;s the AI layer</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">6.3 करोड़ MSMEs WhatsApp + Excel पर चलते हैं — AI layer अब यहाँ है</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">India&#x27;s 63 million MSMEs don&#x27;t need enterprise SaaS. They need AI that speaks their channel and their language.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">भारत के 6.3 करोड़ MSMEs को enterprise SaaS नहीं चाहिए। उन्हें उनके channel और भाषा की AI चाहिए।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-04-08</p>
+        </div>
+      </a>
+    </article>
+    <article x-show="cat==='all' || cat==='shrutam'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/shrutam-blind-mode/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/shrutam-blind-mode-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">EDUCATION</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">India&#x27;s first blind-mode edtech — FREE forever</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">भारत का पहला blind-mode edtech — हमेशा के लिए FREE</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">50 lakh visually-impaired students in India. Zero edtech serves them. Shrutam does — and it&#x27;s free.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">भारत में 50 लाख दृष्टिबाधित विद्यार्थी। कोई edtech उनकी सेवा नहीं करता। Shrutam करता है — और मुफ़्त में।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-04-02</p>
+        </div>
+      </a>
+    </article>
+    <article x-show="cat==='all' || cat==='shrutam'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/shrutam-audio-first/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/shrutam-audio-first-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">EDUCATION</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Why audio-first for Class 6-10 students</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">Class 6-10 के लिए audio-first क्यों</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">Video feels modern but fails Bharat. Text fails the weak reader. Audio meets everyone where they are.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">Video आधुनिक लगता है, पर भारत के लिए नहीं चलता। Text कमज़ोर पाठक को पीछे छोड़ देता है। Audio हर बच्चे से मिलता है।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-03-28</p>
+        </div>
+      </a>
+    </article>
+    <article x-show="cat==='all' || cat==='shrutam'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/shrutam-hindi-medium-kids/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/shrutam-hindi-medium-kids-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">EDUCATION</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Why Hindi-medium kids are falling behind — and what fixes it</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">हिंदी-medium बच्चे पीछे क्यों रह जाते हैं — और क्या ठीक करेगा</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">67% of India&#x27;s students study in Hindi medium. They&#x27;re not behind because of intelligence. They&#x27;re behind because every tool assumes English.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">भारत के 67% विद्यार्थी हिंदी माध्यम में पढ़ते हैं। वे बुद्धि की कमी से पीछे नहीं हैं। वे पीछे हैं क्योंकि हर tool English मानकर चलता है।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-03-22</p>
+        </div>
+      </a>
+    </article>
+    <article x-show="cat==='all' || cat==='market'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/hindi-vs-translation/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/hindi-vs-translation-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">MARKET</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">We don&#x27;t translate, we rebuild — why native Hindi AI wins</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">हम अनुवाद नहीं करते, नए सिरे से बनाते हैं</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">Translated AI sounds wrong. It thinks in English and pretends. Native Hindi AI thinks in Hindi. The difference is everything.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">अनूदित AI ग़लत लगती है। वह English में सोचती है, नाटक करती है। हिंदी में सोचने वाली AI अलग है।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-03-18</p>
+        </div>
+      </a>
+    </article>
+    <article x-show="cat==='all' || cat==='market'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/bharat-ai-gap/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/bharat-ai-gap-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">MARKET</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">India&#x27;s 1.2 billion AI gap — the math</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">भारत का 1.2 अरब AI का अंतर — आँकड़े</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">1.4 billion Indians. 200 million speak English. Every AI product serves that 200M. Here&#x27;s the math on the 1.2B left behind.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">1.4 अरब भारतीय। 20 करोड़ English बोलते हैं। हर AI product उन्हीं के लिए बनता है। बाक़ी 1.2 अरब का गणित।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-03-12</p>
+        </div>
+      </a>
+    </article>
+    <article x-show="cat==='all' || cat==='brand'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/22-7-philosophy/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/22-7-philosophy-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">PHILOSOPHY</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">22/7 — tez nahi, sahi. Why we don&#x27;t ship fast.</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">22/7 — तेज़ नहीं, सही। हम जल्दी ship क्यों नहीं करते।</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">Two woodcutters. One cuts for 24 hours. One cuts for 22 and sharpens for 2. The slow one wins.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">दो लकड़हारे। एक 24 घंटे काटता है। दूसरा 22 काटता है, 2 कुल्हाड़ी तेज़ करता है। धीमा जीतता है।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-03-06</p>
+        </div>
+      </a>
+    </article>
+    <article x-show="cat==='all' || cat==='brand'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/pancha-bhoota-ai/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/pancha-bhoota-ai-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">PHILOSOPHY</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Pancha Bhoota — ancient elements, modern AI</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">पंच भूत — प्राचीन तत्व, आधुनिक AI</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">Five elements. Seven products. A framework borrowed from our grandparents.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">पाँच तत्व। सात products। हमारे दादा-दादियों से उधार लिया गया दर्शन।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-02-28</p>
+        </div>
+      </a>
+    </article>
+    <article x-show="cat==='all' || cat==='brand'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/bharat-vs-india/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/bharat-vs-india-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">PHILOSOPHY</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">Bharat vs India — why we build for the villages</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">भारत बनाम India — हम गाँवों के लिए क्यों बनाते हैं</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">India gets funded. Bharat gets ignored. Here&#x27;s why that&#x27;s about to flip.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">India को funding मिलती है। भारत को नज़रअंदाज़ किया जाता है। यही पलटने वाला है।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-02-20</p>
+        </div>
+      </a>
+    </article>
+    <article x-show="cat==='all' || cat==='brand'" class="bg-card border border-white/[.07] rounded-2xl overflow-hidden hover:border-primary/40 transition-all group">
+      <a href="/blog/india-mein-ai-ki-aarambh/" class="block">
+        <div class="aspect-[1200/630] overflow-hidden bg-cosmos"><img src="/assets/images/blog/india-mein-ai-ki-aarambh-hero.webp" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="1200" height="630"></div>
+        <div class="p-5">
+          <p class="text-[10px] font-bold text-accent tracking-[.18em] uppercase mb-2">PHILOSOPHY</p>
+          <h3 class="font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'en'" lang="en">India mein AI ki aarambh — why now, why us</h3>
+          <h3 class="hindi font-bold text-gray-100 text-lg leading-tight mb-2 group-hover:text-primary transition-colors" x-show="$store.lang.current === 'hi'" lang="hi">भारत में AI का आरम्भ — अभी क्यों, हम क्यों</h3>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3" x-show="$store.lang.current === 'en'" lang="en">The question we kept asking: why hasn&#x27;t world-class AI reached India&#x27;s villages? Aarambha is our answer.</p>
+          <p class="text-sm text-gray-400 leading-relaxed line-clamp-3 hindi" x-show="$store.lang.current === 'hi'" lang="hi">जो सवाल हम बार-बार पूछते रहे: world-class AI गाँव तक क्यों नहीं पहुँचा? आरम्भ उसका उत्तर है।</p>
+          <p class="text-xs text-gray-600 mt-3">2026-02-12</p>
+        </div>
+      </a>
+    </article>
   </div>
 </section>
 
